@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'recipes',
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,7 @@ WSGI_APPLICATION = 'recipeApp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+
 
 DATABASES = {
 'default': {
