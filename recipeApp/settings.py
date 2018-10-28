@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'recipeApp.wsgi.application'
 DATABASES = {
 'default': {
     'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'recipes',
+    'NAME': 'cookIt_db',
     'HOST': '127.0.0.1',
     'PORT': '3306',
     'USER': 'root',
