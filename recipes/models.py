@@ -32,3 +32,7 @@ class Food(models.Model):
     unit_amount = models.IntegerField(null=True)
     isVegetarian = models.CharField(max_length=3, null=True)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE, null=True)
+
+
+class VegetarianFood(models.Model):
+    name = models.CharField(max_length=200, null=True)
