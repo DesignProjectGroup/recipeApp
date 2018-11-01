@@ -2,6 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 from django.shortcuts import render
+from recipes.models import Recipe
 
 
 def call_functions(request):
@@ -10,48 +11,51 @@ def call_functions(request):
 
 
 def get_all_recipes():
-    r = requests.get('https://www.nefisyemektarifleri.com/tarifler/')
+    r = requests.get('http://www.ardaninmutfagi.com/')
     soup = BeautifulSoup(r.content, "html.parser")
-    all_parent_categories = soup.find_all("div", attrs={"class": "kategori-detay"})
-    for parent_category in all_parent_categories:
-        parent_category_link = parent_category.find("h3").a.get("href")
-        get_recipe_link(parent_category_link)
+    all_categories = soup.find_all("div", attrs={"class": "arda-menu-ck-liste"})
+    for categories in all_categories:
+        for category in categories.find_all("li"):
+            category_link = category.a.get("href")
+            get_recipe_link(category_link)
 
 
 def get_recipe_link(parent_category_link):
     r = requests.get(parent_category_link)
     soup = BeautifulSoup(r.content, "html.parser")
-    recipes_list = soup.find_all("div", attrs={"class": "post-title-author"})
-    for recipe in recipes_list:
-        recipe_link = recipe.a.get("href")
+    for i in soup.find_all("div", attrs={"class": "icerik-card-box"}):
+        recipe_link = i.find("article").a.get("href")
         get_recipe(recipe_link)
-    next_page = soup.find("a", attrs={"class": "nextpostslink"})
-    i = 0
-    # while(next_page!=None ):
-    while i < 9:
-        next_page_link = next_page.get("href")
-        r = requests.get(next_page_link)
-        soup = BeautifulSoup(r.content, "html.parser")
-        recipes_list = soup.find_all("div", attrs={"class": "post-title-author"})
-        for recipe in recipes_list:
-            recipe_link = recipe.a.get("href")
-            get_recipe(recipe_link)
-        next_page = soup.find("a", attrs={"class": "nextpostslink"})
-        i = i+1
 
-# recipe_ingredients_list
+
+# recipe_title
 # recipe_ingredient_title
-# recipe_preparation_title
-# recipe_preparation
-#
+# recipe_ingredients_list
+# recipe_preparation_steps_list
 def get_recipe(recipe_link):
     recipe_ingredients_list = []
+    recipe_preparation_steps_list = ""
     r = requests.get(recipe_link)
     soup = BeautifulSoup(r.content, "html.parser")
-    recipe_ingredient_title = soup.find("h2", attrs={"id": "malzemeler"}).text
-    ingredients_list = soup.find_all("li", attrs={"itemprop": "ingredients"})
-    for ing in ingredients_list:
-        recipe_ingredients_list.append(ing.text)
-    recipe_preparation_title = soup.find("h2", attrs={"id": "hazirlanisi"}).text
-    recipe_preparation = soup.find("div", attrs={"class": "entry_content"}).ol.text
-    print(recipe_preparation)
+    # recipe_title
+    recipe_title = soup.find("h1", attrs={"class": "entry-title"}).text
+
+    # recipe_ingredient_title
+    if soup.find("strong"):
+        recipe_ingredient_title = soup.find("strong").text
+
+    # recipe_ingredients_list
+    if soup.find("div", attrs={"class": "mlz"}):
+        ingredients = soup.find("div", attrs={"class": "mlz"}).find_all("br")
+        for i in ingredients:
+            recipe_ingredients_list.append(i.next_sibling.replace("\n", ""))
+
+    # recipe_preparation_steps_list
+    recipe_preparation_steps = soup.find("div", attrs={"class": "entry-content"}).find_all("p")
+    for p in recipe_preparation_steps:
+        if not p.text == "":
+            recipe_preparation_steps_list = recipe_preparation_steps_list + p.text + "\n"
+
+    if soup.find("strong") and soup.find("div", attrs={"class": "mlz"}):
+        Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list,
+                                        ingredient_title=recipe_ingredient_title)

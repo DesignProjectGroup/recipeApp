@@ -3,6 +3,7 @@ from django.db import models
 
 class Recipe(models.Model):
     title = models.CharField(max_length=200, null=True)
+    ingredient_title = models.CharField(max_length=200, null=True)
     calorie = models.IntegerField(default=0, null=True)
     text = models.TextField(null=True)
     score = models.IntegerField(default=0, null=True)
@@ -32,3 +33,7 @@ class Food(models.Model):
     unit_amount = models.IntegerField(null=True)
     isVegetarian = models.CharField(max_length=3, null=True)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE, null=True)
+
+
+class VegetarianFood(models.Model):
+    name = models.CharField(max_length=200, null=True)
