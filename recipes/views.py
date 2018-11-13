@@ -14,3 +14,7 @@ def calculate_calories(request):
     for r in rec:
         print(r.title, r.calorie)
     return render(request, 'recipes/all_cooking_categories.html')
+
+def query(){
+    
+}
