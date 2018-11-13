@@ -10,6 +10,7 @@ class Recipe(models.Model):
     isVegetarian = models.CharField(max_length=3, null=True)
     isGood = models.CharField(max_length=3, null=True)
     image = models.ImageField(null=True)
+    ingredient_title = models.CharField(max_length=200, null=True)
 
 
 class Ingredient(models.Model):
