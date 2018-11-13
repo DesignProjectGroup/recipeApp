@@ -16,4 +16,5 @@ def calculate_calories(request):
     return render(request, 'recipes/all_cooking_categories.html')
 
 def query():
+    ff
     
