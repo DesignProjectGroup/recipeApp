@@ -10,6 +10,7 @@ from django.shortcuts import render
 def call_functions(request):
     get_all_recipes()
     calculate_calories()
+    getLinks_from_trendus()
     return render(request, 'recipes/all_cooking_categories.html', {})
 
 
@@ -77,5 +78,57 @@ def get_recipe(recipe_link):
         Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list,
                                         ingredient_title=recipe_ingredient_title)
 
+def clear_split_string(item):
+    if len(item) == 4:
+        item[0] = item[0] + " " + item[1]
+        del item[1]
+    elif len(item) == 5:
+        item[0] = item[0] + " " + item[1] + " " + item[2]
+        del item[1]
+        del item[2]
+    return item
 
+
+def getLinks_from_trendus():
+    """ we can using other website like trendus  I was trying to get linke from her"""
+    webpage = 'http://www.trendus.com/kalori-cetveli-1933'
+    r = requests.get(webpage)
+    page_soup = BeautifulSoup(r.content, "html.parser")
+    all_items = page_soup.findAll("div", attrs={"class": "News-P"})
+    all_items_as_string = str(all_items).rstrip().split('\n')
+    by_gram = "gram"
+    by_porsiyon = "porsiyon"
+    by_adet = "adet"
+    by_bardak = "bardak"
+    by_Birim = "Birim"
+    by_kutu = "kutu"
+    by_drim = "dilim"
+
+    print("item      birim     Kalori")
+    for item in all_items_as_string:
+        if "gram" in item and "bardak" not in item:
+            item = item[3:-4].replace('gram', '').split()
+            content = clear_split_string(item)
+            # print(content[0] +"  " +content[1]+" gram    "+content[2])
+
+        elif "porsiyon" in item:
+            item = item[3:-4].replace('porsiyon', '').split()
+            content = clear_split_string(item)
+            content[1] = "1"
+            # print(content[0] + "  " + content[1]+" porsiyon    "+content[2])
+
+        elif "adet" in item:
+            item = item[3:-4].replace('adet', '').split()
+            content = clear_split_string(item)
+            # print(content[0] + "  " + content[1]+" adet    "+content[2])
+
+        elif "dilim" in item:
+            item = item[3:-4].replace('dilim', '').split()
+            content = clear_split_string(item)
+            content[1] = "1"
+            # print(content[0] + "  " + content[1]+" dilim    "+content[2])
+        else:
+            pass
+    print(len(all_items))
+    print(len(all_items_as_string))
 
