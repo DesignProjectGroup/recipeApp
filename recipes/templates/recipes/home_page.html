@@ -1,10 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 
-</body>
-</html>
+    {% extends 'recipes/base.html' %}
+          {% block content %}
+
+          <form method="post" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                      <div class="form-group mb-2">
+
+                      </div>
+                  </div>
+                <div class="col-md-2"></div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+
+                  </div>
+                  <div class="col-md-2"></div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-2">
+                      <div class="form-group">
+                         <!-- <label for="id_source_language">source language</label>-->
+
+
+
+                      </div>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div class="col-md-2">
+                      <div class="form-group">
+                         <!-- <label for="id_target_language">target language</label>-->
+
+                      </div>
+                  </div>
+                  <div class="col-md-3"></div>
+              </div>
+
+              <div class="row">
+                  <div class="col-md-4"></div>
+                  <div class="col-md-4">
+                     <!-- <button type="submit" class="btn btn-xl btn-dark" >Upload</button>-->
+                  </div>
+                  <div class="col-md-4"></div>
+              </div>
+
+          </form>
+
+        
+
+
+
+          {% endblock %}
+
+
+
+
+
+
+
+
+
+

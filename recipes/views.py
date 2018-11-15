@@ -8,9 +8,9 @@ from django.shortcuts import render
 
 
 def call_functions(request):
-    get_all_recipes()
-    calculate_calories()
-    return render(request, 'recipes/all_cooking_categories.html', {})
+    #get_all_recipes()
+    #calculate_calories()
+    return render(request, 'recipes/home_page.html', {})
 
 
 def calculate_calories():
