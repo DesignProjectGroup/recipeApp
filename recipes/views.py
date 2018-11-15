@@ -8,7 +8,7 @@ from django.shortcuts import render
 
 
 def call_functions(request):
-    get_all_recipes()
+    #get_all_recipes()
     calculate_calories()
     getLinks_from_trendus()
     return render(request, 'recipes/all_cooking_categories.html', {})
@@ -109,24 +109,32 @@ def getLinks_from_trendus():
         if "gram" in item and "bardak" not in item:
             item = item[3:-4].replace('gram', '').split()
             content = clear_split_string(item)
-            # print(content[0] +"  " +content[1]+" gram    "+content[2])
+            print(content[0] +"  " +content[1]+" gram    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="gram")
 
         elif "porsiyon" in item:
             item = item[3:-4].replace('porsiyon', '').split()
             content = clear_split_string(item)
             content[1] = "1"
             # print(content[0] + "  " + content[1]+" porsiyon    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="porsiyon")
 
         elif "adet" in item:
             item = item[3:-4].replace('adet', '').split()
             content = clear_split_string(item)
             # print(content[0] + "  " + content[1]+" adet    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="adet")
 
         elif "dilim" in item:
             item = item[3:-4].replace('dilim', '').split()
             content = clear_split_string(item)
             content[1] = "1"
             # print(content[0] + "  " + content[1]+" dilim    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="dilim")
         else:
             pass
     print(len(all_items))
