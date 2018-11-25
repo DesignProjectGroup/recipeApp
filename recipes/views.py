@@ -2,14 +2,15 @@
 import requests
 from bs4 import BeautifulSoup
 from django.shortcuts import render
-from recipes.models import Recipe
-from recipes.models import Food, Recipe, Ingredient
-from django.shortcuts import render
+from recipes.models import Food, Recipe, Ingredient, MeasureTable
+import os
 
 
 def call_functions(request):
-    #get_all_recipes()
-    #calculate_calories()
+    # get_all_recipes()
+    # calculate_calories()
+    get_measure()
+    parse_ingredient()
     return render(request, 'recipes/home_page.html', {})
 
 
@@ -78,4 +79,38 @@ def get_recipe(recipe_link):
                                         ingredient_title=recipe_ingredient_title)
 
 
+# Seda
+# Adds measure and their grams in the MeasureTable
+def get_measure():
+    cwd = os.path.realpath("measure_table.txt")  # find measure.txt path in the project
+    data = [i.strip('\n').split('\t') for i in open(cwd)]  # open and split measure.txt
+    for m in range(0, len(data)):
+        if(data[m][2]):
+            # Adds data to the MeasureTable
+            MeasureTable.objects.update_or_create(name=data[m][0],
+                                                  object_type=data[m][1],
+                                                  technical_measure=data[m][2])
 
+
+# Seda
+# Splitting materials by measure and name
+def parse_ingredient():
+    # ingredients_list başka metottan  çağırılacak
+    ingredients_list = ['tuz', '1 demet reyhan', '1 su bardağı toz şeker', '½ tatlı kaşığı limon tuzu', '6 diş kuru karanfil', '2 adet çubuk tarçın', '5 su bardağı sıcak su']
+    parse_ingredient_list = [] # keeps the materials after the parsing
+    # measures ölçüleri tutuyor ekleme yapılabilir
+    measures = ['yemek kaşığı', 'çay kaşığı', 'tatlı kaşığı', 'su bardağı', 'çay bardağı', 'kahve fincanı', 'fincan', 'bardak', 'kaşık', 'gram', 'adet', 'tane', 'diş', 'demet', 'tutam', 'gr.', 'paket', 'litre']
+    for ingredients in ingredients_list:
+        for measure in measures:
+            if measure in ingredients:
+                ingredient = ingredients.split(measure)
+                parse_ingredient_list.append(ingredient[0])
+                parse_ingredient_list.append(measure)
+                parse_ingredient_list.append(ingredient[1])
+                break
+        else: # eğer ölçü yoksa sadece malzeme adı varsa
+            if ingredients not in parse_ingredient_list:
+                parse_ingredient_list.append("")
+                parse_ingredient_list.append("")
+                parse_ingredient_list.append(ingredients)
+    print(parse_ingredient_list)

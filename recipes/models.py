@@ -37,3 +37,9 @@ class Food(models.Model):
 
 class VegetarianFood(models.Model):
     name = models.CharField(max_length=200, null=True)
+
+
+class MeasureTable(models.Model):
+    name = models.CharField(max_length=200, null=True)
+    object_type = models.CharField(max_length=200, null=True)
+    technical_measure = models.IntegerField(null=True)
