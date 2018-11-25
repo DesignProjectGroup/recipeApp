@@ -1,0 +1,252 @@
+Arpa Şehriye	Su Bardağı	165
+Arpa Şehriye	Çay Bardağı	80
+Arpa Şehriye	Kahve Fincanı	50
+Arpa Şehriye	Çorba Kaşığı	15
+Arpa Şehriye	Tatlı Kaşığı	0
+Arpa Şehriye	Çay Kaşığı	0
+Badem	Su Bardağı	125
+Badem	Çay Bardağı	70
+Badem	Kahve Fincanı	40
+Badem	Çorba Kaşığı	20
+Badem	Tatlı Kaşığı	0
+Badem	Çay Kaşığı	0
+Buğday	Su Bardağı	155
+Buğday	Çay Bardağı	70
+Buğday	Kahve Fincanı	47
+Buğday	Çorba Kaşığı	0
+Buğday	Tatlı Kaşığı	0
+Buğday	Çay Kaşığı	0
+Bulgur	Su Bardağı	175
+Bulgur	Çay Bardağı	100
+Bulgur	Kahve Fincanı	50
+Bulgur	Çorba Kaşığı	20
+Bulgur	Tatlı Kaşığı	10
+Bulgur	Çay Bardağı	3
+Ceviz İçi	Su Bardağı	90
+Ceviz İçi	Çay Bardağı	50
+Ceviz İçi	Kahve Fincanı	30
+Ceviz İçi	Çorba Kaşığı	15
+Ceviz İçi	Tatlı Kaşığı	0
+Ceviz İçi	Çay Kaşığı	0
+Çörek Otu	Su Bardağı	100
+Çörek Otu	Çay Bardağı	50
+Çörek Otu	Kahve Fincanı	30
+Çörek Otu	Çorba Kaşığı	15
+Çörek Otu	Tatlı Kaşığı	5
+Çörek Otu	Çay Kaşığı	2
+Domates Salçası	Su Bardağı	200
+Domates Salçası	Çay Bardağı	90
+Domates Salçası	Kahve Fincanı	60
+Domates Salçası	Çorba Kaşığı	20
+Domates Salçası	Tatlı Kaşığı	0
+Domates Salçası	Çay Kaşığı	0
+Dövülmüş Badem	Su Bardağı	125
+Dövülmüş Badem	Çay Bardağı	80
+Dövülmüş Badem	Kahve Fincanı	45
+Dövülmüş Badem	Çorba Kaşığı	20
+Dövülmüş Badem	Tatlı Kaşığı	10
+Dövülmüş Badem	Çay Kaşığı	0
+Dövülmüş Ceviz İçi	Su Bardağı	110
+Dövülmüş Ceviz İçi	Çay Bardağı	60
+Dövülmüş Ceviz İçi	Kahve Fincanı	30
+Dövülmüş Ceviz İçi	Çorba Kaşığı	15
+Dövülmüş Ceviz İçi	Tatlı Kaşığı	8
+Dövülmüş Ceviz İçi	Çay Kaşığı	2
+Dövülmüş Fındık içi	Su Bardağı	115
+Dövülmüş Fındık içi	Çay Bardağı	65
+Dövülmüş Fındık içi	Kahve Fincanı	35
+Dövülmüş Fındık içi	Çorba Kaşığı	15
+Dövülmüş Fındık içi	Tatlı Kaşığı	8
+Dövülmüş Fındık içi	Çay Kaşığı	2
+Erişte	Su Bardağı	80
+Erişte	Çay Bardağı	40
+Erişte	Kahve Fincanı	25
+Erişte	Çorba Kaşığı	0
+Erişte	Tatlı Kaşığı	0
+Erişte	Çay Kaşığı	0
+Eritilmiş Margarin	Su Bardağı	220
+Eritilmiş Margarin	Çay Bardağı	100
+Eritilmiş Margarin	Kahve Fincanı	67
+Eritilmiş Margarin	Çorba Kaşığı	0
+Eritilmiş Margarin	Tatlı Kaşığı	0
+Eritilmiş Margarin	Çay Kaşığı	0
+Fındık	Su Bardağı	120
+Fındık	Çay Bardağı	65
+Fındık	Kahve Fincanı	35
+Fındık	Çorba Kaşığı	20
+Fındık	Tatlı Kaşığı	0
+Fındık	Çay Kaşığı	0
+Galeta Unu	Su Bardağı	100
+Galeta Unu	Çay Bardağı	60
+Galeta Unu	Kahve Fincanı	30
+Galeta Unu	Çorba Kaşığı	15
+Galeta Unu	Tatlı Kaşığı	5
+Galeta Unu	Çay Kaşığı	0
+Haşhaş	Su Bardağı	110
+Haşhaş	Çay Bardağı	65
+Haşhaş	Kahve Fincanı	40
+Haşhaş	Çorba Kaşığı	15
+Haşhaş	Tatlı Kaşığı	5
+Haşhaş	Çay Kaşığı	2
+Hindistan Cevizi	Su Bardağı	50
+Hindistan Cevizi	Çay Bardağı	30
+Hindistan Cevizi	Kahve Fincanı	15
+Hindistan Cevizi	Çorba Kaşığı	5
+Hindistan Cevizi	Tatlı Kaşığı	3
+Hindistan Cevizi	Çay Kaşığı	2
+İrmik	Su Bardağı	145
+İrmik	Çay Bardağı	85
+İrmik	Kahve Fincanı	50
+İrmik	Çorba Kaşığı	15
+İrmik	Tatlı Kaşığı	5
+İrmik	Çay Kaşığı	2
+Kakao	Su Bardağı	100
+Kakao	Çay Bardağı	55
+Kakao	Kahve Fincanı	30
+Kakao	Çorba Kaşığı	10
+Kakao	Tatlı Kaşığı	5
+Kakao	Çay Kaşığı	2
+Kırmızı Mercimek	Su Bardağı	180
+Kırmızı Mercimek	Çay Bardağı	80
+Kırmızı Mercimek	Kahve Fincanı	55
+Kırmızı Mercimek	Çorba Kaşığı	17
+Kırmızı Mercimek	Tatlı Kaşığı	0
+Kırmızı Mercimek	Çay Kaşığı	0
+Krema	Su Bardağı	210
+Krema	Çay Bardağı	100
+Krema	Kahve Fincanı	65
+Krema	Çorba Kaşığı	0
+Krema	Tatlı Kaşığı	0
+Krema	Çay Kaşığı	0
+Kuru Fasulye	Su Bardağı	180
+Kuru Fasulye	Çay Bardağı	80
+Kuru Fasulye	Kahve Fincanı	55
+Kuru Fasulye	Çorba Kaşığı	17
+Kuru Fasulye	Tatlı Kaşığı	0
+Kuru Fasulye	Çay Kaşığı	0
+Makarna	Su Bardağı	110
+Makarna	Çay Bardağı	50
+Makarna	Kahve Fincanı	35
+Makarna	Çorba Kaşığı	15
+Makarna	Tatlı Kaşığı	0
+Makarna	Çay Kaşığı	0
+Margarin	Su Bardağı	180
+Margarin	Çay Bardağı	80
+Margarin	Kahve Fincanı	55
+Margarin	Çorba Kaşığı	17
+Margarin	Tatlı Kaşığı	0
+Margarin	Çay Kaşığı	0
+Mısır Unu	Su Bardağı	120
+Mısır Unu	Çay Bardağı	60
+Mısır Unu	Kahve Fincanı	40
+Mısır Unu	Çorba Kaşığı	10
+Mısır Unu	Tatlı Kaşığı	5
+Mısır Unu	Çay Kaşığı	0
+Nişasta	Su Bardağı	100
+Nişasta	Çay Bardağı	50
+Nişasta	Kahve Fincanı	30
+Nişasta	Çorba Kaşığı	20
+Nişasta	Tatlı Kaşığı	10
+Nişasta	Çay Kaşığı	0
+Nohut	Su Bardağı	170
+Nohut	Çay Bardağı	75
+Nohut	Kahve Fincanı	50
+Nohut	Çorba Kaşığı	15
+Nohut	Tatlı Kaşığı	0
+Nohut	Çay Kaşığı	0
+Pirinç	Su Bardağı	175
+Pirinç	Çay Bardağı	100
+Pirinç	Kahve Fincanı	50
+Pirinç	Çorba Kaşığı	20
+Pirinç	Tatlı Kaşığı	10
+Pirinç	Çay Kaşığı	3
+Pirinç Unu	Su Bardağı	125
+Pirinç Unu	Çay Bardağı	70
+Pirinç Unu	Kahve Fincanı	35
+Pirinç Unu	Çorba Kaşığı	20
+Pirinç Unu	Tatlı Kaşığı	5
+Pirinç Unu	Çay Kaşığı	3
+Pudra Şekeri	Su Bardağı	150
+Pudra Şekeri	Çay Bardağı	100
+Pudra Şekeri	Kahve Fincanı	40
+Pudra Şekeri	Çorba Kaşığı	20
+Pudra Şekeri	Tatlı Kaşığı	10
+Pudra Şekeri	Çay Kaşığı	5
+Rendelenmiş Kaşar 	Su Bardağı	75
+Rendelenmiş Kaşar 	Çay Bardağı	45
+Rendelenmiş Kaşar 	Kahve Fincanı	25
+Rendelenmiş Kaşar 	Çorba Kaşığı	0
+Rendelenmiş Kaşar 	Tatlı Kaşığı	0
+Rendelenmiş Kaşar 	Çay Kaşığı	0
+Rezene	Su Bardağı	0
+Rezene	Çay Bardağı	0
+Rezene	Kahve Fincanı	0
+Rezene	Çorba Kaşığı	9
+Rezene	Tatlı Kaşığı	3
+Rezene	Çay Kaşığı	2
+Sıvı Yağ	Su Bardağı	170
+Sıvı Yağ	Çay Bardağı	100
+Sıvı Yağ	Kahve Fincanı	60
+Sıvı Yağ	Çorba Kaşığı	10
+Sıvı Yağ	Tatlı Kaşığı	4
+Sıvı Yağ	Çay Kaşığı	0
+Sirke	Su Bardağı	180
+Sirke	Çay Bardağı	100
+Sirke	Kahve Fincanı	70
+Sirke	Çorba Kaşığı	10
+Sirke	Tatlı Kaşığı	5
+Sirke	Çay Kaşığı	0
+Su	Su Bardağı	250
+Su	Çay Bardağı	100
+Su	Kahve Fincanı	75
+Su	Çorba Kaşığı	15
+Su	Tatlı Kaşığı	4
+Su	Çay Kaşığı	0
+Susam	Su Bardağı	110
+Susam	Çay Bardağı	65
+Susam	Kahve Fincanı	40
+Susam	Çorba Kaşığı	10
+Susam	Tatlı Kaşığı	4
+Susam	Çay Kaşığı	0
+Süt	Su Bardağı	250
+Süt	Çay Bardağı	115
+Süt	Kahve Fincanı	75
+Süt	Çorba Kaşığı	15
+Süt	Tatlı Kaşığı	4
+Süt	Çay Kaşığı	0
+Tarçın	Su Bardağı	0
+Tarçın	Çay Bardağı	0
+Tarçın	Kahve Fincanı	0
+Tarçın	Çorba Kaşığı	20
+Tarçın	Tatlı Kaşığı	6
+Tarçın	Çay Kaşığı	4
+Toz Şeker	Su Bardağı	175
+Toz Şeker	Çay Bardağı	100
+Toz Şeker	Kahve Fincanı	50
+Toz Şeker	Çorba Kaşığı	20
+Toz Şeker	Tatlı Kaşığı	8
+Toz Şeker	Çay Kaşığı	4
+Tuz	Su Bardağı	0
+Tuz	Çay Bardağı	0
+Tuz	Kahve Fincanı	0
+Tuz	Çorba Kaşığı	20
+Tuz	Tatlı Kaşığı	10
+Tuz	Çay Kaşığı	5
+Un	Su Bardağı	110
+Un	Çay Bardağı	65
+Un	Kahve Fincanı	40
+Un	Çorba Kaşığı	20
+Un	Tatlı Kaşığı	10
+Un	Çay Kaşığı	4
+Yoğurt	Su Bardağı	210
+Yoğurt	Çay Bardağı	120
+Yoğurt	Kahve Fincanı	64
+Yoğurt	Çorba Kaşığı	40
+Yoğurt	Tatlı Kaşığı	20
+Yoğurt	Çay Kaşığı	0
+Zeytinyağı	Su Bardağı	220
+Zeytinyağı	Çay Bardağı	100
+Zeytinyağı	Kahve Fincanı	65
+Zeytinyağı	Çorba Kaşığı	22
+Zeytinyağı	Tatlı Kaşığı	0
+Zeytinyağı	Çay Kaşığı	0

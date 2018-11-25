@@ -16,7 +16,7 @@ class Ingredient(models.Model):
     name = models.CharField(max_length=200,null=True)
     subtitle = models.CharField(max_length=200, null=True)
     calorie = models.IntegerField(default=0, null=True)
-    count = models.IntegerField(default=0, null=True)
+    count = models.CharField(max_length=200, null=True)
     measurementUnit = models.CharField(max_length=200, null=True)
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, null=True)
 
@@ -40,3 +40,9 @@ class Food(models.Model):
 
 class VegetarianFood(models.Model):
     name = models.CharField(max_length=200, null=True)
+
+
+class MeasureTable(models.Model):
+    name = models.CharField(max_length=200, null=True)
+    object_type = models.CharField(max_length=200, null=True)
+    technical_measure = models.IntegerField(null=True)
