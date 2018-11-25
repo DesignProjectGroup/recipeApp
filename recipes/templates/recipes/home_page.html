@@ -1,62 +1,44 @@
 
     {% extends 'recipes/base.html' %}
           {% block content %}
-
-          <form method="post" enctype="multipart/form-data">
-              {% csrf_token %}
+              <div class="row"></div>
               <div class="row">
-                <div class="col-md-2"></div>
+                  <div class="col-md-2"></div>
+
                   <div class="col-md-8">
-                      <div class="form-group mb-2">
+                      <div class="row">
+                          <div class="col-md-2"></div>
+                          <div class="col-md-8">
+                              <form method='post' action=''>
+                                  <div class="form-group">
+                                      <label for="sel1">Please select the material</label>
+                                      {% csrf_token %}
+                                      <select class="form-control" id="selected_food" name='selected_food'>
+                                          {% for food in foods %}
+                                              <option value='{{food.name}}'>{{ food.name }}</option>
+                                          {% endfor %}
+                                      </select>
+                                      <input type="submit" value="Select">
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="col-md-8"></div>
+
+                      </div>
+                      <div class="row">
+                          {{ selected_food }}
+                      </div>
+                      <div class="row">
+                          <a href="{% url 'suggested_recipes' %}"><button type="button" class="btn">gönder</button></a>
 
                       </div>
                   </div>
-                <div class="col-md-2"></div>
-              </div>
 
-              <div class="row">
-                  <div class="col-md-2"></div>
-                  <div class="col-md-8">
-
-                  </div>
                   <div class="col-md-2"></div>
               </div>
+              <div class="row"></div>
 
-              <div class="row">
-                  <div class="col-md-3"></div>
-                  <div class="col-md-2">
-                      <div class="form-group">
-                         <!-- <label for="id_source_language">source language</label>-->
-
-
-
-                      </div>
-                  </div>
-                  <div class="col-md-2"></div>
-                  <div class="col-md-2">
-                      <div class="form-group">
-                         <!-- <label for="id_target_language">target language</label>-->
-
-                      </div>
-                  </div>
-                  <div class="col-md-3"></div>
-              </div>
-
-              <div class="row">
-                  <div class="col-md-4"></div>
-                  <div class="col-md-4">
-                     <!-- <button type="submit" class="btn btn-xl btn-dark" >Upload</button>-->
-                  </div>
-                  <div class="col-md-4"></div>
-              </div>
-
-          </form>
-
-        
-
-
-
-          {% endblock %}
+        {% endblock %}
 
 
 
