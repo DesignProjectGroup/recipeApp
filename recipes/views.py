@@ -13,6 +13,7 @@ def list_recipes(request):
 def call_functions(request):
     get_all_recipes()
     #calculate_calories()
+    getLinks_from_trendus()
     foods = Food.objects.all()
     if request.method == 'POST':
         selected_food.append(request.POST.get('selected_food'))
@@ -74,6 +75,7 @@ def get_recipe(recipe_link):
     Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list)
     this_recipe = Recipe.objects.get(title=recipe_title, text=recipe_preparation_steps_list)
 
+
     # recipe_ingredients_list
     if soup.find("div", attrs={"class": "mlz"}):
         ingredients_subtitles_list = soup.find("div", attrs={"class": "mlz"}).find_all("strong")
@@ -132,4 +134,70 @@ def parse_ingredient(ingredientString):
             parse_ingredient_list.append("")
             parse_ingredient_list.append(ingredientString)
     return parse_ingredient_list
+
+
+#mohammed
+def clear_split_string(item):
+    if len(item) == 4:
+        item[0] = item[0] + " " + item[1]
+        del item[1]
+    elif len(item) == 5:
+        item[0] = item[0] + " " + item[1] + " " + item[2]
+        del item[1]
+        del item[2]
+    return item
+
+
+#mohammed
+def getLinks_from_trendus():
+    """ we can using other website like trendus  I was trying to get linke from her"""
+    webpage = 'http://www.trendus.com/kalori-cetveli-1933'
+    r = requests.get(webpage)
+    page_soup = BeautifulSoup(r.content, "html.parser")
+    all_items = page_soup.findAll("div", attrs={"class": "News-P"})
+    all_items_as_string = str(all_items).rstrip().split('\n')
+    by_gram = "gram"
+    by_porsiyon = "porsiyon"
+    by_adet = "adet"
+    by_bardak = "bardak"
+    by_Birim = "Birim"
+    by_kutu = "kutu"
+    by_drim = "dilim"
+
+    print("item      birim     Kalori")
+    for item in all_items_as_string:
+        if "gram" in item and "bardak" not in item:
+            item = item[3:-4].replace('gram', '').split()
+            content = clear_split_string(item)
+            print(content[0] +"  " +content[1]+" gram    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="gram")
+
+        elif "porsiyon" in item:
+            item = item[3:-4].replace('porsiyon', '').split()
+            content = clear_split_string(item)
+            content[1] = "1"
+            # print(content[0] + "  " + content[1]+" porsiyon    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="porsiyon")
+
+        elif "adet" in item:
+            item = item[3:-4].replace('adet', '').split()
+            content = clear_split_string(item)
+            # print(content[0] + "  " + content[1]+" adet    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="adet")
+
+        elif "dilim" in item:
+            item = item[3:-4].replace('dilim', '').split()
+            content = clear_split_string(item)
+            content[1] = "1"
+            # print(content[0] + "  " + content[1]+" dilim    "+content[2])
+            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
+                                          measurement_unit="dilim")
+        else:
+            pass
+    print(len(all_items))
+    print(len(all_items_as_string))
+
 

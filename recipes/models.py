@@ -36,6 +36,7 @@ class Food(models.Model):
     measurementUnit = models.CharField(max_length=200, null=True)
     isVegetarian = models.CharField(max_length=3, null=True)
     ingredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE, null=True)
+    measurement_unit = models.CharField(max_length=100, null=True)
 
 
 class VegetarianFood(models.Model):
