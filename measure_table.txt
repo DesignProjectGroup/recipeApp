@@ -202,7 +202,7 @@ Su	Kahve Fincanı	75
 Su	Çorba Kaşığı	15
 Su	Tatlı Kaşığı	4
 Su	Çay Kaşığı	0
-su	litre	1
+su	Litre	1
 Susam	Su Bardağı	110
 Susam	Çay Bardağı	65
 Susam	Kahve Fincanı	40
@@ -251,3 +251,6 @@ Zeytinyağı	Kahve Fincanı	65
 Zeytinyağı	Çorba Kaşığı	22
 Zeytinyağı	Tatlı Kaşığı	0
 Zeytinyağı	Çay Kaşığı	0
+Haşlanmış Nohut	Su bardağı	120
+soğan – rende	adet	100
+ince bulgur	su bardağı	165

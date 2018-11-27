@@ -1,8 +1,11 @@
+Arpa Şehriye	20	gram	71
 Asma Yaprağı	100	gram	97
+Badem	25	gram	150
 Balkabağı	1	porsiyon	139
 Bamya	100	gram	72
 Bezelye	100	gram	89
 Börülce	100	gram	127
+Buğday	4	gram	13
 Brokoli	100	gram	35
 Brüksel Lahanası	100	gram	35
 Domates	1	adet	14
@@ -117,6 +120,7 @@ Palamut	100	gram	168
 Sardalya	100	gram	162
 Somon	100	gram	131
 Somon Füme	100	gram	143
+Su	100	gram	0
 Tekir	100	gram	151
 Ton balığı	100	gram	130
 Tuzlanmış Balık	100	gram	305
@@ -378,3 +382,7 @@ Soğan Çorbası	1	porsiyon	103
 Tavuk Suyu Çorba	1	porsiyon	82
 Tel Şehriye Çorbası	1	porsiyon	245
 Yayla Çorbası	1	porsiyon	270
+Haşlanmış nohut	60	gram	68
+soğan – rende	100	gram	40
+ince bulgur	1	gram	4
+un	100	gram	364
