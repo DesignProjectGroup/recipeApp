@@ -160,7 +160,6 @@ def read_food_calories(food_calories_file):
 
 
 def calculate_ingredient_calories(name, measurementUnit, count):
-
     if measurementUnit=="gr.":
         measurementUnit = "gram"
     calorie = 0

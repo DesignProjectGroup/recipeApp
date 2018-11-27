@@ -251,6 +251,37 @@ Zeytinyağı	Kahve Fincanı	65
 Zeytinyağı	Çorba Kaşığı	22
 Zeytinyağı	Tatlı Kaşığı	0
 Zeytinyağı	Çay Kaşığı	0
+Zeytinyağı	yemek kaşığı	6
 Haşlanmış Nohut	Su bardağı	120
 soğan – rende	adet	100
 ince bulgur	su bardağı	165
+yumurta	adet	50
+süzme yoğurt	gram	1
+yumurta sarısı	adet	20
+kuru nane	yemek kaşığı	3
+toz tarhana	yemek kaşığı	16
+nane	tutam	1
+tereyağı	yemek kaşığı	20
+pastırma	dilim	10
+sarımsak	diş	3
+un	yemek kaşığı	8
+tavuk suyu	su bardağı	200
+süzme yoğurt	su bardağı	90
+patlıcan	adet	200
+sarı mercimek	su bardağı	170
+pirinç	yemek kaşığı	13
+pilavlık bulgur	yemek kaşığı	12
+defne yaprağı	adet	1
+limon suyu	adet	60
+yufka	adet	160
+kırmızı kapya biber	adet	75
+kuşbaşı dana eti	gram	1
+sivri biber	adet	30
+biber salçası	tatlı kaşığı	5
+toz kırmızı biber	tutam	1
+pirzola	gram	1
+asma yaprağı	gram	1
+dolmalık fıstık	yemek kaşığı	25
+kuş üzümü	yemek kaşığı	10
+nar ekşisi	yemek kaşığı	10
+toz şeker	yemek kaşığı	12

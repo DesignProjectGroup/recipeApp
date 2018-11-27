@@ -272,7 +272,6 @@ Kimyon	100	gram	375
 Kişniş	100	gram	280
 Köri	100	gram	325
 Mısır Nişastası	100	gram	375
-Nane	100	gram	285
 Tarçın	100	gram	260
 Tuz	100	gram	0
 Safran	100	gram	310
