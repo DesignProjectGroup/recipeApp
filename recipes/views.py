@@ -11,9 +11,14 @@ def list_recipes(request):
 
 
 def call_functions(request):
+    #read_food_calories("food_calories.txt")
+    #get_measure()
     get_all_recipes()
     #calculate_calories()
-    getLinks_from_trendus()
+    #getLinks_from_trendus()
+
+    #calculate_ingredient_calories("pirinç","su bardağı", 2)
+    #change_measurement_unit("süt","su bardağı", "1")
     foods = Food.objects.all()
     if request.method == 'POST':
         selected_food.append(request.POST.get('selected_food'))
@@ -91,15 +96,21 @@ def get_recipe(recipe_link):
             if i == "":
                 ingredients_subtitle_number = ingredients_subtitle_number + 1
             else:
-                print(i)
+
                 parse_ingredient_list = parse_ingredient(i)
-                print(parse_ingredient_list)
-                Ingredient.objects.update_or_create(name=parse_ingredient_list[2],
-                                                    count=parse_ingredient_list[0],
-                                                    measurementUnit=parse_ingredient_list[1],
+                product_name = parse_ingredient_list[2].strip()
+                print(product_name)
+                product_count = parse_ingredient_list[0].strip()
+                product_measurement_unit = parse_ingredient_list[1].strip()
+                calorie = calculate_ingredient_calories(product_name,product_measurement_unit,product_count)
+                Ingredient.objects.update_or_create(name=product_name,
+                                                    count=product_count,
+                                                    measurementUnit=product_measurement_unit,
                                                     subtitle=ingredients_subtitles_text_list
                                                     [ingredients_subtitle_number],
-                                                    recipe=this_recipe)
+                                                    recipe=this_recipe, calorie=calorie)
+
+
 # Seda
 # Adds measure and their grams in the MeasureTable
 def get_measure():
@@ -110,94 +121,66 @@ def get_measure():
             # Adds data to the MeasureTable
             MeasureTable.objects.update_or_create(name=data[m][0],
                                                   object_type=data[m][1],
-                                                  technical_measure=data[m][2])
+                                                  technical_measure=data[m][2], measurementUnit="gram")
 
 
 # Seda
 # Splitting materials by measure and name
-def parse_ingredient(ingredientString):
+def parse_ingredient(ingredient_string):
     parse_ingredient_list = [] # keeps the materials after the parsing
     # measures ölçüleri tutuyor ekleme yapılabilir
     measures = ['yemek kaşığı', 'çay kaşığı', 'tatlı kaşığı', 'su bardağı', 'çay bardağı', 'kahve fincanı',
                 'fincan', 'bardak', 'kaşık', 'gram', 'adet', 'tane', 'diş', 'demet', 'tutam', 'dilim', 'avuç',
-                'gr.', 'paket', 'litre']
+                'gr.', 'paket', 'litre', 'bağ', 'damla']
     for measure in measures:
-        if measure in ingredientString:
-            ingredient = ingredientString.split(measure)
+        if measure in ingredient_string:
+            ingredient = ingredient_string.split(measure)
             parse_ingredient_list.append(ingredient[0])
             parse_ingredient_list.append(measure)
             parse_ingredient_list.append(ingredient[1])
             break
     else: # eğer ölçü yoksa sadece malzeme adı varsa
-        if ingredientString not in parse_ingredient_list:
+        if ingredient_string not in parse_ingredient_list:
             parse_ingredient_list.append("")
             parse_ingredient_list.append("")
-            parse_ingredient_list.append(ingredientString)
+            parse_ingredient_list.append(ingredient_string)
     return parse_ingredient_list
 
 
-#mohammed
-def clear_split_string(item):
-    if len(item) == 4:
-        item[0] = item[0] + " " + item[1]
-        del item[1]
-    elif len(item) == 5:
-        item[0] = item[0] + " " + item[1] + " " + item[2]
-        del item[1]
-        del item[2]
-    return item
+#food_calories.txt file'ı parse eder ve Food table'a ekler.
+def read_food_calories(food_calories_file):
+    file = open(food_calories_file, "r")
+    line = file.readline()
+    while line:
+        split_line = line.split("\t")
+        split_line[3] = split_line[3].replace("\n", "")
+        Food.objects.update_or_create(name=split_line[0], count=split_line[1], measurementUnit=split_line[2],
+                                      calorie=split_line[3])
+        line = file.readline()
 
 
-#mohammed
-def getLinks_from_trendus():
-    """ we can using other website like trendus  I was trying to get linke from her"""
-    webpage = 'http://www.trendus.com/kalori-cetveli-1933'
-    r = requests.get(webpage)
-    page_soup = BeautifulSoup(r.content, "html.parser")
-    all_items = page_soup.findAll("div", attrs={"class": "News-P"})
-    all_items_as_string = str(all_items).rstrip().split('\n')
-    by_gram = "gram"
-    by_porsiyon = "porsiyon"
-    by_adet = "adet"
-    by_bardak = "bardak"
-    by_Birim = "Birim"
-    by_kutu = "kutu"
-    by_drim = "dilim"
+def calculate_ingredient_calories(name,measurementUnit,count):
+    print("**")
+    print(name)
+    calorie = 0
+    m = None
+    f = None
+    try:
+        m = MeasureTable.objects.get(name=name, object_type=measurementUnit)
+    except MeasureTable.DoesNotExist:
+        m = None
+    if m!=None:
+        try:
+            f = Food.objects.get(name=name, measurementUnit=m.measurementUnit)
+        except Food.DoesNotExist:
+            f = None
 
-    print("item      birim     Kalori")
-    for item in all_items_as_string:
-        if "gram" in item and "bardak" not in item:
-            item = item[3:-4].replace('gram', '').split()
-            content = clear_split_string(item)
-            print(content[0] +"  " +content[1]+" gram    "+content[2])
-            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
-                                          measurement_unit="gram")
+    if  m==None:
+        if  f ==None:
+            print("NONE VAR")
 
-        elif "porsiyon" in item:
-            item = item[3:-4].replace('porsiyon', '').split()
-            content = clear_split_string(item)
-            content[1] = "1"
-            # print(content[0] + "  " + content[1]+" porsiyon    "+content[2])
-            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
-                                          measurement_unit="porsiyon")
-
-        elif "adet" in item:
-            item = item[3:-4].replace('adet', '').split()
-            content = clear_split_string(item)
-            # print(content[0] + "  " + content[1]+" adet    "+content[2])
-            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
-                                          measurement_unit="adet")
-
-        elif "dilim" in item:
-            item = item[3:-4].replace('dilim', '').split()
-            content = clear_split_string(item)
-            content[1] = "1"
-            # print(content[0] + "  " + content[1]+" dilim    "+content[2])
-            Food.objects.update_or_create(name=content[0], calorie=content[2], unit_amount=content[1],
-                                          measurement_unit="dilim")
         else:
-            pass
-    print(len(all_items))
-    print(len(all_items_as_string))
+            calorie = m.technical_measure * f.calorie / f.count * count
 
 
+    return calorie

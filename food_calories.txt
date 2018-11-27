@@ -1,0 +1,380 @@
+Asma Yaprağı	100	gram	97
+Balkabağı	1	porsiyon	139
+Bamya	100	gram	72
+Bezelye	100	gram	89
+Börülce	100	gram	127
+Brokoli	100	gram	35
+Brüksel Lahanası	100	gram	35
+Domates	1	adet	14
+Ebegümeci	100	gram	48
+Enginar	1	adet	10
+Havuç	100	gram	35
+Ispanak	100	gram	26
+Kabak	100	gram	25
+Karnabahar	100	gram	32
+Kereviz	100	gram	18
+Kıvırcık Salata	100	gram	20
+Lahana	100	gram	20
+Mantar	100	gram	14
+Marul	100	gram	15
+Maydanoz	100	gram	44
+Nane	100	gram	65
+Patates(Haşlama)	100	gram	100
+Patlıcan	1	adet	28
+Pazı	1	porsiyon	32
+Pırasa	100	gram	52
+Salatalık	1	adet	11
+Sarımsak	100	gram	137
+Semizotu	100	gram	32
+Soğan	100	gram	35
+Soya Fasulyesi	100	gram	403
+Taze Fasulye	100	gram	90
+Taze Yeşil Biber	120	gram	15
+Turp	100	gram	19
+Yer Elması	100	gram	75
+Ahududu	100	gram	57
+Ananas	100	gram	52
+Armut	1	adet	61
+Avokado	100	gram	145
+Ayva	1	adet	57
+Böğürtlen	100	gram	58
+Çilek	100	gram	26
+Dut	100	gram	93
+Elma	1	adet	60
+Erik	1	adet	8
+Greyfurt	1	adet	60
+Hurma	1	adet	15
+İncir	100	gram	41
+İncir(kuru)	100	gram	49
+Karpuz	100	gram	19
+Kavun	100	gram	18
+Kayısı	1	adet	8
+Kiraz	100	gram	40
+Kivi	1	adet	34
+Limon	100	gram	27
+Mandalina	1	adet	50
+Muz	1	adet	100
+Nar	100	gram	63
+Üzüm	100	gram	57
+Portakal	1	adet	50
+Şeftali	1	adet	38
+Vişne	100	gram	60
+Az Yağlı Sığır Eti	100	gram	225
+Az Yağlı Koyun Eti	100	gram	247
+Beyin	100	gram	137
+Biftek	100	gram	156
+Bonfile	100	gram	225
+Böbrek	100	gram	241
+Dalak	100	gram	109
+Dana But	100	gram	141
+Dana Eti	100	gram	156
+Dana Jambon	100	gram	82
+Dana Kıyma	100	gram	182
+Dana Salam	100	gram	385
+Dana Sosis	100	gram	295
+Dana Pirzola	100	gram	114
+Haşlanmış Tavuk Göğsü	100	gram	150
+Hindi	100	gram	160
+Hindi Salam	100	gram	152
+Hindi Sosis	100	gram	196
+Izgara Biftek	100	gram	278
+Izgara Tavuk	100	gram	132
+Karaciğer	100	gram	135
+Koyun Kıyma(Yağsız)	100	gram	206
+Koyun Kıyma(Yağlı)	100	gram	381
+Kuzu Pirzola	2	adet	192
+Ördek	100	gram	404
+Pastırma	100	gram	250
+Rozbif	100	gram	172
+Salam	100	gram	446
+Sosis	100	gram	295
+Sucuk	100	gram	452
+Yağlı Koyun Eti	100	gram	310
+Yağlı Sığır Eti	100	gram	301
+Yürek	100	gram	133
+Ahtapot	100	gram	163
+Alabalık	100	gram	168
+Barbunya	100	gram	68
+Dil Balığı	100	gram	83
+Gümüş Balığı	100	gram	78
+Hamsi	100	gram	156
+Havyar	100	gram	257
+Istakoz (Haşlanmış)	150	gram	108
+İstavrit	100	gram	214
+İstiridye	1	adet	6
+Kalamar	100	gram	79
+Kalkan	100	gram	193
+Kalkan (Tavada)	100	gram	320
+Karides	1	adet	114
+Kayabalığı	100	gram	121
+Kefal	100	gram	151
+Kılıç Balığı	100	gram	150
+Levrek	100	gram	93
+Lüfer	1	adet	222
+Mezgit	100	gram	80
+Midye	1	adet	8
+Palamut	100	gram	168
+Sardalya	100	gram	162
+Somon	100	gram	131
+Somon Füme	100	gram	143
+Tekir	100	gram	151
+Ton balığı	100	gram	130
+Tuzlanmış Balık	100	gram	305
+Uskumru	100	gram	159
+Yengeç	100	gram	102
+Ayran	100	gram	37
+Beyaz Peynir	100	gram	393
+Cheddarpeyniri	100	gram	404
+Kaşar Peynir	100	gram	413
+Krem Peynir	100	gram	353
+Lor Peynir	100	gram	85
+Meyveli Yoğurt	100	gram	105
+Mozerella Peyniri	100	gram	300
+Parmesan Peyniri	100	gram	431
+Süt (Yağlı)	100	gram	68
+Süt (Yağsız)	100	gram	40
+Yoğurt(Yağlı)	100	gram	95
+Yoğurt(Yağsız)	100	gram	58
+Ayçiçek Yağı	100	gram	884
+Balık Yağı	100	gram	902
+Kakao Yağı	100	gram	862
+Margarin	100	gram	717
+Susam Yağı	100	gram	884
+Tereyağ	100	gram	720
+Zeytin Yağı	100	gram	806
+Açma	1	adet	250
+Acıbadem Kurabiye	100	gram	425
+Ay Çöreği	1	adet	235
+Bisküvi	100	gram	470
+Çatal	1	adet	52
+Kruasan	200	gram	150
+Kurabiye	100	gram	350
+Poğaça	1	adet	180
+Simit	1	adet	280
+Talaş Böreği	100	gram	339
+Aşure	1	porsiyon	554
+Ayva Tatlısı	1	porsiyon	230
+Baklava	100	gram	402
+Browni	1	porsiyon	120
+Cheesecake	100	gram	280
+Çikolatalı Dondurma	1	kase	300
+Çikolatalı Kek	1	dilim	190
+Çikolatalı Puding	1	kase	400
+Ekler Pasta	1	porsiyon	237
+Elma Komposta	1	kase	193
+Elmalı Tart	1	dilim	300
+İrmik Helvası	1	porsiyon	530
+Kabak Tatlısı	1	dilim	240
+Kadayıf	100	gram	290
+Krem Karamel	1	porsiyon	265
+Kuru Erik Komposto	1	porsiyon	178
+Muhallebi	100	gram	175
+Meyveli Kek	1	dilim	138
+Peynir Tatlısı	1	porsiyon	110
+Profiterol	1	porsiyon	291
+Puding Çikolatalı	1	porsiyon	163
+Puding Vanilyalı	1	porsiyon	150
+Revani	1	porsiyon	501
+Spangle	1	porsiyon	245
+Sütlaç	100	gram	140
+Sütlü Çikolata	100	gram	492
+Şekerpare	1	adet	140
+Tel Kadayıf	1	porsiyon	430
+Tulumba Tatlısı	1	adet	92
+Tiramisu	1	porsiyon	250
+Un Helvası	1	porsiyon	582
+Beyaz Ekmek	28	gram	90
+Kepekli Ekmek	28	gram	60
+kızarmış Ekmek	15	gram	35
+Arpa	100	gram	367
+Buğday	100	gram	364
+Bulgur	100	gram	371
+Erişte	100	gram	70
+Kuskus	100	gram	367
+Makarna(haşlanmış)	1	porsiyon	470
+Makarna Kepekli(Haşlanmış)	1	porsiyon	315
+Mercimek	100	gram	115
+Mısır(haşlanmış)	100	gram	100
+Mısır(Patlamış-Tuzlu)	100	gram	500
+Pirinç	100	gram	357
+Susam	100	gram	589
+Ayva Reçeli	1	yemek kaşığı	42
+Bal	1	yemek kaşığı	64
+Beyaz Peynir(Yağlı)	1	dilim	110
+Beyaz Peynir(Yağsız)	1	dilim	85
+Cheddar Peynir	100	gram	393
+Çay(Şekersiz)	1	bardak	1
+Çilek Reçeli	1	yemek kaşığı	50
+Dana Salam	100	gram	385
+Dana Sosis	100	gram	295
+Dil Peynir	100	gram	280
+Esmer Şeker	1	çay kaşığı	20
+Filtre Kahve(Şekersiz)	1	bardak	2
+Helva	100	gram	650
+Hindi Salam	100	gram	152
+Hindi Sosis	100	gram	196
+Kaşar Peynir (Yağlı)	1	dilim	124
+Kaşar Peynir (Yağsız)	1	dilim	73
+Kayısı Reçeli	1	yemek kaşığı	50
+Kaymak	100	gram	208
+Kiraz Reçeli	1	yemek kaşığı	57
+Krem Peynir (Yağlı)	1	yemek kaşığı	51
+Küp Şeker	1	adet	9
+Mozerella Peynir	100	gram	300
+Parmesan Peynir	100	gram	431
+Pastırma	100	gram	250
+Pekmez	1	yemek kaşığı	60
+Portakal Reçeli	1	yemek kaşığı	60
+Portakal Suyu	1	bardak(250gram)	112
+Siyah Çay(Şekersiz)	1	bardak	0
+Siyah Zeytin	100	gram	233
+Süt(Yağlı)	1	bardak	153
+Süt(Yağsız)	1	bardak	91
+Tahin	1	yemek kaşığı	89
+Tereyağ	1	yemek kaşığı	143
+Toz Şeker	1	yemek kaşığı	20
+Tulum Peyniri	100	gram	238
+Üzüm Pekmezi	1	yemek kaşığı	50
+Vişne Reçeli	1	yemek kaşığı	50
+Yumurta(beyazı)	1	adet	15
+Yumurta (sarısı)	1	adet	75
+Ay Çekirdeği	100	gram	582
+Badem	100	gram	597
+Ceviz	100	gram	654
+Fındık	100	gram	526
+Fıstık	100	gram	568
+Kabak Çekirdeği	100	gram	610
+Kaju	100	gram	565
+Kestane	100	gram	194
+Kuru Erik	100	gram	230
+Kuru İncir	100	gram	270
+Kuru Kayısı	100	gram	260
+Kuru Üzüm	100	gram	290
+Leblebi	100	gram	600
+Patlamış Mısır	100	gram	500
+Şam Fıstığı	100	gram	400
+Biberiye	100	gram	331
+Defne Yaprağı	100	gram	313
+Dereotu	100	gram	253
+Fesleğen	100	gram	252
+Hardal	100	gram	470
+Haşhaş	100	gram	533
+Hindistan Cevizi	100	gram	525
+Karabiber	100	gram	255
+Karanfil	100	gram	336
+Kekik	100	gram	275
+Kırmızı Biber	100	gram	318
+Kimyon	100	gram	375
+Kişniş	100	gram	280
+Köri	100	gram	325
+Mısır Nişastası	100	gram	375
+Nane	100	gram	285
+Tarçın	100	gram	260
+Tuz	100	gram	0
+Safran	100	gram	310
+Yenibahar	100	gram	264
+Zencefil	100	gram	347
+Zerdaçal	100	gram	364
+Ananas Suyu	1	bardak	120
+Ayran	1	bardak	90
+Elma Suyu	1	bardak	100
+Domates Suyu	1	bardak	130
+Havuç Suyu	1	bardak	130
+Kayısı Suyu	1	bardak	110
+Kiraz Suyu	1	bardak	128
+Limonata	1	bardak	170
+Nar Suyu	1	bardak	120
+Portakal Suyu	1	bardak	100
+Şalgam Suyu	1	bardak	105
+Şeftali Suyu	1	bardak	120
+Üzüm Suyu	1	bardak	150
+Vişne Suyu	1	bardak	116
+Coca Cola	1	kutu	149
+Fanta Portakal	1	bardak	124
+Fanta Limon	1	bardak	124
+Fanta Mandalina	1	bardak	103
+Schweppes Mandarin	1	bardak	135
+Schweppes Bitter Lemon	1	bardak	108
+Sprite	1	bardak	103
+Caffe Americano	1	kupa	240
+Caffe Latte	1	kupa	240
+Çay	1	çay bardağı	1
+Çay(Yeşil)	1	Kupa	240
+Espresso	1	fincan	1
+Kahve	1	kupa	2
+Sahlep	1	bardak	80
+Türk Kahvesi	1	kahve fincanı	23
+Adana Kebap	1	porsiyon	897
+Ali Nazik	1	porsiyon	400
+Arnavut Ciğeri	1	porsiyon	797
+Bezelye	1	porsiyon	289
+Bulgur Pilavı	1	porsiyon	291
+Ciğer Tava	1	porsiyon	763
+Dalyan Köfte	1	porsiyon	498
+Dana Haşlama	1	porsiyon	631
+Döner	1	porsiyon	556
+Etli Karışık Dolma	1	porsiyon	331
+Etli Türü	1	porsiyon	537
+Etli Taze Fasulye	1	porsiyon	475
+Etli Yaprak Sarma	1	porsiyon	572
+Fırın Makarna	1	porsiyon	505
+Fırın Tavuk	1	porsiyon	402
+İmambayıldı	1	porsiyon	194
+İzmir Köfte	1	porsiyon	348
+Kabak Dolma	1	porsiyon	247
+Karnıyarık	1	porsiyon	270
+Kadın Budu Köfte	1	porsiyon	1237
+Kış Türlüsü	1	porsiyon	238
+Kıymalı Bezelye	1	porsiyon	298
+Kıymalı Biber Dolma	1	porsiyon	226
+Kıymalı Ispanak	1	porsiyon	276
+Kıymalı Karnabahar	1	porsiyon	187
+Kıymalı Kapuska	1	porsiyon	190
+Kıymalı Patates	1	porsiyon	250
+Kıymalı Taze Fasulye	1	porsiyon	222
+Kuru Fasulye	1	porsiyon	336
+Kuru Köfte	1	porsiyon	974
+Kuzu Kızartma	1	porsiyon	717
+Lahana Dolma	1	porsiyon	535
+Mantarlı Et Sote	1	porsiyon	578
+Mantarlı Tavuk Sote	1	porsiyon	631
+Nohut	1	porsiyon	350
+Orman Kebap	1	porsiyon	969
+Rosto	1	porsiyon	311
+Patlıcan Musakka	1	porsiyon	201
+Peynirli Makarna	1	porsiyon	354
+Piliç Izgara	1	porsiyon	498
+Piliç Şinitzel	1	porsiyon	1048
+Pirinç Pilavı	1	porsiyon	326
+Tas Kebabı	1	porsiyon	343
+Tavuk Köfte	1	porsiyon	568
+Terbiyeli Köfte	1	porsiyon	231
+Yaz Türlüsü	1	porsiyon	221
+Zeytinyağlı bakla	1	porsiyon	266
+Zeytinyağlı barbunya	1	porsiyon	328
+Zeytinyağlı biber dolma	1	porsiyon	265
+Zeytinyağlı taze fasulye	1	porsiyon	177
+Zeytinyağlı Pırasa	1	porsiyon	225
+Akdeniz Salata	1	porsiyon	130
+Amerikan Salata	1	porsiyon	276
+Cacık	1	porsiyon	131
+Göbek Salata(Mısırlı)	1	porsiyon	182
+Havuç Salata	1	porsiyon	144
+Karışık Turşu	1	porsiyon	70
+Kısır	1	porsiyon	374
+Mevsim Salata	1	porsiyon	179
+Piyaz	1	porsiyon	443
+Semizotu Salatası	1	porsiyon	218
+Söğüş Salata	1	porsiyon	218
+Tavuklu Salata	1	porsiyon	140
+Bezelye Çorbası	1	porsiyon	170
+Et Suyu Çorbası	1	porsiyon	35
+Ezo Gelin Çorbası	1	porsiyon	217
+Domates Çorbası	1	porsiyon	189
+Kremalı Çorba	1	porsiyon	220
+Mercimek Çorbası	1	porsiyon	386
+Sebze Çorbası	1	porsiyon	85
+Soğan Çorbası	1	porsiyon	103
+Tavuk Suyu Çorba	1	porsiyon	82
+Tel Şehriye Çorbası	1	porsiyon	245
+Yayla Çorbası	1	porsiyon	270
