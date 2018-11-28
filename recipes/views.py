@@ -11,9 +11,11 @@ def list_recipes(request):
 
 
 def call_functions(request):
+    #clean_product_name("su")
     read_food_calories("food_calories.txt")
     get_measure()
     get_all_recipes()
+
     #calculate_calories()
     #getLinks_from_trendus()
 
@@ -117,6 +119,7 @@ def get_measure():
     cwd = os.path.realpath("measure_table.txt")  # find measure.txt path in the project
     data = [i.strip('\n').split('\t') for i in open(cwd)]  # open and split measure.txt
     for m in range(0, len(data)):
+        #print(data[m])
         if data[m][2]:
             # Adds data to the MeasureTable
             MeasureTable.objects.update_or_create(name=data[m][0],
@@ -159,26 +162,53 @@ def read_food_calories(food_calories_file):
         line = file.readline()
 
 
+def clean_product_name(name):
+    foods_name_list = MeasureTable.objects.values_list('name', flat=True).distinct()
+    match_amount = 0
+    clean_name = "*"
+    for f in foods_name_list:
+        if f.lower() in name.lower():
+            parsed_f = f.split(" ")
+            m = len(parsed_f)
+            if m > match_amount:
+                match_amount = m
+                clean_name = f
+    if clean_name=="*":
+        print("++++")
+        print(name)
+    return clean_name
+
+
 def calculate_ingredient_calories(name, measurementUnit, count):
+    try:
+        m0 = MeasureTable.objects.get(name=name, object_type=measurementUnit)
+    except MeasureTable.DoesNotExist:
+        m0 = None
+    if m0  == None:
+        clean_name = clean_product_name(name)
+    else:
+        clean_name = name
+
     if measurementUnit=="gr.":
         measurementUnit = "gram"
     calorie = 0
     m = None
     f = None
     try:
-        m = MeasureTable.objects.get(name=name, object_type=measurementUnit)
+        m = MeasureTable.objects.get(name=clean_name, object_type=measurementUnit)
     except MeasureTable.DoesNotExist:
         print("----measure_table.txt'ye ekle:-----")
-        print(name,end=" -- ")
+        print(clean_name,end=" -- ")
         print(measurementUnit)
         m = None
     if m!=None:
         try:
-
-            f = Food.objects.get(name=name, measurementUnit=m.measurementUnit)
+            #print("fffffff")
+            #print(name)
+            f = Food.objects.get(name=clean_name, measurementUnit=m.measurementUnit)
         except Food.DoesNotExist:
             print("----food_calories.txt'ye ekle:-----")
-            print(name)
+            print(clean_name)
             f = None
 
     if  m==None:

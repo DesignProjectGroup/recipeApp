@@ -5,7 +5,6 @@ Balkabağı	1	porsiyon	139
 Bamya	100	gram	72
 Bezelye	100	gram	89
 Börülce	100	gram	127
-Buğday	4	gram	13
 Brokoli	100	gram	35
 Brüksel Lahanası	100	gram	35
 Domates	1	adet	14

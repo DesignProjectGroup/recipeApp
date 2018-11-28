@@ -253,7 +253,7 @@ Zeytinyağı	Tatlı Kaşığı	0
 Zeytinyağı	Çay Kaşığı	0
 Zeytinyağı	yemek kaşığı	6
 Haşlanmış Nohut	Su bardağı	120
-soğan – rende	adet	100
+soğan	adet	100
 ince bulgur	su bardağı	165
 yumurta	adet	50
 süzme yoğurt	gram	1
@@ -285,3 +285,81 @@ dolmalık fıstık	yemek kaşığı	25
 kuş üzümü	yemek kaşığı	10
 nar ekşisi	yemek kaşığı	10
 toz şeker	yemek kaşığı	12
+dana kıyma	gram	1
+Tuz		0
+Karabiber		0
+Kırmızı pul biber		0
+mantar	gram	1
+Dereotu		0
+Kuru soğan	1	100
+Toz kişniş		0
+Kimyon		0
+domates salçası	yemek kaşığı	20
+yeşil soğan	gram	1
+limon suyu		60
+kuru nane		1
+toz kırmızı biber		1
+karabiber	tatlı kaşığı	5
+nane	tatlı kaşığı	2
+su		0
+kuru soğan	adet	100
+mantar	adet	15
+tereyağı	gram	1
+toz kırmızı biber	yemek kaşığı	10
+sarımsak	adet	35
+sirke	yemek kaşığı	10
+tuz	tutam	1
+su	yemek kaşığı	0
+süzme yoğurt	yemek kaşığı	22
+dereotu	bağ	100
+soğan	yemek kaşığı	10
+pul biber		0
+yeşil mercimek	su bardağı	150
+tavuk but	adet	200
+havuç	adet	40
+kereviz	adet	200
+patates	adet	200
+kıyma	gram	1
+su	adet	50
+kırmızı toz biber		1
+kaşar peyniri	su bardağı	200
+domates	yemek kaşığı	25
+büyük boy domates	adet	140
+yeni bahar	tatlı kaşığı	5
+kuzu but	gram	1
+bezelye	su bardağı	300
+kabak	adet	150
+dana ciğer	gram	1
+kuru kekik		1
+kuru soğan		100
+domates salçası		20
+zeytin yağı		6
+muskat	tutam	1
+maydanoz	bağ	150
+ayçiçek yağı		6
+bonfile	gram	1
+domates	adet	110
+kuzu incik	adet	362
+somon	dilim	200
+parmesan	avuç	35
+milföy	adet	50
+deniz börülcesi	avuç	100
+levrek	adet	600
+chili biber	adet	18
+ak biber	tutam	1
+zencefil	tutam	1
+hamsi	adet	10
+nane		1
+karanfilin top kısmı	adet	1
+pul biber	tutam	1
+toz kırmızı biber	tatlı kaşığı	4
+kimyon	tatlı kaşığı	4
+tuz	yemek kaşığı	10
+köri	tatlı kaşığı	5
+tereyağı	kaşık	20
+mısır	adet	100
+portakal	adet	220
+avokado	adet	140
+jalapeno biber	adet	40
+taneli hardal	yemek kaşığı	10
+pazı	bağ	130
