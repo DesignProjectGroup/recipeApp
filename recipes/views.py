@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from django.shortcuts import render
 from recipes.models import Food, Recipe, Ingredient, MeasureTable
 import os
+from django.shortcuts import redirect
 
 selected_food = []
 
@@ -13,17 +14,24 @@ def list_recipes(request):
 
 
 def call_functions(request):
-    # create_recipes_db()
-    foods = Food.objects.all()
+    # foods = Food.objects.all()
+    foods = MeasureTable.objects.values('name').distinct()
     if request.method == 'POST':
         selected_food.append(request.POST.get('selected_food'))
     return render(request, 'recipes/home_page.html', {'foods': foods, 'selected_food': selected_food})
 
 
-def create_recipes_db():
-    read_food_calories("food_calories.txt")
-    get_measure()
-    get_all_recipes()
+def create_recipes_db(request):
+    if 'new_recipe_btn' in request.GET:
+
+        get_all_recipes()
+        return redirect('/manager_page')
+    elif 'new_ingredient_btn' in request.GET:
+        print("heyyyy")
+        read_food_calories("food_calories.txt")
+        get_measure()
+        return redirect('/manager_page')
+    return render(request, 'recipes/manager_page.html', {})
 
 
 # seda bayrak
