@@ -1,32 +1,33 @@
 # from django.shortcuts import render
 import requests
 from bs4 import BeautifulSoup
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from recipes.models import Food, Recipe, Ingredient, MeasureTable
 import os
 
 selected_food = []
+
+
 def list_recipes(request):
-   return render(request, 'recipes/suggested_recipes.html', {})
+    return render(request, 'recipes/suggested_recipes.html', {})
 
 
 def call_functions(request):
-    #clean_product_name("su")
+    # create_recipes_db()
+    foods = Food.objects.all()
+    if request.method == 'POST':
+        selected_food.append(request.POST.get('selected_food'))
+    return render(request, 'recipes/home_page.html', {'foods': foods, 'selected_food': selected_food})
+
+
+def create_recipes_db():
     read_food_calories("food_calories.txt")
     get_measure()
     get_all_recipes()
 
-    #calculate_calories()
-    #getLinks_from_trendus()
 
-    #calculate_ingredient_calories("pirinç","su bardağı", 2)
-    #change_measurement_unit("süt","su bardağı", "1")
-    foods = Food.objects.all()
-    if request.method == 'POST':
-        selected_food.append(request.POST.get('selected_food'))
-    return render(request, 'recipes/home_page.html', {'foods': foods,'selected_food': selected_food})
-
-
+# seda bayrak
+# şuanda kullanılmıyor
 def calculate_calories():
     ingredients = Ingredient.objects.order_by('count')
     foods = Food.objects.order_by('name')
@@ -36,9 +37,9 @@ def calculate_calories():
             if ingredient.id == food.ingredient.id:
                 recipe.calorie += (food.calorie/food.unit_amount)*food.ingredient.count
                 recipe.save()
-    #rec = Recipe.objects.order_by('title')
-    #for r in rec:
-        #print(r.title, r.calorie)
+    # rec = Recipe.objects.order_by('title')
+    # for r in rec:
+        # print(r.title, r.calorie)
 
 
 def get_all_recipes():
@@ -82,7 +83,6 @@ def get_recipe(recipe_link):
     Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list)
     this_recipe = Recipe.objects.get(title=recipe_title, text=recipe_preparation_steps_list)
 
-
     # recipe_ingredients_list
     if soup.find("div", attrs={"class": "mlz"}):
         ingredients_subtitles_list = soup.find("div", attrs={"class": "mlz"}).find_all("strong")
@@ -103,8 +103,8 @@ def get_recipe(recipe_link):
                 product_name = parse_ingredient_list[2].strip()
                 product_count = parse_ingredient_list[0].strip()
                 product_measurement_unit = parse_ingredient_list[1].strip()
-                #print(this_recipe.title)
-                calorie = calculate_ingredient_calories(product_name,product_measurement_unit,product_count)
+                # print(this_recipe.title)
+                calorie = calculate_ingredient_calories(product_name, product_measurement_unit, product_count)
                 Ingredient.objects.update_or_create(name=product_name,
                                                     count=product_count,
                                                     measurementUnit=product_measurement_unit,
@@ -119,7 +119,7 @@ def get_measure():
     cwd = os.path.realpath("measure_table.txt")  # find measure.txt path in the project
     data = [i.strip('\n').split('\t') for i in open(cwd)]  # open and split measure.txt
     for m in range(0, len(data)):
-        #print(data[m])
+        # print(data[m])
         if data[m][2]:
             # Adds data to the MeasureTable
             MeasureTable.objects.update_or_create(name=data[m][0],
@@ -130,7 +130,8 @@ def get_measure():
 # Seda
 # Splitting materials by measure and name
 def parse_ingredient(ingredient_string):
-    parse_ingredient_list = [] # keeps the materials after the parsing
+    # keeps the materials after the parsing
+    parse_ingredient_list = []
     # measures ölçüleri tutuyor ekleme yapılabilir
     measures = ['yemek kaşığı', 'çay kaşığı', 'tatlı kaşığı', 'su bardağı', 'çay bardağı', 'kahve fincanı',
                 'fincan', 'bardak', 'kaşık', 'gram', 'adet', 'tane', 'diş', 'demet', 'tutam', 'dilim', 'avuç',
@@ -142,7 +143,8 @@ def parse_ingredient(ingredient_string):
             parse_ingredient_list.append(measure)
             parse_ingredient_list.append(ingredient[1])
             break
-    else: # eğer ölçü yoksa sadece malzeme adı varsa
+    # eğer ölçü yoksa sadece malzeme adı varsa
+    else:
         if ingredient_string not in parse_ingredient_list:
             parse_ingredient_list.append("")
             parse_ingredient_list.append("")
@@ -150,7 +152,7 @@ def parse_ingredient(ingredient_string):
     return parse_ingredient_list
 
 
-#food_calories.txt file'ı parse eder ve Food table'a ekler.
+# food_calories.txt file'ı parse eder ve Food table'a ekler.
 def read_food_calories(food_calories_file):
     file = open(food_calories_file, "r")
     line = file.readline()
@@ -173,49 +175,47 @@ def clean_product_name(name):
             if m > match_amount:
                 match_amount = m
                 clean_name = f
-    if clean_name=="*":
-        print("++++")
+    if clean_name == "*":
         print(name)
     return clean_name
 
 
-def calculate_ingredient_calories(name, measurementUnit, count):
+def calculate_ingredient_calories(name, measurement_unit, count):
     try:
-        m0 = MeasureTable.objects.get(name=name, object_type=measurementUnit)
+        m0 = MeasureTable.objects.get(name=name, object_type=measurement_unit)
     except MeasureTable.DoesNotExist:
         m0 = None
-    if m0  == None:
-        clean_name = clean_product_name(name)
+    if m0 is None:
+        if measurement_unit != "":
+            clean_name = clean_product_name(name)
+        else:
+            clean_name = name
     else:
         clean_name = name
-
-    if measurementUnit=="gr.":
-        measurementUnit = "gram"
+    if measurement_unit == "gr.":
+        measurement_unit = "gram"
     calorie = 0
     m = None
     f = None
     try:
-        m = MeasureTable.objects.get(name=clean_name, object_type=measurementUnit)
+        m = MeasureTable.objects.get(name=clean_name, object_type=measurement_unit)
     except MeasureTable.DoesNotExist:
-        print("----measure_table.txt'ye ekle:-----")
-        print(clean_name,end=" -- ")
-        print(measurementUnit)
+        if measurement_unit != "":
+            print("----measure_table.txt'ye ekle:-----")
+            print(clean_name, end=" -- ")
+            print(measurement_unit)
         m = None
-    if m!=None:
+    if m is not None:
         try:
-            #print("fffffff")
-            #print(name)
             f = Food.objects.get(name=clean_name, measurementUnit=m.measurementUnit)
         except Food.DoesNotExist:
-            print("----food_calories.txt'ye ekle:-----")
-            print(clean_name)
+            # print("----food_calories.txt'ye ekle:-----")
+            # print(clean_name)
             f = None
-
-    if  m==None:
-        if  f ==None:
-            print(".")
+    if m is None:
+        if f is None:
+            if measurement_unit == "":
+                calorie = 0
         else:
             calorie = m.technical_measure * f.calorie / f.count * count
-
-
     return calorie

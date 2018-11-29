@@ -300,6 +300,7 @@ limon suyu		60
 kuru nane		1
 toz kırmızı biber		1
 karabiber	tatlı kaşığı	5
+kara biber	tatlı kaşığı	5
 nane	tatlı kaşığı	2
 su		0
 kuru soğan	adet	100
@@ -353,6 +354,7 @@ nane		1
 karanfilin top kısmı	adet	1
 pul biber	tutam	1
 toz kırmızı biber	tatlı kaşığı	4
+kırmızı biber	tatlı kaşığı	4
 kimyon	tatlı kaşığı	4
 tuz	yemek kaşığı	10
 köri	tatlı kaşığı	5
@@ -363,3 +365,70 @@ avokado	adet	140
 jalapeno biber	adet	40
 taneli hardal	yemek kaşığı	10
 pazı	bağ	130
+muskat	adet	40
+çam fıstığı	tutam	15
+sarımsak	yemek kaşığı	10
+ak biber	tatlı kaşığı	5
+krema	yemek kaşığı	10
+yeni bahar	tatlı kaşığı	5
+kuş üzümü	su bardağı	125
+kuru nane	tatlı kaşığı	2
+taneli hardal	tatlı kaşığı	5
+yeni bahar	tatlı kaşığı	5
+maydanoz	demet	150
+su	bardak	200
+palamut	adet	280
+limon	adet	100
+karabiber	adet	1
+tavuk kalça	adet	265
+siyah zeytin	adet	4
+ceviz	avuç	25
+tost ekmeği	adet	30
+biber salçası	yemek kaşığı	10
+karabiber	tutam	1
+kimyon	tutam	1
+tavuk göğsü	adet	200
+kaşar peyniri	gram	1
+ıspanak	gram	1
+burger ekmeği	adet	52
+tavuk göğüs	adet	200
+ketçap	yemek kaşığı	20
+ekmek kırıntısı	yemek kaşığı	25
+kimyon	yemek kaşığı	15
+cheddar peyniri	dilim	15
+mayonez	yemek kaşığı	13
+hardal	yemek kaşığı	15
+panko	su bardağı	75
+chilli biberi	adet	18
+yenibahar	tatlı kaşığı	5
+tost ekmeği	dilim	30
+kapari	yemek kaşığı	9
+zeytin	adet	4
+limon	dilim	15
+kuru acı biber	adet	2
+nane	bağ	100
+kabartma tozu	paket	11
+limon kabuğu	adet	15
+maydanoz	avuç	30
+kapya biber	adet	50
+dana kuşbaşı et	gram	1
+ıspanak	bağ	51
+nane	bağ	100
+çeçil peyniri	su bardağı	150
+karbonat	paket	10
+su	tutam	1
+soda	su bardağı	200
+pilavlık bulgur	su bardağı	150
+kekik	tutam	1
+mor lahana	adet	320
+salatalık	adet	120
+lime kabuğu	adet	9
+su	avuç	3
+semizotu	gram	1
+çam fıstığı	yemek kaşığı	30
+buğday	avuç	30
+esmer şeker	yemek kaşığı	13
+kornişon turşu	adet	20
+kırmızı biber	adet	50
+çekirdek içi	yemek kaşığı	10
+semizotu	bağ	124

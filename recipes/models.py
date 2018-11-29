@@ -13,7 +13,7 @@ class Recipe(models.Model):
 
 
 class Ingredient(models.Model):
-    name = models.CharField(max_length=200,null=True)
+    name = models.CharField(max_length=200, null=True)
     subtitle = models.CharField(max_length=200, null=True)
     calorie = models.IntegerField(default=0, null=True)
     count = models.CharField(max_length=200, null=True)
