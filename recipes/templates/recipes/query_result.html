@@ -1,0 +1,54 @@
+{%extends 'recipes/base.html' %}
+<!DOCTYPE html>
+
+<html lang="en">
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>CookIt Results</title>
+
+<style>
+#recipeList {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#recipeList td, #recipeList th {
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+#recipeList th {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: middle;
+    background-color: #ffa64d;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<table id="recipeList">
+  <caption>Fasulye , domates malzemelerinin arama sonuçları </caption>
+  <tr>
+    <th>İsim</th>
+    <th>Kalori</th>
+    <th>Popülerlik</th>
+    <th>Kolaylık Derecesi</th>
+    <th>xxx</th>
+    <th>xxx</th>
+  </tr>
+  <tr>
+    <td>Yeşil Fasulye</td>
+    <td>50</td>
+    <td>8/10</td>
+    <td>Orta</td>
+    <td>xxx</td>
+  </tr>
+
+</table>
+</body>
+ {% endblock %}
+</html>

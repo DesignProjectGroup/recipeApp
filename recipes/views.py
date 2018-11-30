@@ -10,7 +10,7 @@ from django.shortcuts import render
 def call_functions(request):
     #get_all_recipes()
     #calculate_calories()
-    return render(request, 'recipes/home_page.html', {})
+    return render(request, 'recipes/query_result.html', {})
 
 
 def calculate_calories():
