@@ -10,7 +10,8 @@ selected_food = []
 
 
 def list_recipes(request):
-    return render(request, 'recipes/suggested_recipes.html', {})
+    suggestion_recipe()
+    return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food})
 
 
 def call_functions(request):
@@ -23,11 +24,9 @@ def call_functions(request):
 
 def create_recipes_db(request):
     if 'new_recipe_btn' in request.GET:
-
         get_all_recipes()
         return redirect('/manager_page')
     elif 'new_ingredient_btn' in request.GET:
-        print("heyyyy")
         read_food_calories("food_calories.txt")
         get_measure()
         return redirect('/manager_page')
@@ -227,3 +226,64 @@ def calculate_ingredient_calories(name, measurement_unit, count):
         else:
             calorie = m.technical_measure * f.calorie / f.count * count
     return calorie
+
+
+# Seda
+# Returns similarity of two list
+def jaccard_similarity(x, y):
+    intersection_cardinality = len(set.intersection(*[set(x), set(y)]))
+    union_cardinality = len(set.union(*[set(x), set(y)]))
+    return intersection_cardinality/float(union_cardinality)
+
+
+# Seda
+# Returns the intersection of two lists
+def jaccard_similarity_list(x, y):
+    intersection_cardinality = set.intersection(*[set(x), set(y)])
+    return intersection_cardinality
+
+
+# Seda
+# Finds recipes containing the all entered ingredients or the greatest similarity of some of the entered ingredients
+def suggestion_recipe():
+    print("ww")
+    recipe_list = []  # keeps suggestion recipes
+    missing_recipe = {}  # keeps suggestion recipes that ingredients are missing
+    matching_list = []
+    missing_ingredient = 0
+    for i in range(0, len(selected_food)):
+        if Ingredient.objects.filter(name=selected_food[i]).exists():  # Check  ingredient in Ingredient table
+            ingredients = Ingredient.objects.filter(name=selected_food[i])  # Get ingredient object in Ingredient query
+            for ingredient in ingredients:
+                matching_ingredient = Ingredient.objects.filter(recipe__id=ingredient.recipe.id)
+                matching_list = matching_ingredient.values_list('name', flat=True)
+                # matching_ingredient : holds Ingredient objects with the same recipe id as the ingredient
+                # matching_list : keeps all ingredient names that have the same recipe id
+                x = 0
+                for match in matching_ingredient:
+                    for j in range(0, len(selected_food)):
+                        if match.name == selected_food[j]:
+                            x += 1
+                if x == len(matching_list):  # If a recipe contains all the ingredients entered
+                    recipe_list.append(ingredient)
+                    missing_ingredient = jaccard_similarity(selected_food, matching_list)
+
+                # If the jaccard_similarity of items entered and  ingredients of recipe are greater than the previous
+                # jaccard_similarity, suggestion recipe changes
+                elif missing_ingredient < jaccard_similarity(selected_food, matching_list):
+                    missing_ingredient = jaccard_similarity(selected_food, matching_list)
+                    missing_recipe.clear()
+                    missing_recipe[ingredient] = set(matching_list) - set(jaccard_similarity_list(selected_food,
+                                                                                                 matching_list))
+                elif ingredient not in missing_recipe and missing_ingredient == jaccard_similarity(selected_food,
+                                                                                                   matching_list):
+                    missing_recipe[ingredient] = set(matching_list) - set(jaccard_similarity_list(selected_food,
+                                                                                                  matching_list))
+
+    # If there is no recipe containing all ingredients entered
+    if len(recipe_list) == 0:
+        for x, y in missing_recipe.items():
+            print(x.recipe.title, "\t", y)
+    else:
+        for r in recipe_list:
+            print(r.recipe.title)
