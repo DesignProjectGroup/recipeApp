@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -11,82 +10,34 @@
 
     <title>Cook It</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../../static/startbootstrap-stylish-portfolio-gh-pages/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{% static 'startbootstrap-stylish-portfolio-gh-pages/vendor/bootstrap/css/bootstrap.min.css' %}"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+          rel="stylesheet" type="text/css">
+    <link href="{% static 'startbootstrap-stylish-portfolio-gh-pages/vendor/simple-line-icons/css/simple-line-icons.css' %}"
+          rel="stylesheet">
+    <link href="{% static 'startbootstrap-stylish-portfolio-gh-pages/css/stylish-portfolio.min.css' %}"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css"/>
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="{% static 'startbootstrap-stylish-portfolio-gh-pages/vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'startbootstrap-stylish-portfolio-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'startbootstrap-stylish-portfolio-gh-pages/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'startbootstrap-stylish-portfolio-gh-pages/js/stylish-portfolio.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/i18n/tr.js"></script>
 
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="{% static 'main.js' %}"></script>
+</head>
 
-    <!-- Custom Fonts -->
-    <link href="../../static/startbootstrap-stylish-portfolio-gh-pages/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="../../static/startbootstrap-stylish-portfolio-gh-pages/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="../../static/startbootstrap-stylish-portfolio-gh-pages/css/stylish-portfolio.min.css" rel="stylesheet">
-
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static 'vendor/perfect-scrollbar/perfect-scrollbar.css' %}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-
-  </head>
-
-  <body id="page-top">
-    <!-- Navigation -->
-
-    <nav class="navbar navbar-dark" style="background-color: #f1ad2d;">
-        <a href='/' class="navbar-brand" ;>Home</a>
-        <a href='/manager_page' class="navbar-brand" ;>Manager Page</a>
-    </nav>
-
-    <a class="menu-toggle rounded" >
-      <i class="fa fa-bars"></i>
-    </a>
-
-
-
-
-    <!-- Call to Action -->
-    <div class="content-section bg-primary text-white">
-      <div class="container text-center">
-
-         {% block content %}
-          {% endblock %}
-
-
-
-
-
-      </div>
+<body id="page-top">
+<div class="content-section bg-primary text-white">
+    <div class="container text-center">
+        {% block content %}
+        {% endblock %}
     </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="../../static/startbootstrap-stylish-portfolio-gh-pages/vendor/jquery/jquery.min.js"></script>
-    <script src="../../static/startbootstrap-stylish-portfolio-gh-pages/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="../../static/startbootstrap-stylish-portfolio-gh-pages/vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="../../static/startbootstrap-stylish-portfolio-gh-pages/js/stylish-portfolio.min.js"></script>
-
-  <!--===============================================================================================-->
-  <script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
-<!--===============================================================================================-->
-  <script src="{% static 'vendor/select2/select2.min.js' %}"></script>
-<!--===============================================================================================-->
-  <script src="{% static 'js/main.js' %}"></script>
-
-  </body>
-
+</div>
+</body>
 </html>

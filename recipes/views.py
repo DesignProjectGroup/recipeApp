@@ -5,23 +5,39 @@ from django.shortcuts import render
 from recipes.models import Food, Recipe, Ingredient, MeasureTable
 import os
 from django.shortcuts import redirect
+from .forms import UserProduct
 
 selected_food = []
 
-
+#malzeme seçildikten sonra tarif öner
 def list_recipes(request):
-    suggestion_recipe()
-    return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food})
+    form = UserProduct(request.POST)
+    if form.is_valid():
+        user_products = form.cleaned_data.get('userProducts')
+        selected_food.clear()
+        selected_food.extend(user_products)
 
 
-def call_functions(request):
+        suggestion_recipe()
+        return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food})
+
+
+#kullanıcıya malzeme seçtir
+def select_ingredients(request):
+    form = UserProduct()
+    return render(request, 'recipes/home_page.html', {'form': form, 'selected_food': selected_food})
+
+
+
+#kullanıcıya malzeme seçtir
+def select_ingredients2(request):
     # foods = Food.objects.all()
     foods = MeasureTable.objects.values('name').distinct()
     if request.method == 'POST':
         selected_food.append(request.POST.get('selected_food'))
     return render(request, 'recipes/home_page.html', {'foods': foods, 'selected_food': selected_food})
 
-
+#recipes ve ingredients table ları güncelle
 def create_recipes_db(request):
     if 'new_recipe_btn' in request.GET:
         get_all_recipes()
@@ -31,22 +47,6 @@ def create_recipes_db(request):
         get_measure()
         return redirect('/manager_page')
     return render(request, 'recipes/manager_page.html', {})
-
-
-# seda bayrak
-# şuanda kullanılmıyor
-def calculate_calories():
-    ingredients = Ingredient.objects.order_by('count')
-    foods = Food.objects.order_by('name')
-    for ingredient in ingredients:
-        recipe = Recipe.objects.get(id=ingredient.recipe.id)
-        for food in foods:
-            if ingredient.id == food.ingredient.id:
-                recipe.calorie += (food.calorie/food.unit_amount)*food.ingredient.count
-                recipe.save()
-    # rec = Recipe.objects.order_by('title')
-    # for r in rec:
-        # print(r.title, r.calorie)
 
 
 def get_all_recipes():
@@ -122,6 +122,8 @@ def get_recipe(recipe_link):
 
 # Seda
 # Adds measure and their grams in the MeasureTable
+# Nohut	Su Bardağı	170 gram
+#tüm besinlerin belirlenen ölçüm aleti ile kaç grama denk geldiğini hesaplar.
 def get_measure():
     cwd = os.path.realpath("measure_table.txt")  # find measure.txt path in the project
     data = [i.strip('\n').split('\t') for i in open(cwd)]  # open and split measure.txt
@@ -136,6 +138,7 @@ def get_measure():
 
 # Seda
 # Splitting materials by measure and name
+# "1 çay kaşığı kekik" gibi içeriği parse eder ve parse_ingredient_list 'e atar
 def parse_ingredient(ingredient_string):
     # keeps the materials after the parsing
     parse_ingredient_list = []
@@ -160,6 +163,9 @@ def parse_ingredient(ingredient_string):
 
 
 # food_calories.txt file'ı parse eder ve Food table'a ekler.
+# food_calories.txt dosyası "Et Suyu Çorbası	1	porsiyon	35" verisini tutar
+# food_calories.txt veriyi bu dosyadan alıp measure_table.txtde gram cinsini bulup ve yine food_calories.txt de
+# calorie karşılığına göre calorisi hesaplanır
 def read_food_calories(food_calories_file):
     file = open(food_calories_file, "r")
     line = file.readline()
@@ -171,6 +177,7 @@ def read_food_calories(food_calories_file):
         line = file.readline()
 
 
+#
 def clean_product_name(name):
     foods_name_list = MeasureTable.objects.values_list('name', flat=True).distinct()
     match_amount = 0
@@ -187,6 +194,7 @@ def clean_product_name(name):
     return clean_name
 
 
+# ingredients tabledaki calorie attributunu bu fonksiyonu kullanarak dolduruyoruz.
 def calculate_ingredient_calories(name, measurement_unit, count):
     try:
         m0 = MeasureTable.objects.get(name=name, object_type=measurement_unit)
@@ -245,8 +253,8 @@ def jaccard_similarity_list(x, y):
 
 # Seda
 # Finds recipes containing the all entered ingredients or the greatest similarity of some of the entered ingredients
+# kullanıcı ürün girdikten sonra kullanıcıya tarif gösterir.
 def suggestion_recipe():
-    print("ww")
     recipe_list = []  # keeps suggestion recipes
     missing_recipe = {}  # keeps suggestion recipes that ingredients are missing
     matching_list = []

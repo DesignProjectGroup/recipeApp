@@ -1,44 +1,18 @@
+{% extends 'recipes/base.html' %}
+{% block content %}
+    <form method="post" action="suggested_recipes">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 offset-md-3">
+                {% csrf_token %}
+                {{ form }}
+            </div>
 
-    {% extends 'recipes/base.html' %}
-          {% block content %}
-              <div class="row"></div>
-              <div class="row">
-                  <div class="col-md-2"></div>
-
-                  <div class="col-md-8">
-                      <div class="row">
-                          <div class="col-md-2"></div>
-                          <div class="col-md-8">
-                              <form method='post' action=''>
-                                  <div class="form-group">
-                                      <label for="sel1">Please select the material</label>
-                                      {% csrf_token %}
-                                      <select class="form-control" id="selected_food" name='selected_food'>
-                                          {% for food in foods %}
-                                              <option value='{{food.name}}'>{{ food.name }}</option>
-                                          {% endfor %}
-                                      </select>
-                                      <input type="submit" value="Select">
-                                  </div>
-                              </form>
-                          </div>
-                          <div class="col-md-8"></div>
-
-                      </div>
-                      <div class="row">
-                          {{ selected_food }}
-                      </div>
-                      <div class="row">
-                          <a href="{% url 'suggested_recipes' %}"><button type="button" class="btn">gönder</button></a>
-
-                      </div>
-                  </div>
-
-                  <div class="col-md-2"></div>
-              </div>
-              <div class="row"></div>
-
-        {% endblock %}
+            <div class="col-sm-12 col-md-6 offset-md-3">
+                <input type="submit" class="btn btn-primary" value="Haydi fırına ver" />
+            </div>
+        </div>
+    </form>
+{% endblock %}
 
 
 
