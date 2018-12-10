@@ -9,24 +9,27 @@ from .forms import UserProduct
 
 selected_food = []
 
-#malzeme seçildikten sonra tarif öner
+
+# malzeme seçildikten sonra tarif öner
 def list_recipes(request):
     form = UserProduct(request.POST)
     if form.is_valid():
         user_products = form.cleaned_data.get('userProducts')
         selected_food.clear()
         selected_food.extend(user_products)
-        suggestion_recipe()
-        return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food})
+        all_suggestion_recipes = suggestion_recipe()
+
+        return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food,
+                                                                  'all_suggestion_recipes': all_suggestion_recipes})
 
 
-#kullanıcıya malzeme seçtir
+# kullanıcıya malzeme seçtir
 def select_ingredients(request):
     form = UserProduct()
     return render(request, 'recipes/home_page.html', {'form': form, 'selected_food': selected_food})
 
 
-#recipes ve ingredients table ları güncelle
+# recipes ve ingredients table ları güncelle
 def create_recipes_db(request):
     if 'new_recipe_btn' in request.GET:
         get_all_recipes()
@@ -112,7 +115,7 @@ def get_recipe(recipe_link):
 # Seda
 # Adds measure and their grams in the MeasureTable
 # Nohut	Su Bardağı	170 gram
-#tüm besinlerin belirlenen ölçüm aleti ile kaç grama denk geldiğini hesaplar.
+# tüm besinlerin belirlenen ölçüm aleti ile kaç grama denk geldiğini hesaplar.
 def get_measure():
     cwd = os.path.realpath("measure_table.txt")  # find measure.txt path in the project
     data = [i.strip('\n').split('\t') for i in open(cwd)]  # open and split measure.txt
@@ -230,7 +233,7 @@ def calculate_ingredient_calories(name, measurement_unit, count):
 def jaccard_similarity(x, y):
     intersection_cardinality = len(set.intersection(*[set(x), set(y)]))
     union_cardinality = len(set.union(*[set(x), set(y)]))
-    return intersection_cardinality/float(union_cardinality)
+    return intersection_cardinality / float(union_cardinality)
 
 
 # Seda
@@ -271,16 +274,25 @@ def suggestion_recipe():
                     missing_ingredient = jaccard_similarity(selected_food, matching_list)
                     missing_recipe.clear()
                     missing_recipe[ingredient] = set(matching_list) - set(jaccard_similarity_list(selected_food,
-                                                                                                 matching_list))
+                                                                                                  matching_list))
                 elif ingredient not in missing_recipe and missing_ingredient == jaccard_similarity(selected_food,
                                                                                                    matching_list):
                     missing_recipe[ingredient] = set(matching_list) - set(jaccard_similarity_list(selected_food,
                                                                                                   matching_list))
-
+    all_suggestion_recipes = []
     # If there is no recipe containing all ingredients entered
     if len(recipe_list) == 0:
         for x, y in missing_recipe.items():
+            one_suggestion_recipe = []
+            one_suggestion_recipe.append(x.recipe.title)
+            one_suggestion_recipe.append(y)
+            all_suggestion_recipes.append(one_suggestion_recipe)
             print(x.recipe.title, "\t", y)
     else:
         for r in recipe_list:
+            one_suggestion_recipe = []
+            one_suggestion_recipe.append(r.recipe.title)
+            one_suggestion_recipe.append("")
+            all_suggestion_recipes.append(one_suggestion_recipe)
             print(r.recipe.title)
+    return all_suggestion_recipes

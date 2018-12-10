@@ -1,6 +1,51 @@
+{#{% extends 'recipes/base.html' %}#}
+{#{% block content %}#}
+{#    {% for s in selected_food %}#}
+{#        {{ s }}#}
+{#    {% endfor %}#}
+{#{% endblock %}#}
+{##}
 {% extends 'recipes/base.html' %}
 {% block content %}
-    {% for s in selected_food %}
-        {{ s }}
-    {% endfor %}
+    <title>CookIt Results</title>
+
+    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 collection-tile-full">
+
+    </div>
+
+
+    <style>
+        #recipeList {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #recipeList td, #recipeList th {
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        #recipeList th {
+            padding-top: 22px;
+            padding-bottom: 22px;
+            text-align: middle;
+            background-color: #ffa64d;
+            color: white;
+        }
+    </style>
+    </head>
+
+    <body>
+    <table id="recipeList">
+        <caption>Fasulye , domates malzemelerinin arama sonuçları</caption>
+        {% for recipe in all_suggestion_recipes %}
+            <tr>
+                {% for i in recipe %}
+                    <th>{{ i }}</th>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+    </body>
 {% endblock %}
