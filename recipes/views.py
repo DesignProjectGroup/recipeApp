@@ -16,8 +16,6 @@ def list_recipes(request):
         user_products = form.cleaned_data.get('userProducts')
         selected_food.clear()
         selected_food.extend(user_products)
-
-
         suggestion_recipe()
         return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food})
 
@@ -27,15 +25,6 @@ def select_ingredients(request):
     form = UserProduct()
     return render(request, 'recipes/home_page.html', {'form': form, 'selected_food': selected_food})
 
-
-
-#kullanıcıya malzeme seçtir
-def select_ingredients2(request):
-    # foods = Food.objects.all()
-    foods = MeasureTable.objects.values('name').distinct()
-    if request.method == 'POST':
-        selected_food.append(request.POST.get('selected_food'))
-    return render(request, 'recipes/home_page.html', {'foods': foods, 'selected_food': selected_food})
 
 #recipes ve ingredients table ları güncelle
 def create_recipes_db(request):
