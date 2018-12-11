@@ -3,14 +3,14 @@ from comments.models import ProbabilityOfWords
 from snowballstemmer import stemmer
 import re
 
-
+# train txt leri okur ve kelimeleri olasılıklarını database e kaydeder.
 def read_file(file_name):
     stem = stemmer('turkish')
     all_words_list = []
     word_count_pair = {}
 
     stopwords_file = \
-        open("/Users/Elmas/Documents/hacettepe/project/new2/recipeApp/comments/text_files/stopwords.txt", "r").read()
+        open("comments/text_files/stopwords.txt", "r").read()
     stopwords_list = stopwords_file.split("\n")
 
     file = open(file_name, "r").read()
@@ -78,14 +78,14 @@ def calculate_probability(word, word_count_pair, count_of_all_words, count_of_un
     probability = count_of_word / (count_of_all_words + count_of_unique_words)
     return probability
 
-
+#verilen cümlenin pozitif mi negatif mi olduğuna karar verir
 def do_semantic_analysis(sentence):
     sentence_probability_of_negative = 1
     sentence_probability_of_positive = 1
     stem = stemmer('turkish')
 
     stopwords_file = \
-        open("/Users/Elmas/Documents/hacettepe/project/new2/recipeApp/comments/text_files/stopwords.txt", "r").read()
+        open("comments/text_files/stopwords.txt", "r").read()
     stopwords_list = stopwords_file.split("\n")
 
     words_list = sentence.split(" ")
@@ -118,8 +118,8 @@ def do_semantic_analysis(sentence):
 
 
 def deneme(request):
-    read_file("/Users/Elmas/Documents/hacettepe/project/new2/recipeApp/comments/text_files/positives.txt")
-    read_file("/Users/Elmas/Documents/hacettepe/project/new2/recipeApp/comments/text_files/negatives.txt")
+    read_file("comments/text_files/positives.txt")
+    read_file("comments/text_files/negatives.txt")
     do_semantic_analysis("Tarif çok zor olsada yapmaya değer")
     do_semantic_analysis("tarif yapması çok zor")
     return render(request, 'comments/comment_template.html', {})
