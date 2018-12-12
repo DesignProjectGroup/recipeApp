@@ -1,11 +1,16 @@
+{% extends 'recipes/base.html' %}
+{% block content %}
+    <section class="content-section bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">The buttons below are impossible to resist...</h2>
 
-    {% extends 'recipes/base.html' %}
-          {% block content %}
-              <form action="#" method="GET">
-                  <input type="submit" class="btn" value="Yeni tarif kaydet" name="new_recipe_btn">
-                  <input type="submit" class="btn" value="Yeni malzeme ekle" name="new_ingredient_btn">
-              </form>
-          {% endblock %}
+            <form action="#" method="GET">
+                <input type="submit" class="btn btn-xl btn-light mr-4" value="Yeni tarif kaydet" name="new_recipe_btn">
+                <input type="submit" class="btn btn-xl btn-dark" value="Yeni malzeme ekle" name="new_ingredient_btn">
+            </form>
+        </div>
+    </section>
+{% endblock %}
 
 
 
