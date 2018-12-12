@@ -161,8 +161,10 @@ def parse_ingredient(ingredient_string):
 def read_food_calories(food_calories_file):
     file = open(food_calories_file, "r")
     line = file.readline()
+
     while line:
         split_line = line.split("\t")
+        # print(split_line)
         split_line[3] = split_line[3].replace("\n", "")
         Food.objects.update_or_create(name=split_line[0], count=split_line[1], measurementUnit=split_line[2],
                                       calorie=split_line[3])

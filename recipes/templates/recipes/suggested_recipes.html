@@ -1,51 +1,81 @@
-{#{% extends 'recipes/base.html' %}#}
-{#{% block content %}#}
-{#    {% for s in selected_food %}#}
-{#        {{ s }}#}
-{#    {% endfor %}#}
-{#{% endblock %}#}
-{##}
 {% extends 'recipes/base.html' %}
-{% block content %}
-    <title>CookIt Results</title>
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2 collection-tile-full">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Suggested Recipes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'startbootstrap-3-col-portfolio-gh-pages/vendor/bootstrap/css/bootstrap.min.css' %}"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'startbootstrap-3-col-portfolio-gh-pages/css/3-col-portfolio.css' %}" rel="stylesheet">
+</head>
+
+<body>
+{% block content %}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="my-4">Malzemeler:
+        <small>{{ selected_food }}</small>
+    </h1>
+
+    <div class="row">
+        {% for recipe in all_suggestion_recipes %}
+            <div class="col-lg-4 col-sm-6 portfolio-item">
+
+                <div class="card h-100">
+                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a href="#">{{ recipe.0 }}</a>
+                        </h4>
+                        <p class="card-text">Eksik Malzemeler: {{ recipe.1 }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
 
     </div>
 
+    <!-- Pagination -->
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+        </li>
+    </ul>
+</div>
 
-    <style>
-        #recipeList {
-            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        #recipeList td, #recipeList th {
-            border: 1px solid #ddd;
-            padding: 20px;
-        }
-
-        #recipeList th {
-            padding-top: 22px;
-            padding-bottom: 22px;
-            text-align: middle;
-            background-color: #ffa64d;
-            color: white;
-        }
-    </style>
-    </head>
-
-    <body>
-    <table id="recipeList">
-        <caption>Fasulye , domates malzemelerinin arama sonuçları</caption>
-        {% for recipe in all_suggestion_recipes %}
-            <tr>
-                {% for i in recipe %}
-                    <th>{{ i }}</th>
-                {% endfor %}
-            </tr>
-        {% endfor %}
-    </table>
-    </body>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 {% endblock %}
+</body>
+
+</html>

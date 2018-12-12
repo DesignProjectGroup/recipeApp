@@ -79,7 +79,7 @@ Dana Jambon	100	gram	82
 Dana Kıyma	100	gram	182
 Dana Salam	100	gram	385
 Dana Sosis	100	gram	295
-Kıyma 100	gram	202
+Kıyma	100	gram	202
 Dana Pirzola	100	gram	114
 Haşlanmış Tavuk Göğsü	100	gram	150
 Hindi	100	gram	160
