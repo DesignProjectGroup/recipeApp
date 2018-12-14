@@ -6,8 +6,15 @@ from recipes.models import Food, Recipe, Ingredient, MeasureTable
 import os
 from django.shortcuts import redirect
 from .forms import UserProduct
+from urllib.request import urlopen, Request
 
 selected_food = []
+
+
+def get_recipe_page(request, pk):
+    recipe = Recipe.objects.get(pk=pk)
+    ingredients = Ingredient.objects.filter(recipe__id=recipe.pk)
+    return render(request, 'recipes/recipe_page.html', {'recipe': recipe, 'ingredients': ingredients})
 
 
 # malzeme seçildikten sonra tarif öner
@@ -76,11 +83,18 @@ def get_recipe(recipe_link):
     # recipe_preparation_steps_list
     recipe_preparation_steps = soup.find("div", attrs={"class": "entry-content"}).find_all("p")
     for p in recipe_preparation_steps:
+        img = p.find("img")
+        if img is not None:
+            try:
+                img_link = img["srcset"].split(",")[0].split(" ")[0]
+            except KeyError:
+                img_link = ""
+                continue
         if not p.text == "":
             recipe_preparation_steps_list = recipe_preparation_steps_list + p.text + "\n"
 
-    Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list)
-    this_recipe = Recipe.objects.get(title=recipe_title, text=recipe_preparation_steps_list)
+    Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list, image=img_link)
+    this_recipe = Recipe.objects.get(title=recipe_title, text=recipe_preparation_steps_list, image=img_link)
 
     # recipe_ingredients_list
     if soup.find("div", attrs={"class": "mlz"}):
@@ -216,7 +230,7 @@ def calculate_ingredient_calories(name, measurement_unit, count):
         m = None
     if m is not None:
         try:
-            f = Food.objects.get(name=clean_name, measurementUnit=m.measurementUnit)
+            f = Food.objects.filter(name=clean_name, measurementUnit=m.measurementUnit)
         except Food.DoesNotExist:
             # print("----food_calories.txt'ye ekle:-----")
             # print(clean_name)
@@ -288,6 +302,7 @@ def suggestion_recipe():
             one_suggestion_recipe = []
             one_suggestion_recipe.append(x.recipe.title)
             one_suggestion_recipe.append(y)
+            one_suggestion_recipe.append(x.recipe.pk)
             all_suggestion_recipes.append(one_suggestion_recipe)
             print(x.recipe.title, "\t", y)
     else:
