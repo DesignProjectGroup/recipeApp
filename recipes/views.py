@@ -1,16 +1,33 @@
 # from django.shortcuts import render
+#  -*- coding: utf-8 -*-
 import requests
+from MySQLdb.compat import unicode
 from bs4 import BeautifulSoup
 from django.shortcuts import render
+from django.utils.baseconv import base64
+import base64
 from recipes.models import Food, Recipe, Ingredient, MeasureTable
 import os
 from django.shortcuts import redirect
 from .forms import UserProduct
 from urllib.request import urlopen, Request
+from django.core.files.temp import NamedTemporaryFile
+from django.core.files import File
+import tempfile
+from django.core import files
+import urllib
+from urllib.parse import urlparse
+# import urllib2
+from django.core.files import File
+from django.core.files import File
+# add imprt of content file wrapper
+from django.core.files.base import ContentFile
+from django.core.files import File
+import io
 
 selected_food = []
 
-
+#seçilen tarifi getir.
 def get_recipe_page(request, pk):
     recipe = Recipe.objects.get(pk=pk)
     ingredients = Ingredient.objects.filter(recipe__id=recipe.pk)
@@ -66,6 +83,16 @@ def get_recipe_link(parent_category_link):
         get_recipe(recipe_link)
 
 
+def save_image_from_url(url):
+    r = requests.get(url)
+
+    img_temp = NamedTemporaryFile(delete=True)
+    img_temp.write(r.content)
+    img_temp.flush()
+    img_file = File(img_temp)
+    return img_file
+
+
 # recipe_title
 # recipe_ingredient_title
 # recipe_ingredients_list
@@ -82,19 +109,30 @@ def get_recipe(recipe_link):
 
     # recipe_preparation_steps_list
     recipe_preparation_steps = soup.find("div", attrs={"class": "entry-content"}).find_all("p")
+    img_link = None
     for p in recipe_preparation_steps:
         img = p.find("img")
         if img is not None:
             try:
                 img_link = img["srcset"].split(",")[0].split(" ")[0]
             except KeyError:
-                img_link = ""
+                img_link = None
                 continue
+            print(img_link)
         if not p.text == "":
             recipe_preparation_steps_list = recipe_preparation_steps_list + p.text + "\n"
 
-    Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list, image=img_link)
-    this_recipe = Recipe.objects.get(title=recipe_title, text=recipe_preparation_steps_list, image=img_link)
+    recipe = Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list)
+    if img_link != None:
+
+        try:
+            name = urlparse(img_link).path.split('/')[-1]
+            content = ContentFile(urllib.request.urlopen(img_link).read())
+            recipe[0].image.save(name, content, save=True)
+        except:
+            print("Resim çekilemedi!")
+
+    this_recipe = Recipe.objects.get(title=recipe_title, text=recipe_preparation_steps_list)
 
     # recipe_ingredients_list
     if soup.find("div", attrs={"class": "mlz"}):

@@ -9,7 +9,7 @@ class Recipe(models.Model):
     isHard = models.CharField(max_length=3, null=True)
     isVegetarian = models.CharField(max_length=3, null=True)
     isGood = models.CharField(max_length=3, null=True)
-    image = models.ImageField(null=True)
+    image = models.ImageField(upload_to='photos',null=True)
 
 
 class Ingredient(models.Model):
