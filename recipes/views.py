@@ -1,29 +1,18 @@
-# from django.shortcuts import render
 #  -*- coding: utf-8 -*-
 import requests
-from MySQLdb.compat import unicode
 from bs4 import BeautifulSoup
 from django.shortcuts import render
-from django.utils.baseconv import base64
-import base64
 from recipes.models import Food, Recipe, Ingredient, MeasureTable
 import os
 from django.shortcuts import redirect
 from .forms import UserProduct
 from urllib.request import urlopen, Request
 from django.core.files.temp import NamedTemporaryFile
-from django.core.files import File
-import tempfile
-from django.core import files
 import urllib
 from urllib.parse import urlparse
-# import urllib2
-from django.core.files import File
-from django.core.files import File
-# add imprt of content file wrapper
 from django.core.files.base import ContentFile
 from django.core.files import File
-import io
+
 
 selected_food = []
 
