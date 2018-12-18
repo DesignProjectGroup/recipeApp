@@ -417,7 +417,6 @@ Tavuk Suyu Çorba	1	porsiyon	82
 Tavuk Suyu	100	gram	36
 Tel Şehriye Çorbası	1	porsiyon	245
 Yayla Çorbası	1	porsiyon	270
-Haşlanmış nohut	60	gram	68
 soğan – rende	100	gram	40
 ince bulgur	1	gram	4
 un	100	gram	364
@@ -437,7 +436,6 @@ Pudra Şekeri	50	gram	195
 Rezene	50	gram	23
 Sıvı Yağ	50	gram	442
 Sirke	50	gram	10
-Su	50	gram	0
 Toz Tarhana	100	gram	56
 Tereyağı	100	gram	783
 Limon Suyu	100	gram	100

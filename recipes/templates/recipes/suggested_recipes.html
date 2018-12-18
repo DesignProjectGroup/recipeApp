@@ -24,10 +24,26 @@
                 </div>
             </div>
 
+            <div class="card mb-4">
+                <div class="card-body">
+                    {% for key in most_common_key %}
+                        {{ key }} -->
+                        {% for i in most_common|get_item:key %}
+                            {{ i }},
+                        {% endfor %}
+                    {% endfor %}
+                </div>
+            </div>
+
             <div class="row no-gutters">
                 <div class="card-columns">
                     {% for recipe in all_suggestion_recipes %}
                         <div class="card">
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    Tarifin kalorisi: {{ recipe.4 }} kcal
+                                </small>
+                            </div>
                             <div class="card-body">
                                 <a href="{% url 'get_recipe_page' pk=recipe.2 %}">
                                     <h5 class="card-title">{{ recipe.0 }}</h5>
@@ -42,10 +58,11 @@
                                     {% endfor %}
                                 </p>
                             </div>
-
                             <div class="card-footer">
                                 <small class="text-muted">Eksik {{ recipe.1|length }} malzeme var!</small>
                             </div>
+
+
                         </div>
                     {% endfor %}
                 </div>

@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from django.shortcuts import render
 from recipes.models import Food, Recipe, Ingredient, MeasureTable
+from comments.models import Comment
 import os
 from django.shortcuts import redirect
 from .forms import UserProduct
@@ -13,13 +14,40 @@ import urllib
 from urllib.parse import urlparse
 from django.core.files.base import ContentFile
 from django.core.files import File
+import datetime
+from comments.views import read_file,do_semantic_analysis
+
 selected_food = []
 
-#seçilen tarifi getir.
+
+# seçilen tarifi getir.
 def get_recipe_page(request, pk):
+    time = ""
     recipe = Recipe.objects.get(pk=pk)
-    ingredients = Ingredient.objects.filter(recipe__id=recipe.pk)
-    return render(request, 'recipes/recipe_page.html', {'recipe': recipe, 'ingredients': ingredients})
+    all_ingredients = Ingredient.objects.filter(recipe__id=recipe.pk)
+    ingredients = []
+    for i in all_ingredients:
+        if i.count == 0.5:
+            i.count = "1/2"
+        elif i.count == 0.25:
+            i.count = "1/4"
+        elif i.count == 0.75:
+            i.count = "3/4"
+        elif i.count == 0:
+            i.count = ""
+        else:
+            i.count = int(round(i.count))
+        ing = [i.count, i.measurementUnit, i.name]
+        ingredients.append(ing)
+    if request.method == 'POST':
+        time = datetime.datetime.now().date()
+        text = request.POST.get('textfield', None)
+        isPos = do_semantic_analysis(text)
+        Comment.objects.update_or_create(recipe=recipe,text=text,isPositive=isPos)
+    comments = Comment.objects.filter(recipe=recipe)
+
+    return render(request, 'recipes/recipe_page.html', {'recipe': recipe, 'ingredients': ingredients,
+                                                        'comments': comments, 'time': time})
 
 
 # malzeme seçildikten sonra tarif öner
@@ -30,9 +58,15 @@ def list_recipes(request):
         selected_food.clear()
         selected_food.extend(user_products)
         all_suggestion_recipes = suggestion_recipe()
+        most_common = most_used()
+        print(most_common)
+        most_common_key = most_common.keys()
+
 
         return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food,
-                                                                  'all_suggestion_recipes': all_suggestion_recipes})
+                                                                  'all_suggestion_recipes': all_suggestion_recipes,
+                                                                  'most_common': most_common,
+                                                                  'most_common_key': most_common_key})
 
 
 # kullanıcıya malzeme seçtir
@@ -41,10 +75,23 @@ def select_ingredients(request):
     return render(request, 'recipes/home_page.html', {'form': form, 'selected_food': selected_food})
 
 
+def calculate_recipe_calorie():
+    # ingredient_calories = Ingredient.objects.values('calorie')
+    ingredients = Ingredient.objects.all()
+    for i in ingredients:
+        i.recipe.calorie = i.recipe.calorie + i.calorie
+        this_recipe = Recipe.objects.get(pk=i.recipe.pk)
+        this_recipe.calorie = i.recipe.calorie
+        this_recipe.save()
+
+
 # recipes ve ingredients table ları güncelle
 def create_recipes_db(request):
     if 'new_recipe_btn' in request.GET:
         get_all_recipes()
+        calculate_recipe_calorie()
+        read_file("comments/text_files/positives.txt")
+        read_file("comments/text_files/negatives.txt")
         return redirect('/manager_page')
     elif 'new_ingredient_btn' in request.GET:
         read_food_calories("food_calories.txt")
@@ -106,7 +153,6 @@ def get_recipe(recipe_link):
             except KeyError:
                 img_link = None
                 continue
-            print(img_link)
         if not p.text == "":
             recipe_preparation_steps_list = recipe_preparation_steps_list + p.text + "\n"
 
@@ -137,19 +183,40 @@ def get_recipe(recipe_link):
             if i == "":
                 ingredients_subtitle_number = ingredients_subtitle_number + 1
             else:
-
                 parse_ingredient_list = parse_ingredient(i)
                 product_name = parse_ingredient_list[2].strip()
-                product_count = parse_ingredient_list[0].strip()
+                if parse_ingredient_list[0].strip().split(" ")[0] != '':
+                    product_count = parse_ingredient_list[0].strip().split(" ")[0]
+                    if "," in product_count:
+                        product_count = product_count.replace(',', '.')
+                        product_count = product_count.replace(' ', '')
+                    elif "½" in product_count:
+                        product_count = product_count.replace("½", "0.5")
+                    elif "¼" in product_count:
+                        product_count = product_count.replace("¼", "0.25")
+                    elif "¾" in product_count:
+                        product_count = product_count.replace("¾", "0.75")
+                    elif "1/2" in product_count:
+                        product_count = product_count.replace("1/2", "0.5")
+                    elif "1/4" in product_count:
+                        product_count = product_count.replace("1/4", "0.25")
+                    elif "3/4" in product_count:
+                        product_count = product_count.replace("3/4", "0.75")
+                    elif "-" in product_count:
+                        product_count = product_count.split("-")[0]
+                else:
+                    product_count = parse_ingredient_list[0].strip()
+                    if product_count == '':
+                        product_count = 0.0
                 product_measurement_unit = parse_ingredient_list[1].strip()
-                # print(this_recipe.title)
                 calorie = calculate_ingredient_calories(product_name, product_measurement_unit, product_count)
                 Ingredient.objects.update_or_create(name=product_name,
-                                                    count=product_count,
+                                                    count=float(product_count),
                                                     measurementUnit=product_measurement_unit,
                                                     subtitle=ingredients_subtitles_text_list
                                                     [ingredients_subtitle_number],
-                                                    recipe=this_recipe, calorie=calorie)
+                                                    recipe=this_recipe,
+                                                    calorie=calorie)
 
 
 # Seda
@@ -251,12 +318,16 @@ def calculate_ingredient_calories(name, measurement_unit, count):
     except MeasureTable.DoesNotExist:
         if measurement_unit != "":
             print("----measure_table.txt'ye ekle:-----")
-            print(clean_name, end=" -- ")
-            print(measurement_unit)
+            # print(clean_name, end=" -- ")
+            # print(measurement_unit)
         m = None
     if m is not None:
         try:
-            f = Food.objects.filter(name=clean_name, measurementUnit=m.measurementUnit)
+            f = Food.objects.get(name=clean_name, measurementUnit=m.measurementUnit)
+            # print(f)
+            # calorie = m.technical_measure * f.calorie / f.count * count
+            # print("*****")
+            # print(calorie)
         except Food.DoesNotExist:
             # print("----food_calories.txt'ye ekle:-----")
             # print(clean_name)
@@ -267,6 +338,8 @@ def calculate_ingredient_calories(name, measurement_unit, count):
                 calorie = 0
         else:
             calorie = m.technical_measure * f.calorie / f.count * count
+    elif m is not None and f is not None:
+        calorie = m.technical_measure * f.calorie / f.count * float(count)
     return calorie
 
 
@@ -321,8 +394,9 @@ def suggestion_recipe():
                                                                  [y.lower() for y in matching_list])))
                     recipe_list.append(ingredient.recipe.pk)
                     intersect_products = intersection_list([x.lower() for x in selected_food],
-                                                                 [y.lower() for y in matching_list])
+                                                           [y.lower() for y in matching_list])
                     recipe_list.append(list(intersect_products))
+                    recipe_list.append(int(round(ingredient.recipe.calorie)))
                     all_suggestion_recipes.append(recipe_list)
     return all_suggestion_recipes
 
@@ -344,7 +418,7 @@ def most_used():
                 matching_ingredient = Ingredient.objects.filter(recipe__id=ingredient.recipe.id)
                 matching_list = matching_ingredient.values_list('name', flat=True)
                 intersection = intersection_list([x.lower() for x in selected_food],
-                                                       [y.lower() for y in matching_list])
+                                                 [y.lower() for y in matching_list])
 
                 if ingredient.recipe.title not in ingredient_title:
                     c = ', '.join(intersection)

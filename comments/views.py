@@ -3,6 +3,7 @@ from comments.models import ProbabilityOfWords
 from snowballstemmer import stemmer
 import re
 
+
 # train txt leri okur ve kelimeleri olasılıklarını database e kaydeder.
 def read_file(file_name):
     stem = stemmer('turkish')
@@ -18,7 +19,7 @@ def read_file(file_name):
     for line in all_lines_list:
         words_of_one_sentence = line.split(" ")
         for word in words_of_one_sentence:
-            word = re.sub(r'[^\w\s]','',word)
+            word = re.sub(r'[^\w\s]', '', word)
             word = word.lower()
             word_list = [word]
             word = stem.stemWords(word_list)[0]
@@ -49,7 +50,7 @@ def read_file(file_name):
                 ProbabilityOfWords.objects.update_or_create(word=word, probabilityOfPositive=word_probability)
 
         for i in ProbabilityOfWords.objects.filter(probabilityOfNegative=0):
-            i.probabilityOfNegative = 1/(count_of_all_words + count_of_unique_words)
+            i.probabilityOfNegative = 1 / (count_of_all_words + count_of_unique_words)
             i.save()
 
     if "negatives.txt" in file_name:
@@ -66,9 +67,8 @@ def read_file(file_name):
                 ProbabilityOfWords.objects.update_or_create(word=word, probabilityOfNegative=word_probability)
 
         for i in ProbabilityOfWords.objects.filter(probabilityOfPositive=0):
-            i.probabilityOfPositive = 1/(count_of_all_words + count_of_unique_words)
+            i.probabilityOfPositive = 1 / (count_of_all_words + count_of_unique_words)
             i.save()
-
 
 
 def calculate_probability(word, word_count_pair, count_of_all_words, count_of_unique_words):
@@ -78,7 +78,8 @@ def calculate_probability(word, word_count_pair, count_of_all_words, count_of_un
     probability = count_of_word / (count_of_all_words + count_of_unique_words)
     return probability
 
-#verilen cümlenin pozitif mi negatif mi olduğuna karar verir
+
+# verilen cümlenin pozitif mi negatif mi olduğuna karar verir
 def do_semantic_analysis(sentence):
     sentence_probability_of_negative = 1
     sentence_probability_of_positive = 1
@@ -110,11 +111,12 @@ def do_semantic_analysis(sentence):
             sentence_probability_of_negative *= word_probability_of_negative
             sentence_probability_of_positive *= word_probability_of_positive
     if sentence_probability_of_positive > sentence_probability_of_negative:
-        print(sentence+"-> pozitif")
+        result = "positive"
     elif sentence_probability_of_positive < sentence_probability_of_negative:
-        print(sentence+"-> negatif")
+        result = "negative"
     else:
-        print("eşit")
+        result = "notr"
+    return result
 
 
 def deneme(request):
