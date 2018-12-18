@@ -1,30 +1,18 @@
 # from django.shortcuts import render
 #  -*- coding: utf-8 -*-
 import requests
-from MySQLdb.compat import unicode
 from bs4 import BeautifulSoup
 from django.shortcuts import render
-from django.utils.baseconv import base64
-import base64
 from recipes.models import Food, Recipe, Ingredient, MeasureTable
 import os
 from django.shortcuts import redirect
 from .forms import UserProduct
 from urllib.request import urlopen, Request
 from django.core.files.temp import NamedTemporaryFile
-from django.core.files import File
-import tempfile
-from django.core import files
 import urllib
 from urllib.parse import urlparse
-# import urllib2
-from django.core.files import File
-from django.core.files import File
-# add imprt of content file wrapper
 from django.core.files.base import ContentFile
 from django.core.files import File
-import io
-
 selected_food = []
 
 #seçilen tarifi getir.
@@ -292,7 +280,7 @@ def jaccard_similarity(x, y):
 
 # Seda
 # Returns the intersection of two lists
-def jaccard_similarity_list(x, y):
+def intersection_list(x, y):
     intersection_cardinality = set.intersection(*[set(x), set(y)])
     return intersection_cardinality
 
@@ -301,53 +289,102 @@ def jaccard_similarity_list(x, y):
 # Finds recipes containing the all entered ingredients or the greatest similarity of some of the entered ingredients
 # kullanıcı ürün girdikten sonra kullanıcıya tarif gösterir.
 def suggestion_recipe():
-    recipe_list = []  # keeps suggestion recipes
-    missing_recipe = {}  # keeps suggestion recipes that ingredients are missing
+    most_used()
+    all_suggestion_recipes = []
     matching_list = []
-    missing_ingredient = 0
+    ingredient_title = []
+    l = []
     for i in range(0, len(selected_food)):
-        if Ingredient.objects.filter(name=selected_food[i]).exists():  # Check  ingredient in Ingredient table
+        if Ingredient.objects.filter(name=selected_food[i]).exists():  # Check ingredient in Ingredient table
             ingredients = Ingredient.objects.filter(name=selected_food[i])  # Get ingredient object in Ingredient query
             for ingredient in ingredients:
+                recipe_list = []  # keeps suggestion recipes
                 matching_ingredient = Ingredient.objects.filter(recipe__id=ingredient.recipe.id)
                 matching_list = matching_ingredient.values_list('name', flat=True)
                 # matching_ingredient : holds Ingredient objects with the same recipe id as the ingredient
                 # matching_list : keeps all ingredient names that have the same recipe id
                 x = 0
                 for match in matching_ingredient:
+                    name = match.name
                     for j in range(0, len(selected_food)):
-                        if match.name == selected_food[j]:
+                        name = clean_product_name(name)
+                        if name.lower() == selected_food[j].lower():
                             x += 1
-                if x == len(matching_list):  # If a recipe contains all the ingredients entered
-                    recipe_list.append(ingredient)
-                    missing_ingredient = jaccard_similarity(selected_food, matching_list)
-
-                # If the jaccard_similarity of items entered and  ingredients of recipe are greater than the previous
-                # jaccard_similarity, suggestion recipe changes
-                elif missing_ingredient < jaccard_similarity(selected_food, matching_list):
-                    missing_ingredient = jaccard_similarity(selected_food, matching_list)
-                    missing_recipe.clear()
-                    missing_recipe[ingredient] = set(matching_list) - set(jaccard_similarity_list(selected_food,
-                                                                                                  matching_list))
-                elif ingredient not in missing_recipe and missing_ingredient == jaccard_similarity(selected_food,
-                                                                                                   matching_list):
-                    missing_recipe[ingredient] = set(matching_list) - set(jaccard_similarity_list(selected_food,
-                                                                                                  matching_list))
-    all_suggestion_recipes = []
-    # If there is no recipe containing all ingredients entered
-    if len(recipe_list) == 0:
-        for x, y in missing_recipe.items():
-            one_suggestion_recipe = []
-            one_suggestion_recipe.append(x.recipe.title)
-            one_suggestion_recipe.append(y)
-            one_suggestion_recipe.append(x.recipe.pk)
-            all_suggestion_recipes.append(one_suggestion_recipe)
-            print(x.recipe.title, "\t", y)
-    else:
-        for r in recipe_list:
-            one_suggestion_recipe = []
-            one_suggestion_recipe.append(r.recipe.title)
-            one_suggestion_recipe.append("")
-            all_suggestion_recipes.append(one_suggestion_recipe)
-            print(r.recipe.title)
+                if ingredient.recipe.title not in ingredient_title:
+                    ingredient_title.append(ingredient.recipe.title)
+                    recipe_list.append(ingredient.recipe.title)
+                    if x == len(matching_list):  # If a recipe contains all the ingredients entered
+                        recipe_list.append("")
+                    else:
+                        recipe_list.append(set([y.lower() for y in matching_list]) -
+                                           set(intersection_list([x.lower() for x in selected_food],
+                                                                 [y.lower() for y in matching_list])))
+                    recipe_list.append(ingredient.recipe.pk)
+                    intersect_products = intersection_list([x.lower() for x in selected_food],
+                                                                 [y.lower() for y in matching_list])
+                    recipe_list.append(list(intersect_products))
+                    all_suggestion_recipes.append(recipe_list)
     return all_suggestion_recipes
+
+
+# Seda
+# Finds intersecting ingredients in recipes that have selected_food ingredient.
+def most_used():
+    most_common = {}  # Keeps intersecting ingredients from recipes that have selected_food ingredients
+    recipe_list = {}  # Keeps recipes of the having a maximum number of intersections ingredients with selected_food
+    common = []  # Keeps intersecting ingredients
+    intersection_recipe = []
+    ingredient_title = []
+    # Finds recipes of the having a maximum number of intersections ingredients with selected_food
+    for i in range(0, len(selected_food)):
+        intersection = []
+        if Ingredient.objects.filter(name=selected_food[i]).exists():  # Check ingredient in Ingredient table
+            ingredients = Ingredient.objects.filter(name=selected_food[i])  # Get ingredient object in Ingredient query
+            for ingredient in ingredients:
+                matching_ingredient = Ingredient.objects.filter(recipe__id=ingredient.recipe.id)
+                matching_list = matching_ingredient.values_list('name', flat=True)
+                intersection = intersection_list([x.lower() for x in selected_food],
+                                                       [y.lower() for y in matching_list])
+
+                if ingredient.recipe.title not in ingredient_title:
+                    c = ', '.join(intersection)
+                    if c not in recipe_list.keys():
+                        recipe_list[c] = []
+                    else:
+                        if len(list(common)) < len(list(intersection)):
+                            common = intersection
+                            ingredient_title = []
+                            ingredient_title.append(ingredient.recipe.title)
+                            recipe_list = {}
+                            recipe_list[c] = []
+                            recipe_list[c].append(ingredient)
+                        elif len(list(common)) == len(list(intersection)):
+                            common = intersection
+                            ingredient_title.append(ingredient.recipe.title)
+                            recipe_list[c].append(ingredient)
+
+    # Finds intersecting ingredients in recipes that have selected_food ingredient
+    for key, value in recipe_list.items():
+        ingredient_list = []
+        if len(value) > 1:
+            for val in list(value):
+                ingredients = Ingredient.objects.filter(recipe_id=val.recipe.id)
+                matching_list = ingredients.values_list('name', flat=True)
+                if len(ingredient_list) == 0:
+                    ingredient_list = matching_list
+                else:
+                    intersections = intersection_list([x.lower() for x in ingredient_list],
+                                                      [y.lower() for y in matching_list])
+
+                    keys = key.split(', ')
+                    if len(list(intersection_recipe)) < len(list(intersections)):
+                        intersection_recipe = intersections
+                        most_common[key] = []
+                        not_intersect = list(intersection_recipe - set(keys))
+                        most_common[key] = not_intersect
+                    elif len(list(ingredient_list)) == len(list(intersections)):
+                        intersection_recipe = intersections
+                        not_intersect = list(intersection_recipe - set(keys))
+                        most_common[key].append(not_intersect)
+
+    return most_common
