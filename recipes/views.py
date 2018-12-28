@@ -8,14 +8,16 @@ from comments.models import Comment
 import os
 from django.shortcuts import redirect
 from .forms import UserProduct
-from urllib.request import urlopen, Request
+from urllib.request import urlopen
 from django.core.files.temp import NamedTemporaryFile
 import urllib
 from urllib.parse import urlparse
 from django.core.files.base import ContentFile
 from django.core.files import File
 import datetime
-from comments.views import read_file,do_semantic_analysis
+from comments.views import read_file, do_semantic_analysis
+import json
+import re
 
 selected_food = []
 
@@ -42,8 +44,8 @@ def get_recipe_page(request, pk):
     if request.method == 'POST':
         time = datetime.datetime.now().date()
         text = request.POST.get('textfield', None)
-        isPos = do_semantic_analysis(text)
-        Comment.objects.update_or_create(recipe=recipe,text=text,isPositive=isPos)
+        is_pos = do_semantic_analysis(text)
+        Comment.objects.update_or_create(recipe=recipe, text=text, isPositive=is_pos)
     comments = Comment.objects.filter(recipe=recipe)
 
     return render(request, 'recipes/recipe_page.html', {'recipe': recipe, 'ingredients': ingredients,
@@ -62,7 +64,6 @@ def list_recipes(request):
         print(most_common)
         most_common_key = most_common.keys()
 
-
         return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food,
                                                                   'all_suggestion_recipes': all_suggestion_recipes,
                                                                   'most_common': most_common,
@@ -71,6 +72,8 @@ def list_recipes(request):
 
 # kullanıcıya malzeme seçtir
 def select_ingredients(request):
+    # write_measure_table_file("ll", "ll")
+    read_json_file()
     form = UserProduct()
     return render(request, 'recipes/home_page.html', {'form': form, 'selected_food': selected_food})
 
@@ -83,6 +86,47 @@ def calculate_recipe_calorie():
         this_recipe = Recipe.objects.get(pk=i.recipe.pk)
         this_recipe.calorie = i.recipe.calorie
         this_recipe.save()
+
+
+def read_json_file():
+    with open('all_recipes.json', 'r') as f:
+        all_recipes = json.load(f)
+#calori hesapla
+#database e kaydet
+# measure.txt ekleme yap
+#train test etiketle
+#image yayınlanma sorunu varsa çöz
+#
+
+    for recipe in all_recipes["all_recipes"]:
+        # this_recipe = Recipe()
+        try:
+            title = recipe["title"]
+            image = recipe["image"]
+            is_hard = recipe["isHard"]
+            technical_type = recipe["technical_type"]
+            time = recipe["time"]
+            preparation = ""
+            for i in recipe["preparation"]:
+                preparation = preparation + i["name"]
+            # this_recipe.title = title
+            # this_recipe.image = image
+            # this_recipe.isHard = is_hard
+            # this_recipe.technical_type = technical_type
+            # this_recipe.time = time
+            # this_recipe.text = preparation
+            # this_recipe.save()
+            # this_ingredient = Ingredient()
+            for i in recipe["ingredients"]:
+                i = i["name"]
+                print(i)
+                parse_ingredient_list = parse_ingredient(i)
+                parse_ingredient_list[2] = clean_product_name(parse_ingredient_list[2])
+                print(parse_ingredient_list)
+
+        except KeyError:
+            # this_recipe.clean()
+            continue
 
 
 # recipes ve ingredients table ları güncelle
@@ -98,6 +142,34 @@ def create_recipes_db(request):
         get_measure()
         return redirect('/manager_page')
     return render(request, 'recipes/manager_page.html', {})
+
+
+# "1/4" string'i 0.25 floata dönüştürür.
+def convert_from_fraction_string_to_float(fraction_string):
+    float_number = 0
+    if "+" in fraction_string:
+        split_list = fraction_string.split("+")
+        if fraction_string[1] == "1/3":
+            float_number = 0.3
+        elif fraction_string[1] == "1/2":
+            float_number = 0.5
+        elif fraction_string[1] == "1/4":
+            float_number = 0.25
+        elif fraction_string[1] == "3/4":
+            float_number = 0.75
+        float_number = int(split_list[0]) + float_number
+    elif "/" in fraction_string:
+        if fraction_string == "1/3":
+            float_number = 0.3
+        elif fraction_string == "1/2":
+            float_number = 0.5
+        elif fraction_string == "1/4":
+            float_number = 0.25
+        elif fraction_string[1] == "3/4":
+            float_number = 0.75
+    else:
+        float_number = float(fraction_string)
+    return float_number
 
 
 def get_all_recipes():
@@ -157,8 +229,7 @@ def get_recipe(recipe_link):
             recipe_preparation_steps_list = recipe_preparation_steps_list + p.text + "\n"
 
     recipe = Recipe.objects.update_or_create(title=recipe_title, text=recipe_preparation_steps_list)
-    if img_link != None:
-
+    if img_link is not None:
         try:
             name = urlparse(img_link).path.split('/')[-1]
             content = ContentFile(urllib.request.urlopen(img_link).read())
@@ -202,6 +273,8 @@ def get_recipe(recipe_link):
                         product_count = product_count.replace("1/4", "0.25")
                     elif "3/4" in product_count:
                         product_count = product_count.replace("3/4", "0.75")
+                    elif "1/6" in product_count:
+                        product_count = product_count.replace("1/6", "0.15")
                     elif "-" in product_count:
                         product_count = product_count.split("-")[0]
                 else:
@@ -242,22 +315,24 @@ def parse_ingredient(ingredient_string):
     # keeps the materials after the parsing
     parse_ingredient_list = []
     # measures ölçüleri tutuyor ekleme yapılabilir
-    measures = ['yemek kaşığı', 'çay kaşığı', 'tatlı kaşığı', 'su bardağı', 'çay bardağı', 'kahve fincanı',
+    measures = ['yemek kaşığı', 'çorba kaşığı', 'çay kaşığı', 'tatlı kaşığı', 'su bardağı', 'çay bardağı',
+                'kahve fincanı',
                 'fincan', 'bardak', 'kaşık', 'gram', 'adet', 'tane', 'diş', 'demet', 'tutam', 'dilim', 'avuç',
                 'gr.', 'paket', 'litre', 'bağ', 'damla']
     for measure in measures:
         if measure in ingredient_string:
             ingredient = ingredient_string.split(measure)
-            parse_ingredient_list.append(ingredient[0])
-            parse_ingredient_list.append(measure)
-            parse_ingredient_list.append(ingredient[1])
+            parse_ingredient_list.append(ingredient[0].strip().split("-")[0].split(" ")[-1])
+            parse_ingredient_list.append(measure.strip())
+            parse_ingredient_list.append(re.sub(r" ?\([^)]+\)", "", ingredient[1].strip()))
+
             break
     # eğer ölçü yoksa sadece malzeme adı varsa
     else:
         if ingredient_string not in parse_ingredient_list:
             parse_ingredient_list.append("")
             parse_ingredient_list.append("")
-            parse_ingredient_list.append(ingredient_string)
+            parse_ingredient_list.append(re.sub(r" ?\([^)]+\)", "", ingredient_string.strip()))
     return parse_ingredient_list
 
 
@@ -290,8 +365,8 @@ def clean_product_name(name):
             if m > match_amount:
                 match_amount = m
                 clean_name = f
-    if clean_name == "*":
-        print(name)
+    # if clean_name == "*":
+    #     print(name)
     return clean_name
 
 
@@ -318,8 +393,14 @@ def calculate_ingredient_calories(name, measurement_unit, count):
     except MeasureTable.DoesNotExist:
         if measurement_unit != "":
             print("----measure_table.txt'ye ekle:-----")
-            # print(clean_name, end=" -- ")
-            # print(measurement_unit)
+            if clean_name == "*":
+                if name != " ":
+                    print(name, end=" -- ")
+                    write_measure_table_file(name, measurement_unit)
+            else:
+                print(clean_name, end=" -- ")
+                write_measure_table_file(name, measurement_unit)
+            print(measurement_unit)
         m = None
     if m is not None:
         try:
@@ -341,6 +422,19 @@ def calculate_ingredient_calories(name, measurement_unit, count):
     elif m is not None and f is not None:
         calorie = m.technical_measure * f.calorie / f.count * float(count)
     return calorie
+
+
+# measure_table.txt yi kontrol eder eğer eksik malzeme varsa gram dönüşümü
+# (örneğin bir bardak kaç gram?)hariç dosyaya ekler
+def write_measure_table_file(clean_name, measurement_unit):
+    file = open("deneme.txt", "a+")
+    i = clean_name.lower() + "\t" + measurement_unit.lower()
+    print("****")
+    print(i)
+    print("****")
+    if i in file.read():
+        print(1111)
+        file.write(clean_name.lower() + "\t" + measurement_unit.lower() + "\t\n")
 
 
 # Seda
@@ -366,7 +460,7 @@ def suggestion_recipe():
     all_suggestion_recipes = []
     matching_list = []
     ingredient_title = []
-    l = []
+    # l = []
     for i in range(0, len(selected_food)):
         if Ingredient.objects.filter(name=selected_food[i]).exists():  # Check ingredient in Ingredient table
             ingredients = Ingredient.objects.filter(name=selected_food[i])  # Get ingredient object in Ingredient query

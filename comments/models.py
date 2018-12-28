@@ -8,6 +8,7 @@ class Comment(models.Model):
     date = models.DateField(null=True)
     text = models.TextField(null=True)
     recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE, null=True)
+    isTrain = models.CharField(max_length=10, null=True)
 
 
 class ProbabilityOfWords(models.Model):
