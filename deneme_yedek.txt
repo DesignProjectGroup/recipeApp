@@ -60,12 +60,6 @@ Buğday	Çay Kaşığı	0
 Buğday	Çorba Kaşığı	0
 Buğday nişastası		111
 Cajun baharatı	çorba kaşığı	111
-Ceviz İçi	Kahve Fincanı	30
-Ceviz İçi	Su Bardağı	90
-Ceviz İçi	Tatlı Kaşığı	0
-Ceviz İçi	Çay Bardağı	50
-Ceviz İçi	Çay Kaşığı	0
-Ceviz İçi	Çorba Kaşığı	15
 Damla çikolata		111
 Defne yaprağı		111
 Dereotu		0
@@ -2983,7 +2977,7 @@ limon tuzu	gram	111
 kabartma tozu	çay bardağı	111
 kepekli makarna	bardak	111
 muskat	tatlı kaşığı	111
-parmesan peyniri rendesi	yemek kaşığı	111
+parmesan peyniri	yemek kaşığı	111
 balık yumurtası	kutu	111
 çam fıstığı	çorba kaşığı	111
 kuru bakla	su bardağı	111

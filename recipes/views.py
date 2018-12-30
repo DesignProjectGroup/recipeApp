@@ -18,6 +18,7 @@ import datetime
 from comments.views import read_file, do_semantic_analysis
 import json
 import re
+import re
 
 selected_food = []
 
@@ -73,11 +74,13 @@ def list_recipes(request):
 # kullanıcıya malzeme seçtir
 def select_ingredients(request):
     # write_measure_table_file("ll", "ll")
-    read_json_file()
+    # sort_all_products("deneme3.txt")
+    # read_json_file()
     form = UserProduct()
     return render(request, 'recipes/home_page.html', {'form': form, 'selected_food': selected_food})
 
 
+# tarifin kalorisini hesaplar
 def calculate_recipe_calorie():
     # ingredient_calories = Ingredient.objects.values('calorie')
     ingredients = Ingredient.objects.all()
@@ -88,16 +91,40 @@ def calculate_recipe_calorie():
         this_recipe.save()
 
 
+# ***geçici***
+# file ı alfabetik olarak sıralar
+# measure_table.txt yi sıraladık.
+def sort_all_products(file):
+    all_list = []
+    f = open(file, "r")
+    f2 = open("deneme4.txt", "w")
+    all_lines = f.read().split("\n")
+    for line in all_lines:
+        if "        " in line:
+            line = line.replace("        ", "\t")
+        # line_split = line.split("\t")
+        # print(line_split)
+        all_list.append(line + "\n")
+
+    print(all_list)
+    # all_list=sorted(list(set(all_list)))
+
+    for i in all_list:
+        f2.write(i)
+
+
+# tariflerin bulunduğu json dosyasını okur ve tarifleri database'e atar.
 def read_json_file():
     with open('all_recipes.json', 'r') as f:
         all_recipes = json.load(f)
-#calori hesapla
-#database e kaydet
-# measure.txt ekleme yap
-#train test etiketle
-#image yayınlanma sorunu varsa çöz
-#
-
+    # calori hesapla
+    # database e kaydet
+    # measure.txt ekleme yap
+    # train test etiketle
+    # image yayınlanma sorunu varsa çöz
+    #
+    f = open("deneme2.txt", "w")
+    malzemeler = []
     for recipe in all_recipes["all_recipes"]:
         # this_recipe = Recipe()
         try:
@@ -119,14 +146,69 @@ def read_json_file():
             # this_ingredient = Ingredient()
             for i in recipe["ingredients"]:
                 i = i["name"]
-                print(i)
-                parse_ingredient_list = parse_ingredient(i)
-                parse_ingredient_list[2] = clean_product_name(parse_ingredient_list[2])
-                print(parse_ingredient_list)
-
+                clean_measuretable(i, malzemeler)
         except KeyError:
             # this_recipe.clean()
             continue
+    for m in malzemeler:
+        if m[1] == "":
+            f.write(m[2] + "\t" + "\t" + "111" + "\n")
+        else:
+            f.write(m[2] + "\t" + m[1] + "\t" + "111" + "\n")
+    print(malzemeler)
+    print(len(malzemeler))
+
+
+# ***geçici***
+# string number içeriyor mu kontrolünü yapar.
+def hasNumbers(inputString):
+    return bool(re.search(r'\d', inputString))
+
+
+# ***geçici***
+# measure_table'a veri eklemek için kullandığımız deneme2.txt dosyasında temizlik yapar.
+# 1 adet çarliston biber
+def clean_measuretable(i, malzemeler):
+    parse_ingredient_list = parse_ingredient(i)
+    if clean_product_name(parse_ingredient_list[2]) == "*":
+        parse_ingredient_list[0] = ""
+        # for m in malzemeler:
+        #     if parse_ingredient_list[1].lower() != m[1].lower() and parse_ingredient_list[2].lower() != m[2].lower():
+        if hasNumbers(parse_ingredient_list[2]) is False:
+            if "yarım" not in parse_ingredient_list[2]:
+                if "Yarım" not in parse_ingredient_list[2]:
+                    if "için" not in parse_ingredient_list[2]:
+                        if "Üzeri" not in parse_ingredient_list[2]:
+                            if "malzeme" not in parse_ingredient_list[2]:
+                                if parse_ingredient_list not in malzemeler:
+                                    malzemeler.append(parse_ingredient_list)
+    else:
+
+        parse_ingredient_list[0] = ""
+        h = MeasureTable.objects.filter(name=clean_product_name(parse_ingredient_list[2])).values_list('object_type',
+                                                                                                       flat=True)
+        h2 = []
+        for k in h:
+            h2.append(k.lower())
+
+        if not parse_ingredient_list[1].lower() in h2:
+
+            print(clean_product_name(parse_ingredient_list[2]))
+            print(parse_ingredient_list)
+            print(h2)
+
+            # if (parse_ingredient_list[2] == "ceviz"):
+            #     # print(parse_ingredient_list[2])
+            #     # print(clean_product_name(parse_ingredient_list[2]))
+            #     # print(parse_ingredient_list[2] + "--" + parse_ingredient_list[1])
+            if hasNumbers(parse_ingredient_list[2]) is False:
+                if "yarım" not in parse_ingredient_list[2]:
+                    if "Yarım" not in parse_ingredient_list[2]:
+                        if "için" not in parse_ingredient_list[2]:
+                            if "Üzeri" not in parse_ingredient_list[2]:
+                                if "malzeme" not in parse_ingredient_list[2]:
+                                    if parse_ingredient_list not in malzemeler:
+                                        malzemeler.append(parse_ingredient_list)
 
 
 # recipes ve ingredients table ları güncelle
@@ -297,15 +379,17 @@ def get_recipe(recipe_link):
 # Nohut	Su Bardağı	170 gram
 # tüm besinlerin belirlenen ölçüm aleti ile kaç grama denk geldiğini hesaplar.
 def get_measure():
+    MeasureTable.objects.all().delete()
     cwd = os.path.realpath("measure_table.txt")  # find measure.txt path in the project
     data = [i.strip('\n').split('\t') for i in open(cwd)]  # open and split measure.txt
     for m in range(0, len(data)):
-        # print(data[m])
+        print(data[m])
         if data[m][2]:
             # Adds data to the MeasureTable
             MeasureTable.objects.update_or_create(name=data[m][0],
                                                   object_type=data[m][1],
                                                   technical_measure=data[m][2], measurementUnit="gram")
+    # print(MeasureTable.objects.filter(name="irmik").values_list())
 
 
 # Seda
@@ -315,10 +399,12 @@ def parse_ingredient(ingredient_string):
     # keeps the materials after the parsing
     parse_ingredient_list = []
     # measures ölçüleri tutuyor ekleme yapılabilir
-    measures = ['yemek kaşığı', 'çorba kaşığı', 'çay kaşığı', 'tatlı kaşığı', 'su bardağı', 'çay bardağı',
-                'kahve fincanı',
-                'fincan', 'bardak', 'kaşık', 'gram', 'adet', 'tane', 'diş', 'demet', 'tutam', 'dilim', 'avuç',
-                'gr.', 'paket', 'litre', 'bağ', 'damla']
+    measures = ['kare', 'parça', 'kase', 'yemek kaşığı', 'çorba kaşığı', 'çay kaşığı', 'tatlı kaşığı', 'su bardağı',
+                'çay bardağı',
+                'kahve fincanı', 'fincan', 'bardak', 'kaşık', 'gram', 'adet', 'tane', 'diş', 'demet', 'tutam', 'dilim',
+                'avuç',
+                'gr.', 'paket', 'litre', 'bağ', 'damla', 'baget', 'dal', 'küp', 'kilo', 'kilogram', 'yaprak', 'kavanoz',
+                'çimdik', 'kutu']
     for measure in measures:
         if measure in ingredient_string:
             ingredient = ingredient_string.split(measure)
@@ -327,7 +413,7 @@ def parse_ingredient(ingredient_string):
             parse_ingredient_list.append(re.sub(r" ?\([^)]+\)", "", ingredient[1].strip()))
 
             break
-    # eğer ölçü yoksa sadece malzeme adı varsa
+    # eğer ölçü yoksa sadece malzeme adı varsa8
     else:
         if ingredient_string not in parse_ingredient_list:
             parse_ingredient_list.append("")
@@ -355,16 +441,22 @@ def read_food_calories(food_calories_file):
 
 #
 def clean_product_name(name):
-    foods_name_list = MeasureTable.objects.values_list('name', flat=True).distinct()
+    foods_name_list = MeasureTable.objects.values_list('name', flat=True)
     match_amount = 0
+    match_amount2 = 0
     clean_name = "*"
+    clean_name2 = "*"
     for f in foods_name_list:
         if f.lower() in name.lower():
             parsed_f = f.split(" ")
             m = len(parsed_f)
-            if m > match_amount:
-                match_amount = m
+            m2 = len(f)
+            if m2 > match_amount2:
+                match_amount2 = m2
                 clean_name = f
+                if m > match_amount:
+                    match_amount = m
+                    clean_name = f
     # if clean_name == "*":
     #     print(name)
     return clean_name

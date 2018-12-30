@@ -1,0 +1,2429 @@
+Agave şurubu                20
+Akdeniz yeşilliği        paket        150
+Amerikan pirinci        su bardağı        160
+Anjelik cinsi büyük kırmızı erik        gram        1
+Antep fıstığı        kaşık        15
+Antep fıstıklı dondurma        paket        300
+Antep fıstığı                100
+Antep fıstığı        avuç        30
+Antep fıstığı        bardak        175
+Antep fıstığı        fincan        75
+Antep fıstığı        gram        1
+Antep fıstığı        kahve fincanı        75
+Antep fıstığı        su bardağı        175
+Antep fıstığı        yemek kaşığı        15
+Antep fıstığı        çay bardağı        75
+Antep fıstığı        çay kaşığı        6
+Antep fıstığı        çorba kaşığı        20
+Antep fıstığı yağı        çay kaşığı        2
+Armut                200
+Arpa Şehriye        Kahve Fincanı        50
+Arpa Şehriye        Su Bardağı        165
+Arpa Şehriye        Tatlı Kaşığı        7
+Arpa Şehriye        Çay Bardağı        80
+Arpa Şehriye        Çay Kaşığı        2
+Arpa Şehriye        Çorba Kaşığı        20
+Arzu edildiği kadar çilek ya da herhangi bir meyve                150
+Asma yaprağı                50
+Avokado                140
+Ayva çekirdeği                3
+Ayvalık tostu ekmeği        dilim        40
+Ayçiçeği yağı                70
+Badem                30
+Badem        Kahve Fincanı        40
+Badem        Su Bardağı        125
+Badem        Tatlı Kaşığı        8
+Badem        Çay Bardağı        70
+Badem        Çay Kaşığı        4
+Badem        Çorba Kaşığı        20
+Baharat                3
+Bal                5
+Beyaz biber                2
+Beyaz toz biber                2
+Beyaz çikolata                100
+Bezelye                200
+Biberiye                5
+Bitter çikolata                20
+Brüksel lahanası        gram        1
+Bulgur                150
+Bulgur        Kahve Fincanı        50
+Bulgur        Su Bardağı        175
+Bulgur        Tatlı Kaşığı        10
+Bulgur        Çay Bardağı        100
+Bulgur        Çay Bardağı        3
+Bulgur        Çorba Kaşığı        20
+Buğday        Kahve Fincanı        47
+Buğday        Su Bardağı        155
+Buğday        Tatlı Kaşığı        5
+Buğday        Çay Bardağı        70
+Buğday        Çay Kaşığı        2
+Buğday        Çorba Kaşığı        10
+Buğday nişastası                70
+Cajun baharatı        çorba kaşığı        10
+Ceviz İçi        Kahve Fincanı        30
+Ceviz İçi        Su Bardağı        90
+Ceviz İçi        Tatlı Kaşığı        5
+Ceviz İçi        Çay Bardağı        50
+Ceviz İçi        Çay Kaşığı        1
+Ceviz İçi        Çorba Kaşığı        10
+Damla çikolata                111
+Defne yaprağı                111
+Dereotu                0
+Dil                 111
+Dil peyniri                111
+Dil peyniri                30
+Diyet sıvı tatlandırıcı                111
+Dolmalık fıstık                111
+Domates                111
+Domates Salçası        Kahve Fincanı        60
+Domates Salçası        Su Bardağı        200
+Domates Salçası        Tatlı Kaşığı        0
+Domates Salçası        Çay Bardağı        90
+Domates Salçası        Çay Kaşığı        0
+Domates Salçası        Çorba Kaşığı        20
+Dövülmüş Badem        Kahve Fincanı        45
+Dövülmüş Badem        Su Bardağı        125
+Dövülmüş Badem        Tatlı Kaşığı        10
+Dövülmüş Badem        Çay Bardağı        80
+Dövülmüş Badem        Çay Kaşığı        0
+Dövülmüş Badem        Çorba Kaşığı        20
+Dövülmüş Ceviz İçi        Kahve Fincanı        30
+Dövülmüş Ceviz İçi        Su Bardağı        110
+Dövülmüş Ceviz İçi        Tatlı Kaşığı        8
+Dövülmüş Ceviz İçi        Çay Bardağı        60
+Dövülmüş Ceviz İçi        Çay Kaşığı        2
+Dövülmüş Ceviz İçi        Çorba Kaşığı        15
+Dövülmüş Fındık içi        Kahve Fincanı        35
+Dövülmüş Fındık içi        Su Bardağı        115
+Dövülmüş Fındık içi        Tatlı Kaşığı        8
+Dövülmüş Fındık içi        Çay Bardağı        65
+Dövülmüş Fındık içi        Çay Kaşığı        2
+Dövülmüş Fındık içi        Çorba Kaşığı        15
+Ekmek                111
+Elma sirkesi                111
+Eritilmiş Margarin        Kahve Fincanı        67
+Eritilmiş Margarin        Su Bardağı        220
+Eritilmiş Margarin        Tatlı Kaşığı        0
+Eritilmiş Margarin        Çay Bardağı        100
+Eritilmiş Margarin        Çay Kaşığı        0
+Eritilmiş Margarin        Çorba Kaşığı        0
+Erişte        Kahve Fincanı        25
+Erişte        Su Bardağı        80
+Erişte        Tatlı Kaşığı        0
+Erişte        Çay Bardağı        40
+Erişte        Çay Kaşığı        0
+Erişte        Çorba Kaşığı        0
+Erzincan tulum peyniri        yemek kaşığı        5
+Erzincan tulumu        çay bardağı        111
+Erzincan tulumu        çay bardağı        50
+Et suyu                111
+Fasulye turşusu kavurması                111
+Fesleğen                111
+Fesleğen                111
+Fesleğen                2
+Frenk soğanı                111
+Frenk soğanı        demet        111
+Frenk soğanı        gram        111
+Frenk soğanı        çorba kaşığı        111
+Fındık        Kahve Fincanı        35
+Fındık        Su Bardağı        120
+Fındık        Tatlı Kaşığı        0
+Fındık        Çay Bardağı        65
+Fındık        Çay Kaşığı        0
+Fındık        Çorba Kaşığı        20
+Fıstık                111
+Galeta Unu        Kahve Fincanı        30
+Galeta Unu        Su Bardağı        100
+Galeta Unu        Tatlı Kaşığı        5
+Galeta Unu        Çay Bardağı        60
+Galeta Unu        Çay Kaşığı        0
+Galeta Unu        Çorba Kaşığı        15
+Galeta unu                111
+Guacamole                111
+Gıda boyası                111
+Hazır karamel sos                111
+Hazır meyve sosu                111
+Haşhaş                111
+Haşhaş        Kahve Fincanı        40
+Haşhaş        Su Bardağı        110
+Haşhaş        Tatlı Kaşığı        5
+Haşhaş        Çay Bardağı        65
+Haşhaş        Çay Kaşığı        2
+Haşhaş        Çorba Kaşığı        15
+Haşlanmış Nohut        Su bardağı        120
+Haşlanmış yumurta                111
+Hindistan Cevizi        Kahve Fincanı        15
+Hindistan Cevizi        Su Bardağı        50
+Hindistan Cevizi        Tatlı Kaşığı        3
+Hindistan Cevizi        Çay Bardağı        30
+Hindistan Cevizi        Çay Kaşığı        2
+Hindistan Cevizi        Çorba Kaşığı        5
+Hindistan cevizi                111
+Hindistan cevizi        bardak        111
+Hindistan cevizi        fincan        111
+Hindistan cevizi        yemek kaşığı        111
+Hindistan cevizi        çorba kaşığı        111
+Hindistan cevizi rendesi        yemek kaşığı        111
+Humus                111
+Jalapeno                111
+Kabartma tozu                111
+Kahve                111
+Kakao                111
+Kakao        Kahve Fincanı        30
+Kakao        Su Bardağı        100
+Kakao        Tatlı Kaşığı        5
+Kakao        Çay Bardağı        55
+Kakao        Çay Kaşığı        2
+Kakao        Çorba Kaşığı        10
+Kapari çiçeği                111
+Kara lahana                111
+Karabiber                0
+Karamel sos                111
+Karnabahar                111
+Kars gravyeri        gram        1
+Kars gravyeri        gram        111
+Kaymak                111
+Kaşar                111
+Kaşar peyniri                30
+Kedi dili bisküvi                111
+Kekik                111
+Kemalpaşa        paket        111
+Ketçap                111
+Kimyon                0
+Kiraz domates                111
+Kişniş                111
+Kişniş                3
+Kola                111
+Kornişon turşu                111
+Krem peynir                111
+Krem şanti                111
+Krema                111
+Krema        Kahve Fincanı        65
+Krema        Su Bardağı        210
+Krema        Tatlı Kaşığı        0
+Krema        Çay Bardağı        100
+Krema        Çay Kaşığı        0
+Krema        Çorba Kaşığı        0
+Kremşanti                111
+Kremşanti                150
+Krep                111
+Krep                50
+Kuru Fasulye        Kahve Fincanı        55
+Kuru Fasulye        Su Bardağı        180
+Kuru Fasulye        Tatlı Kaşığı        0
+Kuru Fasulye        Çay Bardağı        80
+Kuru Fasulye        Çay Kaşığı        0
+Kuru Fasulye        Çorba Kaşığı        17
+Kuru kayısı                111
+Kuru meyveler                111
+Kuru meyveler                30
+Kuru soğan        1        100
+Kuru üzüm                111
+Kuş üzümü                111
+Külah                111
+Kırmızı Mercimek        Kahve Fincanı        55
+Kırmızı Mercimek        Su Bardağı        180
+Kırmızı Mercimek        Tatlı Kaşığı        0
+Kırmızı Mercimek        Çay Bardağı        80
+Kırmızı Mercimek        Çay Kaşığı        0
+Kırmızı Mercimek        Çorba Kaşığı        17
+Kırmızı biber                111
+Kırmızı lahana                111
+Kırmızı lahana                500
+Kırmızı meyveler                111
+Kırmızı pul biber                0
+Kırmızıbiber                111
+Kırmızıbiber                2
+Kırık buz                111
+Kırık buz                5
+Kıvırcık                111
+Kızarmış ekmek                111
+Limon                111
+Limon tuzu                111
+Lingonberry reçeli                111
+Lor                111
+Lor                150
+Makarna        Kahve Fincanı        35
+Makarna        Su Bardağı        110
+Makarna        Tatlı Kaşığı        0
+Makarna        Çay Bardağı        50
+Makarna        Çay Kaşığı        0
+Makarna        Çorba Kaşığı        15
+Manda kaymağı                111
+Manda kaymağı                30
+Mantar                111
+Maraş dondurması        gram        1
+Maraş dondurması        gram        111
+Margarin        Kahve Fincanı        55
+Margarin        Su Bardağı        180
+Margarin        Tatlı Kaşığı        0
+Margarin        Çay Bardağı        80
+Margarin        Çay Kaşığı        0
+Margarin        Çorba Kaşığı        17
+Marmelat                111
+Marul                100
+Marul                111
+Maydanoz                111
+Maydonoz                111
+Mevsim meyveleri                111
+Mozzarella                 111
+Muskat                111
+Muz                111
+Mısır Unu        Kahve Fincanı        40
+Mısır Unu        Su Bardağı        120
+Mısır Unu        Tatlı Kaşığı        5
+Mısır Unu        Çay Bardağı        60
+Mısır Unu        Çay Kaşığı        0
+Mısır Unu        Çorba Kaşığı        10
+Nar                111
+Nar ekşisi                111
+Nişasta                111
+Nişasta                70
+Nişasta        Kahve Fincanı        30
+Nişasta        Su Bardağı        100
+Nişasta        Tatlı Kaşığı        10
+Nişasta        Çay Bardağı        50
+Nişasta        Çay Kaşığı        0
+Nişasta        Çorba Kaşığı        20
+Nohut        Kahve Fincanı        50
+Nohut        Su Bardağı        170
+Nohut        Tatlı Kaşığı        0
+Nohut        Çay Bardağı        75
+Nohut        Çay Kaşığı        0
+Nohut        Çorba Kaşığı        15
+Norveç somon fileto        gram        111
+Paprika                111
+Parmesan                111
+Pasta süsleri                111
+Pide                111
+Pirinç        Kahve Fincanı        50
+Pirinç        Su Bardağı        175
+Pirinç        Tatlı Kaşığı        10
+Pirinç        Çay Bardağı        100
+Pirinç        Çay Kaşığı        3
+Pirinç        Çorba Kaşığı        20
+Pirinç Unu        Kahve Fincanı        35
+Pirinç Unu        Su Bardağı        125
+Pirinç Unu        Tatlı Kaşığı        5
+Pirinç Unu        Çay Bardağı        70
+Pirinç Unu        Çay Kaşığı        3
+Pirinç Unu        Çorba Kaşığı        20
+Pişmaniye                111
+Portakal                111
+Portakal kabuğu                111
+Pudra Şekeri        Kahve Fincanı        40
+Pudra Şekeri        Su Bardağı        150
+Pudra Şekeri        Tatlı Kaşığı        10
+Pudra Şekeri        Çay Bardağı        100
+Pudra Şekeri        Çay Kaşığı        5
+Pudra Şekeri        Çorba Kaşığı        20
+Pudra şekeri                111
+Rendelenmiş Kaşar         Kahve Fincanı        25
+Rendelenmiş Kaşar         Su Bardağı        75
+Rendelenmiş Kaşar         Tatlı Kaşığı        0
+Rendelenmiş Kaşar         Çay Bardağı        45
+Rendelenmiş Kaşar         Çay Kaşığı        0
+Rendelenmiş Kaşar         Çorba Kaşığı        0
+Renkli draje                111
+Rezene        Kahve Fincanı        0
+Rezene        Su Bardağı        0
+Rezene        Tatlı Kaşığı        3
+Rezene        Çay Bardağı        0
+Rezene        Çay Kaşığı        2
+Rezene        Çorba Kaşığı        9
+Royal icing                111
+Rulo gofret                111
+Rus salatası        gram        111
+Rus salatası        yemek kaşığı        111
+Rus salatası        yemek kaşığı        5
+Salatalık                111
+Salatalık turşusu                111
+Salça                111
+Sarımsak                111
+Sarımsaklı yoğurt                111
+Sirke                111
+Sirke        Kahve Fincanı        70
+Sirke        Su Bardağı        180
+Sirke        Tatlı Kaşığı        5
+Sirke        Çay Bardağı        100
+Sirke        Çay Kaşığı        0
+Sirke        Çorba Kaşığı        10
+Sivri biber                111
+Sos olarak hazırlanmış avokado                111
+Soğan                111
+Su        Kahve Fincanı        75
+Su        Su Bardağı        250
+Su        Tatlı Kaşığı        4
+Su        Çay Bardağı        100
+Su        Çay Kaşığı        0
+Su        Çorba Kaşığı        15
+Susam                111
+Susam        Kahve Fincanı        40
+Susam        Su Bardağı        110
+Susam        Tatlı Kaşığı        4
+Susam        Çay Bardağı        65
+Susam        Çay Kaşığı        0
+Susam        Çorba Kaşığı        10
+Süsleme şekerleri                111
+Süslemek için                111
+Süt                111
+Süt        Kahve Fincanı        75
+Süt        Su Bardağı        250
+Süt        Tatlı Kaşığı        4
+Süt        Çay Bardağı        115
+Süt        Çay Kaşığı        0
+Süt        Çorba Kaşığı        15
+Süzme yoğurt                111
+Sıvı Yağ        Kahve Fincanı        60
+Sıvı Yağ        Su Bardağı        170
+Sıvı Yağ        Tatlı Kaşığı        4
+Sıvı Yağ        Yemek Kaşığı        10
+Sıvı Yağ        Çay Bardağı        100
+Sıvı Yağ        Çay Kaşığı        0
+Sıvı Yağ        Çorba Kaşığı        10
+Sıvı yağ                111
+Taco ekmeği                111
+Tane karabiber                111
+Tarçın                111
+Tarçın        Kahve Fincanı        0
+Tarçın        Su Bardağı        0
+Tarçın        Tatlı Kaşığı        6
+Tarçın        Çay Bardağı        0
+Tarçın        Çay Kaşığı        4
+Tarçın        Çorba Kaşığı        20
+Tatlı soya sosu                111
+Taze fesleğen                111
+Taze fesleğen                2
+Taze kekik                111
+Taze nane                111
+Taze soğan                10
+Taze soğan                111
+Taze zencefil                111
+Taze zencefil                50
+Tereyağı                111
+Ton balığı                111
+Tortilla cipsi                111
+Tost                 111
+Tost peyniri                25
+Toz kişniş                0
+Toz Şeker        Kahve Fincanı        50
+Toz Şeker        Su Bardağı        175
+Toz Şeker        Tatlı Kaşığı        8
+Toz Şeker        Çay Bardağı        100
+Toz Şeker        Çay Kaşığı        4
+Toz Şeker        Çorba Kaşığı        20
+Toz şeker                111
+Tulum                 111
+Tulum peyniri                111
+Turşu                111
+Turşu                50
+Tuz                0
+Tuz        Kahve Fincanı        0
+Tuz        Su Bardağı        0
+Tuz        Tatlı Kaşığı        10
+Tuz        Çay Bardağı        0
+Tuz        Çay Kaşığı        5
+Tuz        Çorba Kaşığı        20
+Türk kahvesi        tatlı kaşığı        111
+Türk kahvesi        yemek kaşığı        111
+Türk kahvesi        çay kaşığı        111
+Un                111
+Un        Kahve Fincanı        40
+Un        Su Bardağı        110
+Un        Tatlı Kaşığı        10
+Un        Çay Bardağı        65
+Un        Çay Kaşığı        4
+Un        Çorba Kaşığı        20
+Vanilya                111
+Vanilyalı dondurma                111
+Vişne                111
+Vişne                50
+Wasabi                111
+Yağlı kağıt                111
+Yengeç eti                111
+Yeni bahar                111
+Yeni bahar                3
+Yenibahar                111
+Yeşil biber                111
+Yeşil fıstık                111
+Yeşil fıstık                20
+Yeşil soğan                111
+Yeşillik                111
+Yeşillik                200
+Yoğurt                111
+Yoğurt        Kahve Fincanı        64
+Yoğurt        Su Bardağı        210
+Yoğurt        Tatlı Kaşığı        20
+Yoğurt        Çay Bardağı        120
+Yoğurt        Çay Kaşığı        0
+Yoğurt        Çorba Kaşığı        40
+Yumurta sarısı                111
+Zerdeçal                111
+Zerdeçal                5
+Zeytin ezmesi                111
+Zeytinyağı                111
+Zeytinyağı        Kahve Fincanı        65
+Zeytinyağı        Su Bardağı        220
+Zeytinyağı        Tatlı Kaşığı        0
+Zeytinyağı        yemek kaşığı        6
+Zeytinyağı        Çay Bardağı        100
+Zeytinyağı        Çay Kaşığı        0
+Zeytinyağı        Çorba Kaşığı        22
+acur        gram        111
+acı kırmızı biber        çorba kaşığı        111
+acı pul biber        çay kaşığı        111
+acı pul biber        çorba kaşığı        111
+acı sos        tatlı kaşığı        111
+acı toz kırmızı biber        çay kaşığı        111
+adaçayı        demet        111
+adaçayı yaprağı        adet        1
+adaçayı yaprağı        adet        111
+adaçayı yaprağı        tutam        111
+agave şurubu        tatlı kaşığı        111
+agave şurubu        tatlı kaşığı        2
+ahududu        gram        1
+ahududu        gram        111
+ak biber        tatlı kaşığı        5
+ak biber        tutam        1
+akçaağaç şurubu        yemek kaşığı        111
+alabalık        adet        111
+alabaş        adet        111
+alkol        gram        111
+amber        gram        111
+ananas        dilim        111
+ananas suyu        bardak        111
+anason        tatlı kaşığı        111
+anason        tatlı kaşığı        5
+antrikot        gram        1
+antrikot        gram        111
+ançuez        adet        111
+ançüez        adet        111
+ançüez        gram        111
+ançüez fileto        kutu        111
+arborio pirinci        su bardağı        111
+armut        adet        111
+armut        adet        200
+armut sapı                111
+arpa şehriye        paket        111
+arpacık soğan        adet        111
+arpacık soğan        gram        111
+arpacık soğanı        adet        111
+arpacık soğanı        gram        111
+asma yaprağı        gram        1
+aspir        tutam        111
+atom salata        adet        111
+avokado        adet        111
+avokado        adet        140
+avokado        dilim        111
+avokado püresi        yemek kaşığı        111
+ay çekirdeği        çay bardağı        111
+ay çekirdeği        çay bardağı        40
+ay çekirdeği içi        gram        111
+ay çekirdeği içi        yemek kaşığı        10
+ay çekirdeği içi        yemek kaşığı        111
+ayran        su bardağı        111
+ayran        su bardağı        150
+ayva        adet        111
+ayva        adet        250
+ayva        gram        1
+ayva        gram        111
+ayva        tane        111
+ayva        tane        250
+ayçiçek yağı                6
+ayçiçek yağı        su bardağı        111
+ayçiçeği yağı        bardak        111
+ayçiçeği yağı        kaşık        111
+ayçiçeği yağı        litre        111
+ayçiçeği yağı        su bardağı        111
+ayçiçeği yağı        yemek kaşığı        10
+ayçiçeği yağı        yemek kaşığı        111
+ayçiçeği yağı        çay bardağı        111
+ayçiçeği yağı        çay bardağı        70
+açık deniz somonu        adet        111
+aşurelik buğday        gram        111
+aşurelik buğday        su bardağı        111
+baby şiş        gram        111
+badem                111
+badem        gram        111
+badem        kase        111
+badem        yemek kaşığı        111
+badem aroması        damla        111
+badem ezmesi        fincan        111
+badem ezmesi        gram        111
+badem sütü        bardak        111
+badem sütü        su bardağı        111
+badem tozu        gram        111
+badem unu        gram        111
+badem unu        çay bardağı        111
+baget        adet        111
+baget        adet        300
+baharat        bağ        111
+baharatlı kutu peynir        gram        111
+bakla        gram        111
+baklava yufkası        adet        111
+baklava yufkası        yaprak        111
+baklavalık yufka        adet        111
+baklavalık yufka        paket        111
+baklavalık yufka        paket        800
+bal                111
+bal        bağ        111
+bal        fincan        111
+bal        gram        111
+bal        kahve fincanı        111
+bal        kaşık        111
+bal        litre        111
+bal        su bardağı        111
+bal        tatlı kaşığı        111
+bal        tatlı kaşığı        5
+bal        yemek kaşığı        10
+bal        yemek kaşığı        111
+bal        çay bardağı        111
+bal        çay bardağı        50
+bal        çay kaşığı        111
+bal        çorba kaşığı        10
+bal        çorba kaşığı        111
+bal kabağı        gram        111
+bal kabağı tatlısı        su bardağı        111
+balbakağı        dilim        111
+balkabağı        adet        111
+balkabağı        dilim        111
+balkabağı        gram        111
+balkabağı        su bardağı        111
+balkabağı püresi        su bardağı        111
+bamya        adet        111
+bamya        gram        1
+bamya        gram        111
+bayat ekmek        adet        111
+bayat ekmek        adet        200
+bayat ekmek        avuç        111
+bayat ekmek        dilim        111
+bayat ekmek        dilim        30
+bayat ekmek        su bardağı        111
+bayat ekmek kırıntısı        su bardağı        111
+bayat ekmeğin içi        dilim        111
+bayat kepekli ekmek        bardak        111
+bazlama        adet        111
+bazlama ekmeği        adet        111
+bazlama ekmeği        adet        60
+beyaz biber        çay kaşığı        111
+beyaz biber        çay kaşığı        2
+beyaz ekmek hamuru        adet        111
+beyaz ekmek unu        gram        111
+beyaz lahana        adet        111
+beyaz lahana        adet        700
+beyaz marshmallow        tane        10
+beyaz marshmallow        tane        111
+beyaz peynir                111
+beyaz peynir        adet        111
+beyaz peynir        avuç        111
+beyaz peynir        dilim        111
+beyaz peynir        gram        1
+beyaz peynir        gram        111
+beyaz peynir        kase        111
+beyaz peynir        kutu        111
+beyaz peynir        parça        111
+beyaz peynir        su bardağı        111
+beyaz peynir        yemek kaşığı        111
+beyaz rom        litre        111
+beyaz çikolata        gram        111
+beyaz çikolata        parça        111
+beyaz şarap        bardak        111
+beyaz şarap        litre        111
+beyaz şarap        çay bardağı        111
+beyaz şarap sirkesi        çorba kaşığı        111
+beze        adet        111
+bezelye        avuç        111
+bezelye        bardak        111
+bezelye        bardak        300
+bezelye        gram        111
+bezelye        su bardağı        300
+bezelye        çay bardağı        111
+bezelye konservesi        adet        111
+beşamel sos        paket        111
+beşamel sos        paket        70
+beşamel sos        su bardağı        111
+biber                111
+biber        adet        111
+biber        adet        20
+biber        gram        111
+biber        parça        111
+biber        çay kaşığı        111
+biber salçası        tatlı kaşığı        5
+biber salçası        yemek kaşığı        10
+biberiye        dal        111
+biberiye        tatlı kaşığı        111
+biberiye        yemek kaşığı        111
+biberiye        çay kaşığı        111
+biberiye dalı        adet        111
+biberiye yaprağı        çay kaşığı        111
+biberli salam        gram        111
+biftek        adet        111
+biftek        dilim        111
+biftek        dilim        60
+bira        su bardağı        111
+bira        yemek kaşığı        111
+bisküvi        adet        111
+bisküvi        paket        111
+bisküvi        paket        175
+bitkisel tatlandırıcı        tatlı kaşığı        111
+bitkisel yağ        yemek kaşığı        111
+bitkisel yağ        çorba kaşığı        111
+bitkisel yağ        çorba kaşığı        12
+bitter çikolata        gram        1
+bitter çikolata        gram        111
+bitter çikolata        paket        111
+bonfile        adet        111
+bonfile        gram        1
+boza        yemek kaşığı        111
+brokoli        adet        111
+brokoli        avuç        111
+brokoli        gram        1
+brokoli        gram        111
+brokoli        parça        111
+brokoli        parça        20
+brokoli        su bardağı        111
+bulgur        bardak        111
+bulgur        gram        1
+bulgur        gram        111
+burger ekmeği        adet        52
+buz        adet        111
+buz        küp        111
+buz        küp        5
+buz        su bardağı        111
+buz küpü        adet        111
+buz küpü        adet        5
+buzlu su        çay bardağı        111
+buğday        avuç        30
+buğday        gram        111
+buğday        yemek kaşığı        111
+buğday nişastası        gram        111
+buğday nişastası        paket        111
+buğday nişastası        su bardağı        111
+buğday nişastası        tatlı kaşığı        111
+buğday nişastası        yemek kaşığı        111
+buğday nişastası        çay bardağı        111
+buğday nişastası        çorba kaşığı        111
+buğday unu                111
+buğday unu        gram        111
+buğday unu        su bardağı        111
+böbrek        adet        111
+börülce        gram        1
+börülce        gram        111
+börülce        su bardağı        111
+böğürtlen        adet        111
+böğürtlen        gram        111
+böğürtlen        kase        111
+böğürtlen        kase        225
+böğürtlen        su bardağı        111
+bütün ufak kuzu        adet        111
+büyük boy domates        adet        140
+bıldırcın        adet        111
+ceviz                111
+ceviz                25
+ceviz        adet        111
+ceviz        avuç        25
+ceviz        bardak        111
+ceviz        gram        111
+ceviz        kahve fincanı        111
+ceviz        kase        111
+ceviz        su bardağı        111
+ceviz        su bardağı        50
+ceviz        yemek kaşığı        10
+ceviz        yemek kaşığı        111
+ceviz        çay bardağı        111
+ceviz        çorba kaşığı        111
+ceviz içi        gram        111
+cheddar        dilim        15
+cheddar        gram        111
+cheddar        su bardağı        111
+cheddar peyniri        dilim        15
+cheddar peyniri        su bardağı        30
+chia tohumu        tatlı kaşığı        111
+chia tohumu        yemek kaşığı        111
+chia tohumu        çorba kaşığı        10
+chia tohumu        çorba kaşığı        111
+chili biber        adet        18
+chilli biberi        adet        18
+cips        paket        111
+ciğer        gram        1
+ciğer        gram        111
+damla sakızı        adet        111
+damla sakızı        paket        111
+damla sakızı        parça        111
+damla sakızı        parça        3
+damla sakızı        çay kaşığı        111
+damla çikolata        gram        111
+damla çikolata        su bardağı        111
+damla çikolata        yemek kaşığı        111
+damla çikolata        çay bardağı        111
+dana biftek        gram        111
+dana ciğer        adet        111
+dana ciğer        gram        1
+dana ciğeri        adet        111
+dana ciğeri        gram        1
+dana eti        gram        111
+dana jambon        gram        1
+dana jambon        gram        111
+dana kuşbaşı        gram        111
+dana kuşbaşı et        gram        1
+dana külbastı eti        gram        111
+dana kıyma        gram        1
+dana rosto        gram        111
+dana şinitzel        gram        111
+dana şnitzel        gram        1
+dana şnitzel        gram        111
+dağ kekiği        tatlı kaşığı        111
+dağ kekiği        tatlı kaşığı        2
+defne        yaprak        111
+defne yaprağı        adet        1
+defne yaprağı        dal        111
+demlenmiş sıcak çay        su bardağı        111
+deniz börülcesi        avuç        100
+deniz tuzu        avuç        111
+deniz tuzu        gram        111
+deniz tuzu        tatlı kaşığı        111
+deniz tuzu        çay kaşığı        111
+deniz çuprası        adet        111
+dereotu        bağ        100
+dereotu        dal        111
+dereotu        demet        111
+dereotu        tutam        111
+dereotu        yemek kaşığı        111
+dereotu        çay bardağı        111
+dereotu        çorba kaşığı        111
+derisiz tavuk eti        parça        111
+dil        gram        111
+dil         dilim        111
+dil         paket        111
+dil peyniri        gram        111
+dil peyniri        paket        111
+dil peyniri        paket        250
+dolma baharı        tatlı kaşığı        111
+dolma baharı        çay kaşığı        111
+dolma fıstığı        kahve fincanı        111
+dolma fıstığı        yemek kaşığı        111
+dolmalık biber        adet        111
+dolmalık biber        gram        111
+dolmalık fıstık        adet        111
+dolmalık fıstık        fincan        111
+dolmalık fıstık        gram        1
+dolmalık fıstık        gram        111
+dolmalık fıstık        paket        111
+dolmalık fıstık        yemek kaşığı        25
+dolmalık fıstık        çay bardağı        111
+dolmalık fıstık        çorba kaşığı        111
+dolmalık üzüm        çay bardağı        111
+domates        adet        110
+domates        adet        111
+domates        gram        111
+domates        kilo        111
+domates        kutu        111
+domates        su bardağı        111
+domates        tane        111
+domates        yemek kaşığı        25
+domates salçası        kaşık        111
+domates salçası                20
+domates salçası        gram        111
+domates salçası        yemek kaşığı        20
+domates suyu        su bardağı        111
+domates suyu        çorba kaşığı        111
+dondurma                111
+dondurma        gram        1
+dondurma        gram        111
+dondurulmuş bezelye        gram        111
+dondurulmuş kırmızı orman meyveleri        gram        1
+dondurulmuş kırmızı orman meyveleri        gram        111
+dondurulmuş muz        dilim        111
+dondurulmuş yengeç eti        gram        111
+donmuş karpuz        dilim        111
+donmuş karpuz        dilim        350
+doğal tatlandırıcı        çay kaşığı        111
+doğranmış havuç        bardak        111
+doğranmış siyah zeytin        su bardağı        111
+doğranmış ıspanak        bardak        111
+draje çikolata        paket        111
+draje şeker        paket        111
+dut        su bardağı        111
+dövmelik buğday        bardak        111
+dövülmüş ceviz        su bardağı        200
+dövülmüş ceviz        çay bardağı        111
+dövülmüş kuru yemiş        kase        111
+düşük yağlı krema        gram        111
+ebegümeci        bağ        111
+ebegümeci        gram        111
+ekmek        baget        111
+ekmek        dilim        111
+ekmek        dilim        25
+ekmek içi        su bardağı        111
+ekmek içi        yemek kaşığı        111
+ekmek kırıntısı        kaşık        111
+ekmek kırıntısı        su bardağı        111
+ekmek kırıntısı        yemek kaşığı        25
+ekmek unu        su bardağı        111
+ekmeklik hamur        adet        111
+ekmeğin içi        adet        111
+ekşi krema        gram        111
+ekşi maya        gram        1
+ekşi maya        gram        111
+ekşi mayalı ekmek        adet        111
+ekşimik        su bardağı        111
+elma                111
+elma        adet        100
+elma        adet        111
+elma        bardak        111
+elma püresi        su bardağı        111
+elma sirkesi        litre        111
+elma sirkesi        tatlı kaşığı        111
+elma sirkesi        yemek kaşığı        111
+elma sirkesi        çay bardağı        111
+elma sirkesi        çorba kaşığı        111
+elma suyu        su bardağı        111
+enginar kalbi        adet        111
+enginar kalbi        parça        111
+enginar suyu        çay bardağı        111
+erik        gram        111
+erik ekşisi        tatlı kaşığı        111
+erik marmeladı        kavanoz        111
+eritilmiş tereyağı        gram        111
+eritilmiş tereyağı        paket        111
+eritilmiş tereyağı        yemek kaşığı        111
+eritilmiş tereyağı        çay bardağı        111
+erişte        avuç        111
+erişte        bardak        111
+esmer seker        tatlı kaşığı        111
+esmer şeker        bardak        111
+esmer şeker        fincan        111
+esmer şeker        gram        111
+esmer şeker        su bardağı        111
+esmer şeker        yemek kaşığı        13
+esmer şeker        çay bardağı        111
+esmer şeker        çay kaşığı        111
+esmer şeker        çorba kaşığı        111
+espresso        litre        111
+et bulyon        su bardağı        111
+et suyu        küp        111
+et suyu        litre        111
+et suyu        su bardağı        111
+etil alkol        gram        111
+ev yoğurdu        yemek kaşığı        111
+ev yoğurdu        yemek kaşığı        20
+evelik yaprağı        bağ        111
+ezilmiş vanilya çubuğu        adet        111
+fasulye        gram        111
+fasulye        su bardağı        111
+fesleğen                111
+fesleğen        dal        111
+fesleğen        gram        111
+fesleğen        yaprak        111
+fesleğen        yemek kaşığı        111
+fesleğen        çay kaşığı        111
+fesleğen        çorba kaşığı        111
+fesleğen yaprağı                111
+fesleğen yaprağı        paket        111
+fettuccine        gram        1
+fettuccine        gram        111
+fettuccini        gram        111
+file fıstık        gram        111
+firik        su bardağı        111
+frambuaz                111
+frambuaz        adet        111
+frambuaz        gram        111
+frambuaz        kase        100
+frambuaz        kase        111
+frenk soğanı        avuç        111
+füme dil        dilim        111
+fındık                111
+fındık                24
+fındık        bardak        111
+fındık        gram        111
+fındık        kase        111
+fındık        yemek kaşığı        111
+fındık ezmesi        yemek kaşığı        111
+fındık ezmesi        çorba kaşığı        111
+fındık yağı        yemek kaşığı        111
+fırın poşeti        adet        0
+fırın poşeti        adet        111
+fıstık                111
+fıstık        yemek kaşığı        111
+fıstık        çorba kaşığı        111
+fıstık ezmesi        yemek kaşığı        111
+fıstık ezmesi        yemek kaşığı        12
+fıstık içi        yemek kaşığı        10
+fıstık içi        yemek kaşığı        111
+galeta unu        fincan        111
+galeta unu        gram        111
+galeta unu        kase        111
+galeta unu        yemek kaşığı        10
+galeta unu        yemek kaşığı        111
+garam masala        çorba kaşığı        111
+garnitür        avuç        111
+garnitür        paket        111
+gazoz        çay bardağı        111
+glikoz        yemek kaşığı        111
+granola        yemek kaşığı        111
+granül bezelye proteini        gram        111
+granül kahve        tatlı kaşığı        111
+granül kahve        tatlı kaşığı        2
+granül kahve        yemek kaşığı        111
+granül kahve        yemek kaşığı        5
+greyfurt        adet        111
+greyfurt        tane        111
+göbek        adet        111
+göbek salata        adet        111
+göce        su bardağı        111
+göğüs eti        adet        111
+gül yaprağı        gram        111
+gül şerbeti        yemek kaşığı        111
+güllaç        paket        111
+güllaç        yaprak        111
+güllaç yaprağı        adet        111
+güllaç yaprağı        gram        111
+güllaç yaprağı        tane        111
+güllaç yaprağı        tane        35
+güllaç yufkası        adet        111
+güllü lokum        adet        111
+gıda boyası        damla        111
+hamburger ekmeği        dilim        111
+hamsi        adet        10
+hamsi        gram        111
+hardal        tatlı kaşığı        111
+hardal        tatlı kaşığı        5
+hardal        yemek kaşığı        15
+hardal        çay kaşığı        111
+havuc        adet        111
+havuç        adet        40
+havuç        gram        111
+havuç        su bardağı        111
+havuç        tane        111
+hazır barbekü sos        yemek kaşığı        111
+hazır barbekü sos        yemek kaşığı        23
+hazır beyaz çikolata sos        paket        111
+hazır granül kahve        yemek kaşığı        111
+hazır granül kahve        yemek kaşığı        5
+hazır kahve        bardak        111
+hazır kahve        tatlı kaşığı        111
+hazır kahve        yemek kaşığı        111
+hazır kahve        yemek kaşığı        4
+hazır karamel sos        su bardağı        111
+hazır krep hamuru karışımı        gram        111
+hazır köfte        adet        111
+hazır köfte harcı        gram        111
+hazır lazanya hamuru        parça        111
+hazır mantı        paket        111
+hazır mantı        paket        400
+hazır pandispanya        adet        111
+hazır pasta tabanı        paket        111
+hazır sıvı salep        su bardağı        111
+hazır sıvı salep        su bardağı        200
+hazır çiğ krema        bardak        111
+hazır çiğ krema        su bardağı        111
+haşhaş        yemek kaşığı        111
+haşlanmış et        gram        1
+haşlanmış et        gram        111
+haşlanmış kefal        gram        111
+haşlanmış mısır        adet        111
+haşlanmış mısır        yemek kaşığı        111
+haşlanmış mısır taneleri        yemek kaşığı        111
+haşlanmış nohut        bardak        111
+haşlanmış pancar        dilim        111
+haşlanmış yumurta        adet        111
+hellim        gram        111
+hellim        paket        111
+hellim         adet        111
+hellim peyniri        gram        111
+hibiskus        yaprak        111
+hindi        gram        1
+hindi        gram        111
+hindi göğsü        gram        1
+hindi göğsü        gram        111
+hindi göğüs        adet        111
+hindi göğüs        adet        60
+hindi jambon        adet        111
+hindi jambon        dilim        111
+hindistan cevizi        gram        111
+hurma        adet        111
+hurma        adet        15
+hurma        gram        111
+hurma        çay bardağı        111
+ilikli kemik        adet        111
+ilikli kemik        gram        111
+ilikli kemik        parça        111
+in üzerinde yazan miktarda süt        paket        111
+ince bulgur        bardak        111
+ince bulgur        bardak        165
+ince bulgur        su bardağı        165
+ince bulgur        çay bardağı        100
+ince bulgur        çay bardağı        111
+ince doğranmış mantar        su bardağı        111
+incir        adet        111
+incir        gram        111
+instant maya        paket        10
+instant maya        paket        111
+instant maya        tatlı kaşığı        111
+iri domates        tane        111
+irmik        avuç        111
+irmik        bardak        111
+irmik        bardak        200
+irmik        gram        1
+irmik        gram        111
+irmik        kahve fincanı        111
+irmik        kahve fincanı        60
+irmik        kaşık        10
+irmik        kaşık        111
+irmik        kilo        111
+irmik        paket        111
+irmik        su bardağı        111
+irmik        su bardağı        200
+irmik        yemek kaşığı        10
+irmik        yemek kaşığı        111
+irmik        çay bardağı        100
+irmik        çay bardağı        111
+irmik        çay kaşığı        111
+irmik        çay kaşığı        2
+irmik        çorba kaşığı        10
+irmik        çorba kaşığı        111
+isot        yemek kaşığı        111
+isot        yemek kaşığı        49
+isot        çorba kaşığı        111
+isot        çorba kaşığı        49
+iç badem                111
+iç midye        adet        111
+iç yağı        gram        1
+iç yağı        gram        111
+işkembe        gram        111
+jalapeno biber        adet        40
+jalapeno biberi        gram        111
+jambon        dilim        111
+jelatin        tatlı kaşığı        111
+jelatin        yaprak        111
+julyen doğranmış bonfile        dilim        111
+julyen doğranmış sucuk        dilim        111
+jöle                111
+jöle                50
+jöle        litre        111
+jöle        paket        111
+kabak                111
+kabak        adet        150
+kabak        gram        111
+kabak        su bardağı        111
+kabak        tane        111
+kabak çekirdeği        avuç        111
+kabak çekirdeği        gram        111
+kabak çekirdeği        çay bardağı        111
+kabak çekirdeği        çorba kaşığı        111
+kabak çekirdeği içi        yemek kaşığı        111
+kabarma tozu        paket        111
+kabartma toz        paket        111
+kabartma tozu        adet        111
+kabartma tozu        gram        111
+kabartma tozu        kaşık        111
+kabartma tozu        paket        11
+kabartma tozu        tatlı kaşığı        111
+kabartma tozu        çay kaşığı        111
+kabartma tozu        çorba kaşığı        111
+kadayıf        gram        1
+kadayıf        gram        111
+kahve        tane        111
+kahve        tatlı kaşığı        111
+kahve        yemek kaşığı        10
+kahve        yemek kaşığı        111
+kahve        çay bardağı        111
+kahve        çorba kaşığı        111
+kahve likörü        litre        111
+kaju        adet        111
+kakao        bardak        111
+kakao        gram        111
+kakao        kase        111
+kakao        kaşık        111
+kakao        yemek kaşığı        111
+kakaolu fındık kreması        bardak        111
+kakaolu kavrulmuş bisküvi        paket        111
+kakaolu kek        dilim        111
+kakaolu kremalı bisküvi        adet        111
+kakaolu kremalı kurabiye        adet        111
+kakaolu pirinç patlağı        gram        111
+kakule        tatlı kaşığı        111
+kakule        çay kaşığı        111
+kalamar        gram        1
+kalamar        gram        111
+kalkan fileto        parça        111
+kalçalı but        adet        111
+kanat        adet        111
+kapari        yemek kaşığı        9
+kapya biber        adet        50
+kapya biber        tane        111
+kara biber        tatlı kaşığı        5
+kara havuç        gram        111
+karabiber        adet        1
+karabiber        tane        111
+karabiber        tatlı kaşığı        5
+karabiber        tutam        1
+karabiber        yemek kaşığı        111
+karabiber        çay kaşığı        111
+karabiber        çorba kaşığı        111
+karadut                111
+karalahana        demet        111
+karalahana        yaprak        111
+karamel kıtırı        gram        111
+karamelli dondurma        paket        111
+karanfil        adet        111
+karanfil        diş        111
+karanfil        gram        111
+karanfil        tane        111
+karanfil        tatlı kaşığı        111
+karanfil        tatlı kaşığı        14
+karanfil        çay kaşığı        111
+karanfilin top kısmı        adet        1
+karbonat        paket        10
+karbonat        tatlı kaşığı        111
+karbonat        çay kaşığı        111
+karides                111
+karides        adet        111
+karides        gram        1
+karides        gram        111
+karides        su bardağı        111
+karnabahar        adet        111
+karnabahar        adet        600
+karnabahar        su bardağı        111
+karpuz        dilim        111
+karışık meyveli buğday ve pirinç gevreği        gram        111
+kaşar        kaşık        111
+kaşar peyniri        kaşık        111
+kavrulmuş dolmalık fıstık        adet        111
+kavun        dilim        111
+kavurma        gram        1
+kavurma        gram        111
+kaymak        gram        111
+kaymak        yemek kaşığı        10
+kaymak        yemek kaşığı        111
+kaymak        çorba kaşığı        111
+kaymaklı süt        su bardağı        111
+kayısı        adet        111
+kaşar                111
+kaşar        dilim        111
+kaşar        dilim        25
+kaşar        fincan        111
+kaşar        gram        111
+kaşar        su bardağı        111
+kaşar        su bardağı        200
+kaşar        çay bardağı        111
+kaşar        çorba kaşığı        111
+kaşar peyniri                111
+kaşar peyniri        adet        111
+kaşar peyniri        dilim        111
+kaşar peyniri        gram        1
+kaşar peyniri        gram        111
+kaşar peyniri        kase        111
+kaşar peyniri        su bardağı        111
+kaşar peyniri        su bardağı        200
+kaşar peyniri        yemek kaşığı        111
+kaşar peyniri        çay bardağı        111
+kaşar peyniri        çorba kaşığı        111
+kaşar peyniri         kase        111
+kaşar peyniri         yaprak        111
+kaşar peyniri rendesi        gram        111
+kedi dili        paket        100
+kedi dili        paket        111
+kedi dili bisküvisi        gram        111
+kedidili bisküvi        adet        111
+kedidili bisküvisi        paket        111
+kefir        litre        111
+kek                111
+kek        adet        111
+kek        su bardağı        111
+kek karışımı        çay bardağı        111
+kekik        dal        111
+kekik        gram        111
+kekik        tatlı kaşığı        111
+kekik        tutam        1
+kekik        yemek kaşığı        111
+kekik        çay kaşığı        111
+kekik        çay kaşığı        2
+kekik        çorba kaşığı        111
+kemikli et        gram        111
+kemiksiz but        adet        111
+kemiksiz piliç but        adet        111
+kenevir tohumu        yemek kaşığı        111
+kepek        su bardağı        111
+kepek ekmeği        dilim        111
+kepekli un        yemek kaşığı        111
+kepekli yuvarlak ekmek        adet        111
+kereviz        adet        200
+kereviz        dal        111
+kereviz        gram        111
+kereviz sapı        adet        111
+kereviz sapı        dal        111
+kereviz sapı        tutam        111
+kesme şeker        adet        111
+kesme şeker        tane        111
+kestane        gram        1
+kestane        gram        111
+kestane        çorba kaşığı        111
+keten tohumu        gram        111
+keten tohumu        su bardağı        111
+keten tohumu        su bardağı        150
+keten tohumu        tatlı kaşığı        111
+keten tohumu        yemek kaşığı        111
+keten tohumu        yemek kaşığı        15
+keten tohumu        çay bardağı        111
+ketçap        kaşık        111
+ketçap        yemek kaşığı        20
+keçi         yemek kaşığı        111
+keçi boynuzu tozu        yemek kaşığı        111
+keçi boynuzu özütü        çorba kaşığı        111
+keçi boynuzu özütü        çorba kaşığı        6
+keçi sütü        gram        111
+keçi yoğurdu        çay bardağı        111
+keçiboynuzu tozu        fincan        111
+kimyon        gram        111
+kimyon        tatlı kaşığı        4
+kimyon        tutam        1
+kimyon        yemek kaşığı        15
+kimyon        çay kaşığı        111
+kinoa        su bardağı        111
+kinoa        su bardağı        126
+kinoa        çay bardağı        111
+kiraz        adet        111
+kiraz        su bardağı        111
+kiraz domates        gram        111
+kiraz püresi        bardak        111
+kivi        adet        111
+kişniş        dal        111
+kişniş        fincan        111
+kişniş        yemek kaşığı        111
+kişniş        çay kaşığı        111
+kokteyl sosis        adet        15
+konserve bezelye        kutu        111
+konserve garnitür        kutu        111
+konserve mantar        yemek kaşığı        111
+konyak        yemek kaşığı        111
+kornişon        bardak        111
+kornişon turşu        adet        20
+kornişon turşu        su bardağı        111
+koruk                111
+koruk ekşisi        tatlı kaşığı        111
+koruk ekşisi        çay kaşığı        111
+koruk suyu        çorba kaşığı        111
+krem peynir        gram        111
+krem peynir        paket        111
+krem peynir        su bardağı        111
+krem peynir        yemek kaşığı        111
+krem santi        paket        111
+krem santi        paket        150
+krem santi        paket        75
+krem şanti        gram        111
+krem şanti        paket        111
+krem şanti        paket        75
+krem şanti        yemek kaşığı        111
+krema        bardak        111
+krema        fincan        111
+krema        gram        111
+krema        kutu        111
+krema        litre        111
+krema        paket        111
+krema        yemek kaşığı        10
+kremşanti        paket        111
+kruton ekmeği        çay bardağı        111
+kurkuma        çay kaşığı        111
+kuru acı biber        adet        2
+kuru bakla        gram        1
+kuru bakla        gram        111
+kuru börülce        gram        1
+kuru börülce        gram        111
+kuru dolma        bağ        111
+kuru domates        parça        111
+kuru domates        çay bardağı        111
+kuru erik        gram        1
+kuru erik        gram        111
+kuru fasulye        bardak        111
+kuru fasulye        gram        1
+kuru fasulye        gram        111
+kuru hurma        adet        111
+kuru hurma        gram        111
+kuru incir                111
+kuru incir                30
+kuru incir        adet        111
+kuru incir        adet        20
+kuru incir        gram        1
+kuru incir        gram        111
+kuru kayısı        adet        111
+kuru kayısı        bardak        111
+kuru kayısı        gram        1
+kuru kayısı        gram        111
+kuru kayısı        su bardağı        111
+kuru kekik                1
+kuru kekik        tatlı kaşığı        111
+kuru kızılcık        gram        111
+kuru lavanta        gram        1
+kuru lavanta        gram        111
+kuru maya        bardak        111
+kuru maya        paket        111
+kuru maya        tatlı kaşığı        111
+kuru maya        yemek kaşığı        111
+kuru maya        yemek kaşığı        18
+kuru mürdüm eriği        adet        111
+kuru nane                1
+kuru nane        tatlı kaşığı        2
+kuru nane        yemek kaşığı        3
+kuru soğan                100
+kuru soğan        adet        100
+kuru yemiş        kase        111
+kuru çay        yemek kaşığı        10
+kuru çay        yemek kaşığı        111
+kuru üzüm        adet        111
+kuru üzüm        fincan        111
+kuru üzüm        gram        111
+kuru üzüm        kahve fincanı        111
+kuru üzüm        su bardağı        111
+kuru üzüm        su bardağı        200
+kuru üzüm        yemek kaşığı        111
+kuru üzüm        çay bardağı        111
+kuru İzmir üzümü        yemek kaşığı        111
+kurutulmuş domates        parça        111
+kurutulmuş kızılcık        gram        111
+kurutulmuş mürdüm eriği        gram        1
+kurutulmuş mürdüm eriği        gram        111
+kurutulmuş sebze karışımı        çay bardağı        111
+kuskus        bardak        111
+kuskus        bardak        200
+kuskus        su bardağı        111
+kuzu beyni        adet        111
+kuzu budu        gram        111
+kuzu but        gram        1
+kuzu ciğer        adet        111
+kuzu eti        gram        1
+kuzu eti        gram        111
+kuzu gerdanı        gram        111
+kuzu incik        adet        362
+kuzu incik        gram        111
+kuzu kelle        adet        111
+kuzu kol        adet        111
+kuzu kulağı        demet        111
+kuzu kuşbaşı        gram        1
+kuzu kuşbaşı        gram        111
+kuzu külbastı        adet        111
+kuzu paça        parça        100
+kuzu paça        parça        111
+kuzu şaşlık        adet        111
+kuzu şiş        gram        1
+kuzu şiş        gram        111
+kuzukulağı        demet        111
+kuş üzümü        gram        111
+kuş üzümü        su bardağı        125
+kuş üzümü        tatlı kaşığı        111
+kuş üzümü        tatlı kaşığı        3
+kuş üzümü        yemek kaşığı        10
+kuş üzümü        çay bardağı        111
+kuş üzümü        çorba kaşığı        111
+kuşbaşı dana eti        gram        1
+kuşbaşı et        gram        1
+kuşbaşı et        gram        111
+kuşbaşı kuzu        gram        111
+kuşburnu        gram        1
+kuşburnu        gram        111
+kuşkonmaz        adet        111
+kuşkonmaz        adet        5
+köfte        adet        111
+köfte baharı        yemek kaşığı        111
+köfte harcı        paket        111
+köpüklü şarap        su bardağı        111
+köri        tatlı kaşığı        5
+köri        çay kaşığı        111
+köri        çay kaşığı        2
+körpe ıspanak        yaprak        111
+köy ekmeği        dilim        111
+köy ekmeği        dilim        50
+közlenmiş kırmızı biber        adet        111
+közlenmiş kırmızı biber        tane        111
+kültür mantarı        adet        111
+kültür mantarı        gram        111
+kültür mantarı        paket        111
+kültür mantarı        su bardağı        111
+küp buz        adet        111
+kürdan        adet        1
+kürdan        adet        111
+küçük boy göbek        adet        111
+küçük boy kelek        adet        111
+kılıç balığı filetosu        gram        111
+kırlangıç balığı        adet        111
+kırma zeytin        gram        111
+kırmızı Arnavut biberi        adet        111
+kırmızı Arnavut biberi        adet        2
+kırmızı biber        adet        50
+kırmızı biber        tatlı kaşığı        4
+kırmızı biber        tutam        1
+kırmızı biber        tutam        111
+kırmızı biber        çay kaşığı        111
+kırmızı biber        çorba kaşığı        111
+kırmızı erik        gram        111
+kırmızı greyfurt        tane        111
+kırmızı gıda boyası        damla        111
+kırmızı gıda boyası        çay kaşığı        1
+kırmızı gıda boyası        çay kaşığı        111
+kırmızı havyar        gram        111
+kırmızı kapya biber        adet        75
+kırmızı lahana        adet        111
+kırmızı lahana        adet        320
+kırmızı mercimek        bardak        111
+kırmızı mercimek        bardak        170
+kırmızı pul biber        tatlı kaşığı        111
+kırmızı pul biber        tatlı kaşığı        4
+kırmızı pul biber        tutam        111
+kırmızı pul biber        çay kaşığı        111
+kırmızı toz biber                1
+kırmızı toz biber        tatlı kaşığı        111
+kırmızı toz biber        çay kaşığı        111
+kırmızı şarap        su bardağı        111
+kırmızı şarap        çorba kaşığı        111
+kırmızıbiber        adet        111
+kırmızıbiber        gram        111
+kırmızıbiber        tatlı kaşığı        111
+kırmızıbiber        çay kaşığı        111
+kıvırcık        adet        111
+kıvırcık        yaprak        111
+kıyma                111
+kıyma        gram        1
+kıyma        kilo        111
+kıyılmış dereotu        dal        111
+kızarmış ekmek        paket        111
+kızartma yağı        bardak        111
+kızartma yağı        gram        111
+kızılcık        avuç        111
+kızılcık        gram        111
+kızılcık sosu        gram        111
+labne        kutu        111
+labne        paket        111
+labne        paket        750
+labne peynir        kaşık        111
+labne peynir        kutu        111
+labne peynir        yemek kaşığı        111
+labne peynir        çay bardağı        111
+labne peyniri        gram        111
+labne peyniri        kaşık        111
+labne peyniri        kutu        111
+labne peyniri        paket        111
+labne peyniri        tatlı kaşığı        111
+labne peyniri        yemek kaşığı        111
+labne peyniri        çay bardağı        111
+labne peyniri        çorba kaşığı        111
+lahana        adet        111
+lahana        yaprak        111
+lavaş        paket        111
+lavaş        paket        650
+lazanya        paket        111
+leblebi tozu        su bardağı        111
+levrek        adet        600
+levrek fileto        gram        111
+lime        adet        111
+lime kabuğu        adet        9
+limon        adet        100
+limon        damla        111
+limon        dilim        15
+limon        gram        111
+limon        tane        111
+limon        tatlı kaşığı        111
+limon        çay kaşığı        111
+limon        çorba kaşığı        111
+limon kabuğu        adet        15
+limon kabuğu        yemek kaşığı        111
+limon kabuğu        çay bardağı        111
+limon kabuğu        çay kaşığı        111
+limon kabuğu        çay kaşığı        2
+limon suyu                60
+limon suyu        adet        60
+limon suyu        damla        111
+limon suyu        fincan        111
+limon suyu        kahve fincanı        111
+limon suyu        kaşık        111
+limon suyu        su bardağı        111
+limon suyu        tatlı kaşığı        111
+limon suyu        yemek kaşığı        111
+limon suyu        çay bardağı        111
+limon suyu        çay kaşığı        111
+limon suyu        çorba kaşığı        111
+limon tozu        gram        111
+limon tuzu        adet        111
+limon tuzu        çay kaşığı        111
+limonun kabuğu        adet        111
+lohusa şekeri        kutu        111
+lor        gram        1
+lor        gram        111
+lor        çay bardağı        111
+lor         bardak        111
+lor         gram        111
+lor         su bardağı        111
+lor peyniri        bardak        111
+lor peyniri        gram        1
+lüfer        adet        111
+mahlep        tatlı kaşığı        111
+mahlep        tatlı kaşığı        3
+mahlep        çay kaşığı        111
+makademya fındığı        adet        111
+makarna        gram        111
+makarna        paket        111
+mandalina        adet        111
+mandalina        adet        125
+mandalina        gram        1
+mandalina        gram        111
+mangolu dondurma        kaşık        111
+mantar        adet        15
+mantar        gram        1
+mantar        gram        111
+mantar        kilo        111
+mantar        su bardağı        111
+margarin        gram        111
+margarin        yemek kaşığı        111
+margarin        yemek kaşığı        7
+marmelat        tatlı kaşığı        111
+marshmallow        gram        1
+marshmallow        gram        111
+marul        adet        111
+marul        yaprak        10
+marul        yaprak        111
+marul yaprağı        adet        10
+marul yaprağı        adet        111
+mascarpone        gram        111
+mate        tatlı kaşığı        111
+mavi gıda boyası        damla        111
+mavi haşhaş        yemek kaşığı        111
+maya                111
+maya        gram        111
+maya        paket        111
+maya        paket        40
+maya        tatlı kaşığı        111
+maya        yemek kaşığı        111
+maya        çay kaşığı        111
+maya        çorba kaşığı        111
+mayalı ekmek        gram        111
+maydanoz        avuç        30
+maydanoz        bağ        150
+maydanoz        dal        111
+maydanoz        demet        150
+maydanoz        kahve fincanı        111
+maydanoz        kaşık        111
+maydanoz        tane        111
+maydanoz        tutam        111
+maydanoz        yemek kaşığı        111
+maydanoz        çay bardağı        111
+maydanoz yaprağı        avuç        111
+maydanoz yaprağı        tatlı kaşığı        111
+mayonez        kaşık        111
+mayonez        yemek kaşığı        13
+mayonez        çay kaşığı        111
+mayonez        çorba kaşığı        111
+maş fasulyesi        bardak        111
+mercan köşk        dal        111
+mercanköşk        dal        111
+mercanköşk        gram        1
+mercanköşk        gram        111
+mercimek        gram        111
+mercimek filizi                111
+meyve        gram        1
+meyve        gram        111
+meyve suyu        su bardağı        111
+meyveli musli        su bardağı        111
+mezgit        gram        111
+midye        adet        111
+midye        gram        111
+midye içi        adet        111
+milfoy hamuru        paket        111
+milföy        adet        50
+milföy        gram        111
+milföy        paket        111
+milföy hamuru        adet        111
+milföy hamuru        gram        111
+milföy hamuru        kare        111
+milföy hamuru        yaprak        111
+mor lahana        adet        320
+mor soğan        bardak        111
+mozzarella        paket        111
+mozzarella peyniri        paket        111
+mozzarella peyniri        paket        125
+mozzarella topları        su bardağı        111
+muskat        adet        40
+muskat        tutam        1
+muskat        çay kaşığı        111
+muz        adet        111
+muz        adet        170
+muz        tane        111
+mürdüm eriği        adet        111
+mürdüm eriği        gram        1
+mürdüm eriği        gram        111
+mürdüm eriği        su bardağı        111
+müsli        bardak        100
+müsli        bardak        111
+mısır        adet        100
+mısır        avuç        111
+mısır        bardak        111
+mısır        kutu        111
+mısır        su bardağı        111
+mısır        yemek kaşığı        111
+mısır        çay bardağı        111
+mısır gevreği        kase        111
+mısır gevreği        su bardağı        111
+mısır nişastası        fincan        111
+mısır nişastası        gram        111
+mısır nişastası        su bardağı        111
+mısır nişastası        tatlı kaşığı        111
+mısır nişastası        yemek kaşığı        111
+mısır nişastası        çay bardağı        111
+mısır nişastası        çorba kaşığı        111
+mısır unu                111
+mısır unu        gram        111
+mısır unu        yemek kaşığı        111
+mısır yarması        bardak        111
+nane                1
+nane        bağ        100
+nane        dal        111
+nane        demet        111
+nane        fincan        111
+nane        kase        111
+nane        tatlı kaşığı        2
+nane        tutam        1
+nane        tutam        111
+nane        yaprak        111
+nane        yemek kaşığı        111
+nane        yemek kaşığı        3
+nane        çay kaşığı        1
+nane        çay kaşığı        111
+nane        çorba kaşığı        111
+nane likörü        litre        111
+nane yaprağı        adet        111
+nar        adet        111
+nar        adet        160
+nar        yemek kaşığı        111
+nar ekşisi        kaşık        111
+nar ekşisi        gram        111
+nar ekşisi        kahve fincanı        111
+nar ekşisi        kahve fincanı        56
+nar ekşisi        su bardağı        111
+nar ekşisi        yemek kaşığı        10
+nar ekşisi        çay bardağı        111
+nar tanesi        çay bardağı        111
+narenciye suyu        su bardağı        111
+nişasta        bardak        111
+nişasta        gram        111
+nişasta        kaşık        111
+nişasta        yemek kaşığı        111
+nohut        adet        111
+nohut        bardak        111
+nohut        gram        111
+noodle        gram        111
+olgun mango        adet        111
+orman meyvesi        kase        111
+orman meyvesi        kase        180
+paket sosis        gram        1
+palamut        adet        280
+pancar        adet        111
+pancar suyu        su bardağı        111
+pane harcı        yemek kaşığı        111
+panko        su bardağı        75
+papaya        gram        111
+parmesan        avuç        35
+parmesan        bardak        111
+parmesan        gram        111
+parmesan        su bardağı        111
+parmesan        yemek kaşığı        10
+parmesan        yemek kaşığı        111
+parmesan peynir        gram        111
+parmesan peyniri        avuç        35
+parmesan peyniri        gram        111
+parmesan peyniri        su bardağı        111
+parmesan peyniri        su bardağı        35
+parmesan peyniri        yemek kaşığı        111
+parmesan peyniri        çorba kaşığı        111
+parmesan peyniri         çorba kaşığı        111
+pasta süsü        yemek kaşığı        111
+pastırma        dilim        10
+pastırma        gram        1
+pastırma        gram        111
+pastırma        parça        111
+patates        adet        200
+patates        gram        111
+patates        kilo        111
+patates        tane        111
+patates        tane        213
+patlıcan                111
+patlıcan        adet        200
+patlıcan        gram        111
+pazı        bağ        130
+pazı        demet        111
+pazı        yaprak        111
+paça        adet        111
+pecorino        gram        111
+pekan cevizi        fincan        111
+pekan cevizi        çay bardağı        111
+pekmez        bağ        111
+pekmez        gram        1
+pekmez        gram        111
+pekmez        su bardağı        111
+pekmez        su bardağı        200
+pekmez        yemek kaşığı        111
+pekmez        yemek kaşığı        12
+pekmez        çay bardağı        111
+pekmez        çay kaşığı        111
+pekmez        çorba kaşığı        111
+pembe gıda boyası        damla        111
+pesto sos        kaşık        10
+pesto sos        kaşık        111
+petibör bisküvi        adet        111
+peynir                111
+peynir        gram        1
+peynir        gram        111
+peynir        paket        111
+peynir        su bardağı        111
+pikan cevizi        gram        111
+pilavlık bulgur        bardak        111
+pilavlık bulgur        bardak        150
+pilavlık bulgur        su bardağı        150
+pilavlık bulgur        yemek kaşığı        12
+piliç but                111
+piliç but        adet        111
+pirinç        bardak        111
+pirinç        bardak        180
+pirinç        fincan        111
+pirinç        gram        111
+pirinç        yemek kaşığı        13
+pirinç unu        bardak        111
+pirinç unu        gram        111
+pirinç unu        yemek kaşığı        111
+pirpirim        gram        111
+pirzola        gram        1
+pita ekmeği        adet        111
+pizza hamuru        adet        111
+portakal        adet        220
+portakal        dilim        111
+portakal        tane        111
+portakal kabuğu        adet        111
+portakal kabuğu        çay kaşığı        111
+portakal reçeli        su bardağı        111
+portakal suyu        adet        111
+portakal suyu        kahve fincanı        111
+portakal suyu        su bardağı        111
+portakal suyu        yemek kaşığı        111
+portakal suyu        çay bardağı        111
+pudra şekeri        bardak        111
+pudra şekeri        fincan        111
+pudra şekeri        gram        111
+pudra şekeri        kaşık        111
+pudra şekeri        yemek kaşığı        111
+pul biber                0
+pul biber        tatlı kaşığı        111
+pul biber        tutam        1
+pul biber        yemek kaşığı        10
+pul biber        yemek kaşığı        111
+pul biber        çay kaşığı        111
+pul biber        çay kaşığı        2
+pul kırmızıbiber        tatlı kaşığı        111
+pırasa        adet        111
+pırasa        adet        50
+pırasa        gram        111
+ramazan pidesi        adet        111
+ranch sos        litre        111
+ranch sos        litre        1200
+ravent kökü        gram        111
+renkli draje        paket        111
+renkli pasta süsü        çay bardağı        111
+reyhan        yaprak        1
+reyhan        yaprak        111
+reyhan        yemek kaşığı        111
+rezene        gram        111
+rezene        yemek kaşığı        111
+reçel        parça        111
+roka        adet        111
+roka        adet        2
+roka        bağ        111
+roka        dal        111
+roka        demet        111
+rom        yemek kaşığı        111
+sade helva        yemek kaşığı        111
+sade helva        yemek kaşığı        7
+sade müsli        yemek kaşığı        10
+sade müsli        yemek kaşığı        111
+sade puding        paket        111
+saf keçiboynuzu özü        yemek kaşığı        111
+safran                111
+safran        tatlı kaşığı        111
+safran        tatlı kaşığı        5
+sahlep        çorba kaşığı        111
+sakız        çay kaşığı        111
+sakızlı lokum        çay kaşığı        111
+sakızlı lokum        çay kaşığı        6
+salam        dilim        111
+salam        dilim        20
+salam        gram        111
+salata yeşilliği        fincan        111
+salatalık        adet        120
+salatalık turşusu        adet        111
+salatalık turşusu        kase        111
+salep        tatlı kaşığı        111
+salep        tatlı kaşığı        6
+salep        yemek kaşığı        111
+salep        çorba kaşığı        111
+salsa fresca        fincan        111
+salça        kaşık        111
+salça        tatlı kaşığı        111
+salça        tatlı kaşığı        5
+salça        yemek kaşığı        111
+salça        yemek kaşığı        35
+salça        çorba kaşığı        111
+sandviç ekmeği        adet        111
+sardalye        gram        1
+sardalye        gram        111
+sarmısak        diş        111
+sarı gıda boyası        damla        111
+sarı gıda boyası        çay kaşığı        111
+sarı mercimek        gram        111
+sarı mercimek        su bardağı        170
+sarı üzüm        gram        111
+sarı üzüm        çorba kaşığı        111
+sarımsak        adet        35
+sarımsak        demet        111
+sarımsak        diş        3
+sarımsak        gram        111
+sarımsak        yemek kaşığı        10
+sarımsak tozu        tatlı kaşığı        111
+sebze        gram        111
+sebze bulyon        küp        10
+sebze bulyon        küp        111
+sebze suyu        bardak        111
+sebze suyu        litre        111
+seker        su bardağı        111
+sele zeytin        gram        111
+semizotu        bardak        111
+semizotu        bağ        124
+semizotu        demet        111
+semizotu        gram        1
+simit        adet        100
+simit        adet        111
+sirke        kaşık        111
+sirke        litre        111
+sirke        yemek kaşığı        10
+sivri biber        adet        30
+siyah havyar        gram        111
+siyah mercimek        gram        111
+siyah zeytin        adet        4
+siyah zeytin        kaşık        111
+siyah zeytin        su bardağı        111
+siyah zeytin        yemek kaşığı        111
+soda        su bardağı        200
+somon        dilim        200
+somon        gram        111
+somon fileto        adet        111
+somon fileto        gram        111
+somon filetosu        parça        111
+somon füme        dilim        111
+somon füme        gram        111
+sosis                111
+sosis        adet        111
+sosis        adet        15
+sosis        dilim        111
+sosis        dilim        5
+sosis        gram        111
+sotelik et        gram        111
+soya filizi        paket        111
+soya filizi        yemek kaşığı        111
+soya sos        su bardağı        111
+soya sos        yemek kaşığı        111
+soya sosu        gram        111
+soya sosu        kaşık        111
+soya sosu        su bardağı        111
+soya sosu        yemek kaşığı        111
+soya sosu        çay kaşığı        111
+soya sosu        çorba kaşığı        111
+soya yağı        yemek kaşığı        111
+soyulmuş iç badem        gram        111
+soğan                111
+soğan        adet        100
+soğan        adet        111
+soğan        avuç        111
+soğan        bardak        111
+soğan        demet        111
+soğan        gram        111
+soğan        tane        111
+soğan        tane        75
+soğan        yemek kaşığı        10
+soğan        yemek kaşığı        111
+soğuk demli çay        bardak        111
+spagetti        gram        111
+spagetti        paket        111
+stevia        adet        111
+su                0
+su                111
+su        Litre        1
+su        adet        50
+su        avuç        3
+su        bardak        200
+su        fincan        111
+su        gram        111
+su        kaşık        111
+su        su bardağı        111
+su        tutam        1
+su        yemek kaşığı        0
+su böreklik yufka        paket        111
+su böreklik yufka        paket        500
+sucuk                111
+sucuk        dilim        111
+sucuk        dilim        8
+sucuk        gram        1
+sucuk        gram        111
+susam        kaşık        111
+susam        paket        111
+susam        yemek kaşığı        111
+suşi pilavı        gram        111
+süt        bardak        111
+süt        fincan        111
+süt        gram        1
+süt        gram        111
+süt        kaşık        111
+süt        litre        111
+süt        su bardağı        111
+süt        yemek kaşığı        111
+süt        çay bardağı        111
+süt kreması        gram        111
+süt kreması        litre        111
+süt kreması        su bardağı        111
+süt kreması        çay bardağı        111
+sütlü çikolata        paket        111
+süzme yoğurdu        su bardağı        111
+süzme yoğurt        bardak        111
+süzme yoğurt        gram        1
+süzme yoğurt        kase        111
+süzme yoğurt        su bardağı        90
+süzme yoğurt        yemek kaşığı        22
+süzme yoğurt        çay bardağı        111
+süzme yoğurt        çorba kaşığı        111
+sıcak tavuk suyu        bardak        111
+sıvı ayçiçeği yağı        yemek kaşığı        111
+sıvı ayçiçeği yağı        çay bardağı        111
+sıvı krema        gram        1
+sıvı krema        gram        111
+sıvı krema        su bardağı        111
+sıvı yağ        bardak        111
+sıvı yağ        bardak        175
+sıvı yağ        fincan        111
+sıvı yağ        gram        111
+sıvı yağ        kaşık        111
+sıvı yağ        litre        111
+sıvı yağ        yemek kaşığı        10
+sıvıyağ        yemek kaşığı        111
+sıvıyağ        yemek kaşığı        12
+sıvıyağı        bardak        111
+sığır eti        parça        111
+tahin        gram        1
+tahin        gram        111
+tahin        su bardağı        111
+tahin        su bardağı        150
+tahin        tatlı kaşığı        111
+tahin        yemek kaşığı        111
+tahin        çay bardağı        111
+tam buğday burgu makarna        gram        111
+tam buğday ekmeği        dilim        111
+tam buğday lavaş        adet        100
+tam buğday lavaş        adet        111
+tam buğdaylı panini ekmeği        adet        111
+tane karabiber        gram        111
+tane karabiber        tatlı kaşığı        111
+tane karabiber        çay kaşığı        111
+taneli hardal        tatlı kaşığı        5
+taneli hardal        yemek kaşığı        10
+tarama        gram        111
+tarhana        yemek kaşığı        111
+tart unu        paket        111
+tarçın                111
+tarçın        bardak        111
+tarçın        gram        111
+tarçın        tatlı kaşığı        111
+tarçın        yemek kaşığı        111
+tatlandırıcı toz        çorba kaşığı        111
+tatlı balkabağı        dilim        111
+tatlı chili sos        çorba kaşığı        111
+tatlı ekşi sos        su bardağı        111
+tatlı tart tabanı        paket        111
+tavuk        adet        111
+tavuk        adet        1250
+tavuk        fincan        111
+tavuk budu        adet        111
+tavuk budu        adet        200
+tavuk bulyon        paket        111
+tavuk but        adet        200
+tavuk ciğeri        gram        111
+tavuk eti        gram        1
+tavuk eti        gram        111
+tavuk göğsü                111
+tavuk göğsü                300
+tavuk göğsü        adet        200
+tavuk göğsü        gram        1
+tavuk göğsü        gram        111
+tavuk göğsü        parça        111
+tavuk göğüs        adet        200
+tavuk göğüs        gram        111
+tavuk göğüs        parça        111
+tavuk kalça        adet        265
+tavuk suyu        bardak        111
+tavuk suyu        fincan        111
+tavuk suyu        litre        111
+tavuk suyu        su bardağı        200
+tavuk suyu        çay bardağı        111
+taze adaçayı yaprağı        tutam        4
+taze börülce        gram        1
+taze fasulye        gram        1
+taze fesleğen        gram        1
+taze fesleğen        yaprak        5
+taze kaşar        gram        1
+taze kiraz püresi        bardak        110
+taze mozzarella topları        su bardağı        111
+taze salata yeşilliği        fincan        111
+taze sebze        gram        111
+taze soğan        adet        111
+taze soğan        adet        20
+taze soğan        dal        111
+taze soğan        demet        111
+taze soğan        yemek kaşığı        111
+taze yonca filizi        paket        100
+tekila        litre        900
+tekir balığı        gram        1
+tel şehriye        çay bardağı        75
+temizlenmiş çilek        kase        150
+tere tohumu        çay kaşığı        2
+tereyağı        kaşık        20
+tereyağ        gram        1
+tereyağ        tatlı kaşığı        5
+tereyağ        yemek kaşığı        20
+tereyağ        çorba kaşığı        20
+tereyağı        fincan        90
+tereyağı        gram        1
+tereyağı        kaşık        20
+tereyağı        paket        50
+tereyağı        su bardağı        190
+tereyağı        tatlı kaşığı        5
+tereyağı        yemek kaşığı        20
+tereyağı        çay bardağı        80
+tereyağı        çorba kaşığı        20
+ton balığı        dilim        30
+ton balığı        kutu        120
+ton balığı filetosu        adet        125
+tortellini        paket        250
+tortilla        adet        16
+tortilla ekmeği        adet        16
+tost ekmeği        adet        30
+tost ekmeği        dilim        30
+toz biber        tatlı kaşığı        4
+toz bulyon        yemek kaşığı        15
+toz fıstık        kase        150
+toz fıstık        yemek kaşığı        10
+toz jelatin        gram        1
+toz kakule        çay kaşığı        3
+toz karanfil        çay kaşığı        2
+toz kişniş        çay kaşığı        3
+toz krem şanti        paket        75
+toz krema        paket        100
+toz kırmızı biber                1
+toz kırmızı biber        kaşık        10
+toz kırmızı biber        tatlı kaşığı        4
+toz kırmızı biber        tutam        1
+toz kırmızı biber        yemek kaşığı        10
+toz matcha        çay kaşığı        2
+toz salep        yemek kaşığı        10
+toz seker        gram        1
+toz seker        su bardağı        143
+toz tarhana        yemek kaşığı        16
+toz tartar        çay kaşığı        2
+toz tarçın        gram        1
+toz tarçın        çay kaşığı        1
+toz tatlandırıcı        su bardağı        150
+toz tatlandırıcı        çorba kaşığı        10
+toz tatlı biber        çay kaşığı        2
+toz vanilya        tatlı kaşığı        5
+toz yeşil fıstık        yemek kaşığı        10
+toz zencefil        gram        1
+toz zencefil        tatlı kaşığı        5
+toz zencefil        çay kaşığı        2
+toz zerdece        çay kaşığı        2
+toz zerdeçal        tutam        2
+toz şeker        bardak        143
+toz şeker        fincan        80
+toz şeker        kase        100
+toz şeker        kaşık        12
+toz şeker        kilo        1000
+toz şeker        tane        1
+toz şeker        tutam        2
+toz şeker        yemek kaşığı        12
+trüf yağı        çorba kaşığı        12
+tulum                 50
+tulum         avuç        10
+tulum         su bardağı        50
+tulum         yemek kaşığı        5
+tulum  ,        gram        1
+tulum peyniri        gram        1
+tulum peyniri        su bardağı        50
+tulum peyniri        yemek kaşığı        5
+turna yemişi        gram        1
+turp        adet        150
+turp otu        demet        130
+turta hamuru        gram        1
+tuz        gram        1
+tuz        tutam        1
+tuz        yemek kaşığı        10
+tuz        çimdik        1
+tuzsuz badem        gram        1
+tuzsuz iç badem        gram        1
+tuzsuz tereyağı        gram        1
+tuzsuz tereyağı        tatlı kaşığı        5
+tuzsuz yer fıstığı        gram        1
+un        avuç        40
+un        bardak        110
+un        fincan        50
+un        gram        1
+un        kaşık        10
+un        yemek kaşığı        10
+uskumru        adet        85
+uykuluk        gram        1
+vanilin        paket        10
+vanilya        adet        5
+vanilya        gram        1
+vanilya        kaşık        5
+vanilya        paket        10
+vanilya        tatlı kaşığı        3
+vanilya        çay kaşığı        2
+vanilya        çorba kaşığı        5
+vanilya ekstraktı        çay kaşığı        7
+vanilya esansı        tatlı kaşığı        5
+vanilya esansı        çay kaşığı        2
+vanilya ezmesi        yemek kaşığı        10
+vanilya özü        yemek kaşığı        8
+vanilya özütü        damla        0.5
+vanilya özütü        tatlı kaşığı        4
+vanilya özütü        çay kaşığı        2
+vanilyalı dondurma        gram        1
+vanilyalı dondurma        paket        500
+viski        tatlı kaşığı        2
+viski        çorba kaşığı        5
+vişne        gram        1
+vişne        kase        120
+vişne        su bardağı        111
+vişne jölesi        paket        20
+vişne suyu        litre        100
+vişne suyu        su bardağı        200
+votka        litre        500
+votka        su bardağı        100
+wasabi        çorba kaşığı        8
+yaban havucu        adet        40
+yaban mersini        fincan        100
+yaban mersini        gram        1
+yaban mersini        kase        200
+yaban mersini        çay bardağı        80
+yaprak jelatin        adet        5
+yarma        su bardağı        150
+yasemin pirinci        gram        1
+yağ        gram        1
+yağ        litre        900
+yağlı Maraş pul biberi        gram        1
+yaş maya        adet        5
+yaş maya        gram        1
+yaş maya        paket        42
+yengeç bacağı        adet        10
+yeni bahar        tatlı kaşığı        5
+yeni bahar        çay kaşığı        3
+yenibahar        gram        1
+yenibahar        tane        1
+yenibahar        tatlı kaşığı        5
+yenibahar        tutam        3
+yenibahar        yemek kaşığı        9
+yenibahar        çay kaşığı        3
+yenibahar        çorba kaşığı        111
+yer elması        adet        60
+yer elması        gram        1
+yer fıstığı        bardak        160
+yer fıstığı        çorba kaşığı        10
+yer fıstığı ezmesi        yemek kaşığı        11
+yer fıstığı.        fincan        80
+yerelması        gram        1
+yeşil biber        adet        30
+yeşil biber        tane        30
+yeşil erik        adet        20
+yeşil fasulye        adet        10
+yeşil fıstık        yemek kaşığı        10
+yeşil fıstık        çorba kaşığı        10
+yeşil gıda boyası        çay kaşığı        1
+yeşil mercimek        bardak        150
+yeşil mercimek        su bardağı        150
+yeşil mercimek        çay bardağı        70
+yeşil salata yaprağı        adet        10
+yeşil sarmısak        adet        35
+yeşil soğan        adet        20
+yeşil soğan        dal        20
+yeşil soğan        demet        20
+yeşil soğan        gram        1
+yeşil zeytin        kahve fincanı        20
+yeşil zeytin        kaşık        12
+yeşil zeytin        su bardağı        30
+yeşilbiber        adet        30
+yeşilbiber        tane        30
+yeşilçay        tatlı kaşığı        4
+yonca filizi        paket        100
+yoğurt        bardak        180
+yoğurt        fincan        75
+yoğurt        gram        1
+yoğurt        kase        180
+yoğurt        kaşık        45
+yoğurt        yemek kaşığı        45
+yufka        adet        160
+yufka        gram        1
+yufka        tane        160
+yulaf        fincan        25
+yulaf        gram        1
+yulaf ezmesi        gram        1
+yulaf ezmesi        kaşık        10
+yulaf ezmesi        su bardağı        70
+yulaf ezmesi        tatlı kaşığı        3
+yulaf ezmesi        yemek kaşığı        10
+yulaf unu        gram        1
+yulaflı bisküvi        gram        1
+yulaflı bisküvi        paket        80
+yulaflı bisküvisi        paket        80
+yumurta        adet        50
+yumurta        tane        50
+yumurta akı        adet        25
+yumurta akı        gram        1
+yumurta akı        yemek kaşığı        14
+yumurta sarısı        adet        20
+yumuta        adet        50
+yuvarlak pide        adet        100
+yıldız anason        adet        2
+zahter        demet        70
+zahter        tatlı kaşığı        7
+zahter        yemek kaşığı        140
+zencefil        gram        1
+zencefil        tatlı kaşığı        5
+zencefil        tutam        1
+zencefil        yemek kaşığı        10
+zencefil        çay kaşığı        2
+zerdali        bardak        20
+zerdeçal        gram        1
+zerdeçal        çay kaşığı        2
+zeytin        adet        4
+zeytin        bardak        30
+zeytin        dilim        1
+zeytin        gram        1
+zeytin        su bardağı        30
+zeytin        yemek kaşığı        15
+zeytin yağı                6
+zeytinyağı        bardak        216
+zeytinyağı        gram        1
+zeytinyağı        kaşık        6
+zeytinyağı        litre        900
+Çandır fasulyesi        gram        1
+Çeri domates                45
+Çikolata                70
+Çikolata sos                90
+Çikolata sosu                40
+Çilek                60
+Çilek reçeli                50
+Çin lahanası        bardak        30
+Çökelek                30
+Çörek Otu        Kahve Fincanı        30
+Çörek Otu        Su Bardağı        100
+Çörek Otu        Tatlı Kaşığı        5
+Çörek Otu        Çay Bardağı        50
+Çörek Otu        Çay Kaşığı        2
+Çörek Otu        Çorba Kaşığı        15
+Çörekotu                15
+Çöven otu                3
+çam fıstığı        tutam        15
+çam fıstığı        yemek kaşığı        30
+çarliston biber        adet        35
+çarliston biber        gram        1
+çavdar ekmeği        adet        350
+çay        bardak        200
+çağla        gram        1
+çedene        yemek kaşığı        8
+çekirdek içi        yemek kaşığı        10
+çekirdeksiz siyah zeytin        gram        1
+çekirdeksiz yeşil zeytin        gram        1
+çemen        çay bardağı        80
+çeri domates        adet        15
+çeçil         su bardağı        150
+çeçil peyniri        su bardağı        150
+çifte kavrulmuş petitbeurre        paket        175
+çikolata        gram        1
+çikolata        kare        10
+çikolata        paket        150
+çikolata        parça        10
+çikolata        su bardağı        300
+çikolata        yemek kaşığı        20
+çikolata sosu        paket        50
+çikolata sosu        yemek kaşığı        10
+çikolatalı fındık ezmesi        fincan        100
+çikolatalı puding        paket        60
+çikolatalı sos        paket        50
+çikolatalı süt        su bardağı        200
+çilek                60
+çilek        adet        15
+çilek        avuç        60
+çilek        gram        1
+çilek        kase        250
+çilek        su bardağı        200
+çilek reçeli suyu        yemek kaşığı        10
+çipura        adet        300
+çiğ kaju        gram        1
+çiğ krema        gram        1
+çiğ krema        paket        200
+çiğ krema        su bardağı        200
+çiğ krema        yemek kaşığı        10
+çiğ makadamya fındığı        adet        3
+çiğ süt kreması        su bardağı        120
+çubuk tarçın        adet        5
+çubuk tarçın        tane        5
+çörek otu                5
+çörek otu        kaşık        15
+çörek otu        yemek kaşığı        15
+çözünen kahve        çay kaşığı        1
+çıtır pane harcı        paket        90
+üzüm        adet        1
+üzüm        gram        1
+üzüm        tatlı kaşığı        2
+üzüm pekmezi        yemek kaşığı        12
+üzüm çekirdeği yağı        litre        800
+İrmik        Kahve Fincanı        50
+İrmik        Su Bardağı        145
+İrmik        Tatlı Kaşığı        5
+İrmik        Çay Bardağı        85
+İrmik        Çay Kaşığı        2
+İrmik        Çorba Kaşığı        10
+İzmir tulumu        dilim        30
+ıhlamur        tutam        2
+ıhlamur        çorba kaşığı        5
+ıspanak        adet        5
+ıspanak        bağ        51
+ıspanak        dal        5
+ıspanak        demet        300
+ıspanak        gram        1
+ıspanak        tutam        10
+ıspanak püresi        yemek kaşığı        20
+ıspanak suyu        çay bardağı        100
+ıspanak yaprağ        su bardağı        50
+ıspanak yaprağı        tane        5
+ısırgan otu        dal        25
+ızgara harcı        paket        90
+Şeker                143
+şeftali                200
+şeftali        adet        200
+şehriye        su bardağı        160
+şeker        bardak        143
+şeker        fincan        80
+şeker        gram        1
+şeker        kahve fincanı        80
+şeker        kaşık        24
+şeker        kilo        1000
+şeker        küp        4
+şeker        tatlı kaşığı        4
+şeker        tutam        2
+şeker        yemek kaşığı        24
+şeker        çay bardağı        110
+şeker        çay kaşığı        2
+şeker        çorba kaşığı        24
+şekerli vanilin        paket        10
+şerbet        çorba kaşığı        12
+şevketi bostan otu        demet        200
+şevketibostan        gram        1
