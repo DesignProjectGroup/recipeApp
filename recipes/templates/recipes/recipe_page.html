@@ -12,6 +12,22 @@
     </section>
 
     <section class="content-section">
+        <div class="container mb-5">
+            <div class="row border rounded">
+                <div class="col-md-4">
+                    {{ calorie }} kcal
+                </div>
+                <div class="col-md-4">
+                    {{ recipe.time }}
+                </div>
+                <div class="col-md-4">
+                    {{ recipe.isHard }}
+                </div>
+
+            </div>
+        </div>
+
+
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
@@ -55,7 +71,7 @@
                                     <blockquote class="blockquote mb-0">
                                         <p>
                                             {{ comment.text }}
-{#                                            {{ comment.isPositive }}#}
+                                            {#                                            {{ comment.isPositive }}#}
                                         </p>
                                         <footer class="blockquote-footer">{{ time }}</footer>
                                     </blockquote>
@@ -69,7 +85,7 @@
                                     <blockquote class="blockquote mb-0">
                                         <p>
                                             {{ comment.text }}
-{#                                            {{ comment.isPositive }}#}
+                                            {#                                            {{ comment.isPositive }}#}
                                         </p>
                                         <footer class="blockquote-footer">{{ time }}</footer>
                                     </blockquote>
@@ -83,7 +99,7 @@
                                     <blockquote class="blockquote mb-0">
                                         <p>
                                             {{ comment.text }}
-{#                                            {{ comment.isPositive }}#}
+                                            {#                                            {{ comment.isPositive }}#}
                                         </p>
                                         <footer class="blockquote-footer">{{ time }}</footer>
                                     </blockquote>

@@ -18,9 +18,9 @@
                     Tarifleri Sırala
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Kaloriye göre sırala</a>
-                    <a class="dropdown-item" href="#">A'dan Z'ye sırala</a>
-                    <a class="dropdown-item" href="#">Kolaydan Zora sırala</a>
+                    <a class="dropdown-item" href="{% url 'calorie_sort' %}">Kaloriye göre sırala</a>
+                    <a class="dropdown-item" href="{% url 'alphabetic_sort' %}">A'dan Z'ye sırala</a>
+                    <a class="dropdown-item" href="{% url 'easy_hard_sort' %}">Kolaydan Zora sırala</a>
                 </div>
             </div>
 
@@ -38,32 +38,33 @@
             <div class="row no-gutters">
                 <div class="card-columns">
                     {% for recipe in all_suggestion_recipes %}
-                        <div class="card">
-                            <div class="card-footer">
-                                <small class="text-muted">
-                                    Tarifin kalorisi: {{ recipe.4 }} kcal
-                                </small>
-                            </div>
-                            <div class="card-body">
-                                <a href="{% url 'get_recipe_page' pk=recipe.2 %}">
-                                    <h5 class="card-title">{{ recipe.0 }}</h5>
-                                </a>
-                                <p class="card-text">
-                                    {% for item in recipe.1 %}
-                                        <span class="badge badge-pill badge-danger">{{ item }}</span>
-                                    {% endfor %}
+{#                        <div class="col-sm-3 h-100">#}
+                            <div class="card">
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        Tarifin kalorisi: {{ recipe.4 }} kcal
+                                    </small>
+                                </div>
+                                <div class="card-body">
+                                    <a href="{% url 'get_recipe_page' pk=recipe.2 %}">
+                                        <h5 class="card-title">{{ recipe.0 }}</h5>
+                                    </a>
+                                    <p class="card-text">
+                                        {% for item in recipe.1 %}
+                                            <span class="badge badge-pill badge-danger">{{ item }}</span>
+                                        {% endfor %}
 
-                                    {% for food in recipe.3 %}
-                                        <span class="badge badge-pill badge-success">{{ food }}</span>
-                                    {% endfor %}
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Eksik {{ recipe.1|length }} malzeme var!</small>
-                            </div>
+                                        {% for food in recipe.3 %}
+                                            <span class="badge badge-pill badge-success">{{ food }}</span>
+                                        {% endfor %}
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <small class="text-muted">Eksik {{ recipe.1|length }} malzeme var!</small>
+                                </div>
 
-
-                        </div>
+                            </div>
+{#                        </div>#}
                     {% endfor %}
                 </div>
             </div>

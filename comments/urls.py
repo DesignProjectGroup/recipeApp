@@ -2,6 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.deneme, name='comment_template'),
+    path('', views.show_comment, name='comment_template'),
 
 ]

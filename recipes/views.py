@@ -49,26 +49,43 @@ def get_recipe_page(request, pk):
         Comment.objects.update_or_create(recipe=recipe, text=text, isPositive=is_pos)
     comments = Comment.objects.filter(recipe=recipe)
 
-    return render(request, 'recipes/recipe_page.html', {'recipe': recipe, 'ingredients': ingredients,
-                                                        'comments': comments, 'time': time})
+    return render(request, 'recipes/recipe_page.html',
+                  {'calorie': round(recipe.calorie), 'recipe': recipe, 'ingredients': ingredients,
+                   'comments': comments, 'time': time})
 
 
 # malzeme seçildikten sonra tarif öner
 def list_recipes(request):
-    form = UserProduct(request.POST)
-    if form.is_valid():
-        user_products = form.cleaned_data.get('userProducts')
-        selected_food.clear()
-        selected_food.extend(user_products)
+    all_suggestion_recipes = []
+    most_common = {}
+    most_common_key = []
+    if request.method == "GET":
         all_suggestion_recipes = suggestion_recipe()
         most_common = most_used()
-        print(most_common)
         most_common_key = most_common.keys()
+        if '/suggested_recipes/alphabetic_sort' in request.path:
+            # old_post = request.session.get('_old_post').get('userProducts')
+            all_suggestion_recipes.sort(key=lambda x: x[0])
+        elif 'suggested_recipes/calorie_sort' in request.path:
+            all_suggestion_recipes.sort(key=lambda x: x[4])
+        elif 'suggested_recipes/easy_hard_sort' in request.path:
+            all_suggestion_recipes.sort(key=lambda x: x[0])
 
-        return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food,
-                                                                  'all_suggestion_recipes': all_suggestion_recipes,
-                                                                  'most_common': most_common,
-                                                                  'most_common_key': most_common_key})
+    else:
+        form = UserProduct(request.POST)
+        if form.is_valid():
+            user_products = form.cleaned_data.get('userProducts')
+            selected_food.clear()
+            selected_food.extend(user_products)
+            all_suggestion_recipes = suggestion_recipe()
+            most_common = most_used()
+            most_common_key = most_common.keys()
+            # request.session['_old_post'] = request.POST
+
+    return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food,
+                                                              'all_suggestion_recipes': all_suggestion_recipes,
+                                                              'most_common': most_common,
+                                                              'most_common_key': most_common_key})
 
 
 # kullanıcıya malzeme seçtir
