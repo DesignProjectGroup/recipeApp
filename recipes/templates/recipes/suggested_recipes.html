@@ -1,4 +1,5 @@
 {% extends 'recipes/base.html' %}
+{% load mathfilters %}
 {% block content %}
     <section class="content-section">
         <div class="container">
@@ -18,9 +19,10 @@
                     Tarifleri Sırala
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="{% url 'calorie_sort' %}">Kaloriye göre sırala</a>
-                    <a class="dropdown-item" href="{% url 'alphabetic_sort' %}">A'dan Z'ye sırala</a>
-                    <a class="dropdown-item" href="{% url 'easy_hard_sort' %}">Kolaydan Zora sırala</a>
+                    <a class="dropdown-item" href="{% url 'calorie_sort' %}">Kaloriye Göre Sırala</a>
+                    <a class="dropdown-item" href="{% url 'alphabetic_sort' %}">A'dan Z'ye Sırala</a>
+                    <a class="dropdown-item" href="{% url 'easy_hard_sort' %}">Kolaydan Zora Sırala</a>
+                    <a class="dropdown-item" href="{% url 'by_comment_sort' %}">Yorumlara Göre Sırala</a>
                 </div>
             </div>
 
@@ -44,6 +46,16 @@
                                     <small class="text-muted">
                                         Tarifin kalorisi: {{ recipe.4 }} kcal
                                     </small>
+                                    <br>
+{#                                    <small class="text-muted">#}
+{#                                        {% if recipe.5 < 0 %}#}
+{#                                            Tarif {{ recipe.5|mul:-1 }}kötü yoruma sahip.#}
+{#                                        {% endif %}#}
+{#                                        {% if recipe.5 > 0 %}#}
+{#                                            Tarif {{ recipe.5 }}güzel yoruma sahip.#}
+{#                                        {% endif %}#}
+{##}
+{#                                    </small>#}
                                 </div>
                                 <div class="card-body">
                                     <a href="{% url 'get_recipe_page' pk=recipe.2 %}">

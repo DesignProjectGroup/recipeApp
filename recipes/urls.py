@@ -11,7 +11,8 @@ urlpatterns = [
     url(r'recipe/(?P<pk>\d+)/$', views.get_recipe_page, name='get_recipe_page'),
     path('suggested_recipes/alphabetic_sort', views.list_recipes, name='alphabetic_sort'),
     path('suggested_recipes/calorie_sort', views.list_recipes, name='calorie_sort'),
-    path('suggested_recipes/easy_hard_sort', views.list_recipes, name='easy_hard_sort')
+    path('suggested_recipes/easy_hard_sort', views.list_recipes, name='easy_hard_sort'),
+    path('suggested_recipes/by_comment_sort', views.list_recipes, name='by_comment_sort')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
