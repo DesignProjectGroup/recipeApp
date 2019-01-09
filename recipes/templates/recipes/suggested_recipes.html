@@ -29,54 +29,60 @@
             <div class="card mb-4">
                 <div class="card-body">
                     {% for key in most_common_key %}
-                        {{ key }} -->
+                        <span class="badge badge-pill badge-dark">tavsiye edilen ürünler</span>
+                        <span class="badge badge-pill badge-success">{{ key }}</span>
                         {% for i in most_common|get_item:key %}
-                            {{ i }},
+
+                            <span class="badge badge-pill badge-secondary">{{ i }}</span>
                         {% endfor %}
                     {% endfor %}
                 </div>
             </div>
 
+
             <div class="row no-gutters">
-                <div class="card-columns">
+                <div class="card">
                     {% for recipe in all_suggestion_recipes %}
-{#                        <div class="col-sm-3 h-100">#}
-                            <div class="card">
-                                <div class="card-footer">
-                                    <small class="text-muted">
-                                        Tarifin kalorisi: {{ recipe.4 }} kcal
-                                    </small>
-                                    <br>
-{#                                    <small class="text-muted">#}
-{#                                        {% if recipe.5 < 0 %}#}
-{#                                            Tarif {{ recipe.5|mul:-1 }}kötü yoruma sahip.#}
-{#                                        {% endif %}#}
-{#                                        {% if recipe.5 > 0 %}#}
-{#                                            Tarif {{ recipe.5 }}güzel yoruma sahip.#}
-{#                                        {% endif %}#}
-{##}
-{#                                    </small>#}
-                                </div>
-                                <div class="card-body">
-                                    <a href="{% url 'get_recipe_page' pk=recipe.2 %}">
-                                        <h5 class="card-title">{{ recipe.0 }}</h5>
-                                    </a>
-                                    <p class="card-text">
-                                        {% for item in recipe.1 %}
-                                            <span class="badge badge-pill badge-danger">{{ item }}</span>
-                                        {% endfor %}
-
-                                        {% for food in recipe.3 %}
-                                            <span class="badge badge-pill badge-success">{{ food }}</span>
-                                        {% endfor %}
-                                    </p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">Eksik {{ recipe.1|length }} malzeme var!</small>
-                                </div>
-
+                        {#                        <div class="col-sm-3 h-100">#}
+                        <div class="card mb-4">
+                            <div class="card-footer">
+                                <small class="text-muted">
+                                    Tarifin kalorisi: {{ recipe.4 }} kcal
+                                </small>
+                                <br>
+                                <small class="text-muted">
+                                    Zorluk Drecesi: {{ recipe.6 }}
+                                </small>
+                                {#                                    <small class="text-muted">#}
+                                {#                                        {% if recipe.5 < 0 %}#}
+                                {#                                            Tarif {{ recipe.5|mul:-1 }}kötü yoruma sahip.#}
+                                {#                                        {% endif %}#}
+                                {#                                        {% if recipe.5 > 0 %}#}
+                                {#                                            Tarif {{ recipe.5 }}güzel yoruma sahip.#}
+                                {#                                        {% endif %}#}
+                                {##}
+                                {#                                    </small>#}
                             </div>
-{#                        </div>#}
+                            <div class="card-body">
+                                <a href="{% url 'get_recipe_page' pk=recipe.2 %}">
+                                    <h5 class="card-title">{{ recipe.0 }}</h5>
+                                </a>
+                                <p class="card-text">
+                                    {% for item in recipe.1 %}
+                                        <span class="badge badge-pill badge-danger">{{ item }}</span>
+                                    {% endfor %}
+
+                                    {% for food in recipe.3 %}
+                                        <span class="badge badge-pill badge-success">{{ food }}</span>
+                                    {% endfor %}
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Eksik {{ recipe.1|length }} malzeme var!</small>
+                            </div>
+
+                        </div>
+                        {#                        </div>#}
                     {% endfor %}
                 </div>
             </div>

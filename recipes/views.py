@@ -19,6 +19,7 @@ from comments.views import read_file, do_semantic_analysis
 import json
 import re
 import re
+from comments.models import ProbabilityOfWords
 
 selected_food = []
 
@@ -33,6 +34,9 @@ def select_ingredients(request):
     # Ingredient.objects.all().delete()
     # read_json_file()
     # calculate_recipe_calorie()
+    # ProbabilityOfWords.objects.all().delete()
+    # read_file("comments/text_files/positives.txt")
+    # read_file("comments/text_files/negatives.txt")
     form = UserProduct()
     return render(request, 'recipes/home_page.html', {'form': form, 'selected_food': selected_food})
 
@@ -48,14 +52,15 @@ def list_recipes(request):
         most_common_key = most_common.keys()
         print(all_suggestion_recipes)
         if '/suggested_recipes/alphabetic_sort' in request.path:
-            # old_post = request.session.get('_old_post').get('userProducts')
+            # old_post = request.session.get('_old_post').get('all_suggestion_recipes')
+            # print(old_post)
             all_suggestion_recipes.sort(key=lambda x: x[0])
         elif 'suggested_recipes/calorie_sort' in request.path:
             all_suggestion_recipes.sort(key=lambda x: x[4])
         elif 'suggested_recipes/by_comment_sort' in request.path:
             all_suggestion_recipes.sort(key=lambda x: x[5], reverse=False)
         elif 'suggested_recipes/easy_hard_sort' in request.path:
-            all_suggestion_recipes.sort(key=lambda x: x[0])
+            all_suggestion_recipes.sort(key=lambda x: x[6])
     else:
         form = UserProduct(request.POST)
         if form.is_valid():
@@ -65,7 +70,7 @@ def list_recipes(request):
             all_suggestion_recipes = suggestion_recipe()
             most_common = most_used()
             most_common_key = most_common.keys()
-            # request.session['_old_post'] = request.POST
+            # request.session['_old_post'] = all_suggestion_recipes
     return render(request, 'recipes/suggested_recipes.html', {'selected_food': selected_food,
                                                               'all_suggestion_recipes': all_suggestion_recipes,
                                                               'most_common': most_common,
@@ -77,6 +82,12 @@ def list_recipes(request):
 def get_recipe_page(request, pk):
     time = ""
     recipe = Recipe.objects.get(pk=pk)
+
+
+
+
+
+
     all_ingredients = Ingredient.objects.filter(recipe__id=recipe.pk)
     ingredients = []
     for i in all_ingredients:
@@ -142,10 +153,15 @@ def read_json_file():
             preparation = ""
             for i in recipe["preparation"]:
                 preparation = preparation + i["name"]
-            Recipe.objects.update_or_create(title=title, image=image, isHard=is_hard,
+
+            recipe_object = Recipe.objects.update_or_create(title=title, image=image, isHard=is_hard,
                                             technical_type=technical_type,
                                             time=time, text=preparation)
-            this_recipe = Recipe.objects.get(title=title, image=image, isHard=is_hard,
+            name = urlparse(str(recipe_object[0].image)).path.split('/')[-1]
+            content = ContentFile(urllib.request.urlopen(str(recipe_object[0].image)).read())
+            recipe_object[0].image.save(name, content, save=True)
+
+            this_recipe = Recipe.objects.get(title=title, isHard=is_hard,
                                              technical_type=technical_type,
                                              time=time, text=preparation)
             for i in recipe["ingredients"]:
@@ -279,7 +295,7 @@ def parse_ingredient(ingredient_string):
                 ' su bardağı ', ' çay bardağı ', ' sap ', ' kahve fincanı ', ' fincan ', ' bardak ', ' kaşık ',
                 ' gram ', ' adet ', ' tane ', ' diş ', ' demet ', ' tutam ', ' dilim ', ' avuç ', ' kilogram ', ' gr. ',
                 ' paket ', ' litre ', ' bağ ', ' damla ', ' baget ', ' dal ', ' küp', ' kilo ', ' kilogram ',
-                ' yaprak ', ' kavanoz ', ' çimdik ', ' kutu ']
+                ' yaprak ', ' kavanoz ', ' çimdik ', ' kutu ',' mililitre ',' top ',' kg ',' poşet ']
     for measure in measures:
         if measure in ingredient_string:
             ingredient = ingredient_string.split(measure)
@@ -455,7 +471,11 @@ def suggestion_recipe():
                     recipe_list.append(list(intersect_products))
                     recipe_list.append(int(round(ingredient.recipe.calorie)))
                     recipe_list.append(ingredient.recipe.rating)
+                    recipe_list.append(ingredient.recipe.isHard)
+                    recipe_list.append(len(set(intersection_list([x.lower() for x in selected_food],
+                                                                 [y.lower() for y in matching_list]))))
                     all_suggestion_recipes.append(recipe_list)
+    all_suggestion_recipes.sort(reverse=True, key=lambda x: x[7])
     return all_suggestion_recipes
 
 

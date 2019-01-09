@@ -36,6 +36,7 @@ def read_file(file_name):
             word_list = [word]
             word = stem.stemWords(word_list)[0]
 
+
             if word in stopwords_list:
                 continue
             else:
@@ -44,12 +45,13 @@ def read_file(file_name):
                     word_count_pair[word] += 1
                 else:
                     word_count_pair[word] = 1
+
     count_of_all_words = len(all_words_list)
     count_of_unique_words = len(word_count_pair.keys())
     if "positives.txt" in file_name:
         for word in word_count_pair.keys():
             word_probability = calculate_probability(word, word_count_pair, count_of_all_words,
-                                                     count_of_unique_words)
+                                              count_of_unique_words)
             try:
                 probability_object = ProbabilityOfWords.objects.get(word=word)
             except ProbabilityOfWords.DoesNotExist:
@@ -57,6 +59,7 @@ def read_file(file_name):
 
             if probability_object is not None:
                 probability_object.probabilityOfPositive = word_probability
+                probability_object.save()
             else:
                 ProbabilityOfWords.objects.update_or_create(word=word, probabilityOfPositive=word_probability)
 
@@ -74,6 +77,7 @@ def read_file(file_name):
 
             if probability_object is not None:
                 probability_object.probabilityOfNegative = word_probability
+                probability_object.save()
             else:
                 ProbabilityOfWords.objects.update_or_create(word=word, probabilityOfNegative=word_probability)
 
@@ -104,7 +108,6 @@ def do_semantic_analysis(sentence):
         word = word.lower()
         x = [word]
         word = stem.stemWords(x)[0]
-
         if word in stopwords_list:
             continue
         else:
@@ -119,6 +122,7 @@ def do_semantic_analysis(sentence):
 
             sentence_probability_of_negative *= word_probability_of_negative
             sentence_probability_of_positive *= word_probability_of_positive
+
     if sentence_probability_of_positive > sentence_probability_of_negative:
         result = "positive"
     elif sentence_probability_of_positive < sentence_probability_of_negative:
@@ -155,5 +159,6 @@ def calculate_accuracy():
             wrong += 1
     count_of_all_test_sentences = len(all_test_objects)
     accuracy = right / count_of_all_test_sentences
+    print("accuracy")
     print(accuracy)
     return accuracy
